@@ -23,7 +23,7 @@ MODEL
 */
 MODEL_VERSION "1.0";
 DESIGN "fpga-riscv32-minimal";
-DATE "11/23/2020 00:56:10";
+DATE "11/23/2020 15:31:09";
 PROGRAM "Quartus Prime";
 
 

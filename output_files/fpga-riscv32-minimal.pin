@@ -82,7 +82,7 @@ MSEL2                        : A1        :        :                   :         
 nCE                          : A2        :        :                   :         : 9A        :                
 CONF_DONE                    : A3        :        :                   :         : 9A        :                
 GND                          : A4        : gnd    :                   :         :           :                
-instruction[29]              : A5        : output : 2.5 V             :         : 8A        : N              
+instruction[17]              : A5        : output : 2.5 V             :         : 8A        : N              
 alu_res[28]                  : A6        : input  : 2.5 V             :         : 8A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : A7        :        :                   :         : 7D        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A8        :        :                   :         : 7D        :                
@@ -104,44 +104,44 @@ nCSO, DATA4                  : AA1       :        :                   :         
 AS_DATA1, DATA1              : AA2       :        :                   :         : 3A        :                
 VCC_AUX                      : AA3       : power  :                   : 2.5V    :           :                
 GND                          : AA4       : gnd    :                   :         :           :                
-alu_res[25]                  : AA5       : input  : 2.5 V             :         : 3A        : N              
-alu_res[24]                  : AA6       : input  : 2.5 V             :         : 3A        : N              
+instruction[6]               : AA5       : output : 2.5 V             :         : 3A        : N              
+instruction[7]               : AA6       : output : 2.5 V             :         : 3A        : N              
 alu_res[20]                  : AA7       : input  : 2.5 V             :         : 3A        : N              
-alu_res[17]                  : AA8       : input  : 2.5 V             :         : 3B        : N              
+instruction[9]               : AA8       : output : 2.5 V             :         : 3B        : N              
 VCCIO3B                      : AA9       : power  :                   : 2.5V    : 3B        :                
 VREFB3BN0                    : AA10      : power  :                   :         : 3B        :                
-alu_res[16]                  : AA11      : input  : 2.5 V             :         : 4A        : N              
+clear                        : AA11      : input  : 2.5 V             :         : 4A        : N              
 VCCPD3B4A                    : AA12      : power  :                   : 2.5V    : 3B, 4A    :                
 alu_res[5]                   : AA13      : input  : 2.5 V             :         : 4A        : N              
 GND                          : AA14      : gnd    :                   :         :           :                
-instruction[18]              : AA15      : output : 2.5 V             :         : 4A        : N              
+instruction[10]              : AA15      : output : 2.5 V             :         : 4A        : N              
 instruction[23]              : AA16      : output : 2.5 V             :         : 4A        : N              
 VCC_AUX                      : AA17      : power  :                   : 2.5V    :           :                
-instruction[25]              : AA18      : output : 2.5 V             :         : 4A        : N              
+alu_res[4]                   : AA18      : input  : 2.5 V             :         : 4A        : N              
 VCCIO4A                      : AA19      : power  :                   : 2.5V    : 4A        :                
 VREFB4AN0                    : AA20      : power  :                   :         : 4A        :                
-instruction[28]              : AA21      : output : 2.5 V             :         : 5A        : N              
-alu_res[11]                  : AA22      : input  : 2.5 V             :         : 5A        : N              
+instruction[20]              : AA21      : output : 2.5 V             :         : 5A        : N              
+alu_res[22]                  : AA22      : input  : 2.5 V             :         : 5A        : N              
 GND                          : AB1       : gnd    :                   :         :           :                
 AS_DATA3, DATA3              : AB2       :        :                   :         : 3A        :                
 AS_DATA0, ASDO, DATA0        : AB3       :        :                   :         : 3A        :                
 VREFB3AN0                    : AB4       : power  :                   :         : 3A        :                
 alu_res[23]                  : AB5       : input  : 2.5 V             :         : 3A        : N              
 VCCIO3A                      : AB6       : power  :                   : 2.5V    : 3A        :                
-clear                        : AB7       : input  : 2.5 V             :         : 3A        : N              
-instruction[31]              : AB8       : output : 2.5 V             :         : 3B        : N              
-instruction[26]              : AB9       : output : 2.5 V             :         : 3B        : N              
-alu_res[6]                   : AB10      : input  : 2.5 V             :         : 3B        : N              
+alu_res[24]                  : AB7       : input  : 2.5 V             :         : 3A        : N              
+alu_res[6]                   : AB8       : input  : 2.5 V             :         : 3B        : N              
+instruction[14]              : AB9       : output : 2.5 V             :         : 3B        : N              
+instruction[27]              : AB10      : output : 2.5 V             :         : 3B        : N              
 GND                          : AB11      : gnd    :                   :         :           :                
-alu_res[30]                  : AB12      : input  : 2.5 V             :         : 4A        : N              
-alu_res[31]                  : AB13      : input  : 2.5 V             :         : 4A        : N              
-instruction[7]               : AB14      : output : 2.5 V             :         : 4A        : N              
-instruction[20]              : AB15      : output : 2.5 V             :         : 4A        : N              
+alu_res[13]                  : AB12      : input  : 2.5 V             :         : 4A        : N              
+alu_res[27]                  : AB13      : input  : 2.5 V             :         : 4A        : N              
+instruction[18]              : AB14      : output : 2.5 V             :         : 4A        : N              
+alu_res[30]                  : AB15      : input  : 2.5 V             :         : 4A        : N              
 VCCIO4A                      : AB16      : power  :                   : 2.5V    : 4A        :                
-instruction[19]              : AB17      : output : 2.5 V             :         : 4A        : N              
-instruction[0]               : AB18      : output : 2.5 V             :         : 4A        : N              
+alu_res[19]                  : AB17      : input  : 2.5 V             :         : 4A        : N              
+instruction[29]              : AB18      : output : 2.5 V             :         : 4A        : N              
 instruction[22]              : AB19      : output : 2.5 V             :         : 4A        : N              
-alu_res[19]                  : AB20      : input  : 2.5 V             :         : 4A        : N              
+alu_res[2]                   : AB20      : input  : 2.5 V             :         : 4A        : N              
 GND                          : AB21      : gnd    :                   :         :           :                
 instruction[24]              : AB22      : output : 2.5 V             :         : 5A        : N              
 GND                          : B1        : gnd    :                   :         :           :                
@@ -170,8 +170,8 @@ GND                          : C1        :        :                   :         
 MSEL4                        : C2        :        :                   :         : 9A        :                
 GND                          : C3        : gnd    :                   :         :           :                
 MSEL3                        : C4        :        :                   :         : 9A        :                
-alu_res[3]                   : C5        : input  : 2.5 V             :         : 8A        : N              
-instruction[13]              : C6        : output : 2.5 V             :         : 8A        : N              
+instruction[8]               : C5        : output : 2.5 V             :         : 8A        : N              
+alu_res[26]                  : C6        : input  : 2.5 V             :         : 8A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C7        :        :                   :         : 7D        :                
 GND                          : C8        : gnd    :                   :         :           :                
 VCCPD7D_HPS                  : C9        : power  :                   : 2.5V    : 7D        :                
@@ -236,7 +236,7 @@ VCCA_FPLL                    : F1        : power  :                   : 2.5V    
 GND                          : F2        : gnd    :                   :         :           :                
 GND                          : F3        : gnd    :                   :         :           :                
 GND                          : F4        : gnd    :                   :         :           :                
-alu_res[0]                   : F5        : input  : 2.5 V             :         : 8A        : N              
+instruction[28]              : F5        : output : 2.5 V             :         : 8A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : F6        :        :                   :         : 7D        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F7        :        :                   :         : 7D        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F8        :        :                   :         : 7C        :                
@@ -479,19 +479,19 @@ GND                          : U2        : gnd    :                   :         
 GND                          : U3        : gnd    :                   :         :           :                
 TDO                          : U4        : output :                   :         : 3A        :                
 GND                          : U5        : gnd    :                   :         :           :                
-instruction[27]              : U6        : output : 2.5 V             :         : 3A        : N              
-instruction[9]               : U7        : output : 2.5 V             :         : 3A        : N              
+alu_res[31]                  : U6        : input  : 2.5 V             :         : 3A        : N              
+instruction[31]              : U7        : output : 2.5 V             :         : 3A        : N              
 GND                          : U8        : gnd    :                   :         :           :                
 GND                          : U9        : gnd    :                   :         :           :                
-alu_res[13]                  : U10       : input  : 2.5 V             :         : 3B        : N              
+instruction[26]              : U10       : output : 2.5 V             :         : 3B        : N              
 GND                          : U11       : gnd    :                   :         :           :                
 GND                          : U12       : gnd    :                   :         :           :                
 GND                          : U13       : gnd    :                   :         :           :                
 GND                          : U14       : gnd    :                   :         :           :                
 GND                          : U15       : gnd    :                   :         :           :                
 GND                          : U16       : gnd    :                   :         :           :                
-alu_res[18]                  : U17       : input  : 2.5 V             :         : 5A        : N              
-instruction[15]              : U18       : output : 2.5 V             :         : 5A        : N              
+instruction[30]              : U17       : output : 2.5 V             :         : 5A        : N              
+instruction[13]              : U18       : output : 2.5 V             :         : 5A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : U19       :        :                   :         : 6B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U20       :        :                   :         : 6B        :                
 VCCIO6B_HPS                  : U21       : power  :                   : 2.5V    : 6B        :                
@@ -500,22 +500,22 @@ GND                          : V1        : gnd    :                   :         
 TMS                          : V2        : input  :                   :         : 3A        :                
 GND                          : V3        : gnd    :                   :         :           :                
 DCLK                         : V4        :        :                   :         : 3A        :                
-alu_res[4]                   : V5        : input  : 2.5 V             :         : 3A        : N              
-instruction[3]               : V6        : output : 2.5 V             :         : 3A        : N              
-alu_res[9]                   : V7        : input  : 2.5 V             :         : 3A        : N              
+instruction[11]              : V5        : output : 2.5 V             :         : 3A        : N              
+alu_res[16]                  : V6        : input  : 2.5 V             :         : 3A        : N              
+instruction[15]              : V7        : output : 2.5 V             :         : 3A        : N              
 GND                          : V8        : gnd    :                   :         :           :                
 alu_res[7]                   : V9        : input  : 2.5 V             :         : 3A        : N              
 instruction[21]              : V10       : output : 2.5 V             :         : 3B        : N              
-alu_res[2]                   : V11       : input  : 2.5 V             :         : 4A        : N              
+alu_res[3]                   : V11       : input  : 2.5 V             :         : 4A        : N              
 VCCPD3B4A                    : V12       : power  :                   : 2.5V    : 3B, 4A    :                
 GND                          : V13       : gnd    :                   :         :           :                
 VCCPD3B4A                    : V14       : power  :                   : 2.5V    : 3B, 4A    :                
-instruction[8]               : V15       : output : 2.5 V             :         : 5A        : N              
-alu_res[29]                  : V16       : input  : 2.5 V             :         : 5A        : N              
-instruction[2]               : V17       : output : 2.5 V             :         : 5A        : N              
+alu_res[15]                  : V15       : input  : 2.5 V             :         : 5A        : N              
+instruction[19]              : V16       : output : 2.5 V             :         : 5A        : N              
+alu_res[25]                  : V17       : input  : 2.5 V             :         : 5A        : N              
 VCCIO5A                      : V18       : power  :                   : 2.5V    : 5A        :                
-alu_res[22]                  : V19       : input  : 2.5 V             :         : 5A        : N              
-instruction[5]               : V20       : output : 2.5 V             :         : 5A        : N              
+instruction[0]               : V19       : output : 2.5 V             :         : 5A        : N              
+alu_res[0]                   : V20       : input  : 2.5 V             :         : 5A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : V21       :        :                   :         : 6B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V22       :        :                   :         : 6B        :                
 VCCA_FPLL                    : W1        : power  :                   : 2.5V    :           :                
@@ -524,21 +524,21 @@ TCK                          : W3        : input  :                   :         
 TDI                          : W4        : input  :                   :         : 3A        :                
 VCCIO3A                      : W5        : power  :                   : 2.5V    : 3A        :                
 clock                        : W6        : input  : 2.5 V             :         : 3A        : N              
-instruction[6]               : W7        : output : 2.5 V             :         : 3A        : N              
-alu_res[10]                  : W8        : input  : 2.5 V             :         : 3A        : N              
+instruction[12]              : W7        : output : 2.5 V             :         : 3A        : N              
+instruction[3]               : W8        : output : 2.5 V             :         : 3A        : N              
 VCCPD3B4A                    : W9        : power  :                   : 2.5V    : 3B, 4A    :                
 GND                          : W10       : gnd    :                   :         :           :                
 instruction[1]               : W11       : output : 2.5 V             :         : 4A        : N              
-instruction[17]              : W12       : output : 2.5 V             :         : 4A        : N              
+instruction[4]               : W12       : output : 2.5 V             :         : 4A        : N              
 VCCPD3B4A                    : W13       : power  :                   : 2.5V    : 3B, 4A    :                
-instruction[10]              : W14       : output : 2.5 V             :         : 4A        : N              
+instruction[25]              : W14       : output : 2.5 V             :         : 4A        : N              
 GND                          : W15       : gnd    :                   :         :           :                
 alu_res[8]                   : W16       : input  : 2.5 V             :         : 5A        : N              
 VCCA_FPLL                    : W17       : power  :                   : 2.5V    :           :                
-instruction[11]              : W18       : output : 2.5 V             :         : 5A        : N              
+instruction[2]               : W18       : output : 2.5 V             :         : 5A        : N              
 VREFB5AN0                    : W19       : power  :                   :         : 5A        :                
 GND                          : W20       : gnd    :                   :         :           :                
-alu_res[27]                  : W21       : input  : 2.5 V             :         : 5A        : N              
+instruction[5]               : W21       : output : 2.5 V             :         : 5A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : W22       :        :                   :         : 6B        :                
 GND                          : Y1        : gnd    :                   :         :           :                
 GND                          : Y2        : gnd    :                   :         :           :                
@@ -547,18 +547,18 @@ VCCPGM                       : Y4        : power  :                   : 1.8V/2.5
 alu_res[1]                   : Y5        : input  : 2.5 V             :         : 3A        : N              
 VCCPD3A                      : Y6        : power  :                   : 2.5V    : 3A        :                
 GND                          : Y7        : gnd    :                   :         :           :                
-alu_res[21]                  : Y8        : input  : 2.5 V             :         : 3A        : N              
+alu_res[10]                  : Y8        : input  : 2.5 V             :         : 3A        : N              
 DNU                          : Y9        :        :                   :         :           :                
 VCC_AUX                      : Y10       : power  :                   : 2.5V    :           :                
-instruction[30]              : Y11       : output : 2.5 V             :         : 4A        : N              
+alu_res[17]                  : Y11       : input  : 2.5 V             :         : 4A        : N              
 VCCIO4A                      : Y12       : power  :                   : 2.5V    : 4A        :                
-instruction[4]               : Y13       : output : 2.5 V             :         : 4A        : N              
+alu_res[11]                  : Y13       : input  : 2.5 V             :         : 4A        : N              
 alu_res[12]                  : Y14       : input  : 2.5 V             :         : 4A        : N              
-instruction[12]              : Y15       : output : 2.5 V             :         : 4A        : N              
-instruction[14]              : Y16       : output : 2.5 V             :         : 4A        : N              
+alu_res[18]                  : Y15       : input  : 2.5 V             :         : 4A        : N              
+alu_res[9]                   : Y16       : input  : 2.5 V             :         : 4A        : N              
 GND                          : Y17       : gnd    :                   :         :           :                
 VCCPGM                       : Y18       : power  :                   : 1.8V/2.5V/3.0V/3.3V :           :                
-alu_res[15]                  : Y19       : input  : 2.5 V             :         : 5A        : N              
+alu_res[29]                  : Y19       : input  : 2.5 V             :         : 5A        : N              
 instruction[16]              : Y20       : output : 2.5 V             :         : 5A        : N              
-alu_res[26]                  : Y21       : input  : 2.5 V             :         : 5A        : N              
+alu_res[21]                  : Y21       : input  : 2.5 V             :         : 5A        : N              
 VCCIO5A                      : Y22       : power  :                   : 2.5V    : 5A        :                
