@@ -1,0 +1,28 @@
+library ieee;
+
+use ieee.std_logic_1164.all;
+use work.all;
+
+entity decode is
+	port (
+		signal instruction_in: in std_logic_vector(31 downto 0);
+		signal r1_reg_idx, r2_reg_idx, wr_reg_idx: out std_logic_vector(4 downto 0);
+		signal opcode: out std_logic_vector(5 downto 0);
+	);
+end entity decode;
+
+architecture arch_decode of decode is
+	signal opcode, funct7: std_logic_vector(6 downto 0);
+	signal funct3: std_logic_vector(2 downto 0);
+	signal rs1, rs2, rd: std_logic_vector(4 downto 0);
+	signal imm_i, imm_s, imm_sb, imm_uj: std_logic_vector(31 downto 0);
+	signal imm_u: std_logic_vector(31 downto 12);
+	signal ext32: std_logic_vector(31 downto 12);
+begin
+	-- instruction decode
+	opcode <= instruction_in(6 downto 0);
+	wr_reg_idx <= instruction_in(11 downto 7);
+	r1_reg_idx <= instruction_in(19 downto 15);
+	r2_reg_idx <= instruction_in(24 downto 20);
+	
+end architecture arch_decode;

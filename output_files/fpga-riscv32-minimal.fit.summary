@@ -1,4 +1,4 @@
-Fitter Status : Successful - Sun Nov 22 13:08:47 2020
+Fitter Status : Successful - Mon Nov 23 00:55:54 2020
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : fpga-riscv32-minimal
 Top-level Entity Name : fpga_riscv32_minimal
@@ -7,7 +7,7 @@ Device : 5CSEBA6U19C6
 Timing Models : Final
 Logic utilization (in ALMs) : 1 / 41,910 ( < 1 % )
 Total registers : 0
-Total pins : 34 / 205 ( 17 % )
+Total pins : 66 / 205 ( 32 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 5,662,720 ( 0 % )
 Total RAM Blocks : 0 / 553 ( 0 % )

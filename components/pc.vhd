@@ -5,10 +5,10 @@ use work.all;
 
 entity pc is
     port (
-        signal clock, clear: in std_logic;
-        signal pc_in: in std_logic_vector(31 downto 0);
-        signal pc_enable: in std_logic;
-        signal pc_count: out std_logic_vector(31 downto 0)
+        clock, clear: in std_logic;
+        pc_in: in std_logic_vector(31 downto 0);
+        pc_enable: in std_logic;
+        pc_count: out std_logic_vector(31 downto 0)
     );
 end pc;
 
@@ -19,8 +19,5 @@ architecture behavioral of pc is
 
 begin
     count_register : register32b port map (clock, clear, '1', count_address, next_count);
-	-- next_count_int <= next_count;
-    --pc_count <= next_count_int;
-	 pc_count <= next_count;
-	 
+	 pc_count <= next_count; 
 end behavioral;

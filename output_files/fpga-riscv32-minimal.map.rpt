@@ -1,5 +1,5 @@
 Analysis & Synthesis report for fpga-riscv32-minimal
-Sun Nov 22 13:07:48 2020
+Mon Nov 23 00:55:24 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -16,11 +16,12 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   8. Registers Removed During Synthesis
   9. Removed Registers Triggering Further Register Optimizations
  10. General Register Statistics
- 11. Port Connectivity Checks: "pc:program_counter|register32b:count_register"
- 12. Port Connectivity Checks: "pc:program_counter"
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+ 11. Port Connectivity Checks: "adder:alu_pc"
+ 12. Port Connectivity Checks: "pc:program_counter|register32b:count_register"
+ 13. Port Connectivity Checks: "pc:program_counter"
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
 
 
 
@@ -47,14 +48,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Nov 22 13:07:48 2020       ;
+; Analysis & Synthesis Status     ; Successful - Mon Nov 23 00:55:23 2020       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; fpga-riscv32-minimal                        ;
 ; Top-level Entity Name           ; fpga_riscv32_minimal                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 34                                          ;
+; Total pins                      ; 66                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -179,11 +180,25 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path    ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                ; Library ;
 +-------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
+; components/register4b.vhd           ; yes             ; User VHDL File  ; F:/QuartusProjects/fpga-riscv32-minimal/components/register4b.vhd           ;         ;
+; components/register1b.vhd           ; yes             ; User VHDL File  ; F:/QuartusProjects/fpga-riscv32-minimal/components/register1b.vhd           ;         ;
+; components/register32b_falling.vhd  ; yes             ; User VHDL File  ; F:/QuartusProjects/fpga-riscv32-minimal/components/register32b_falling.vhd  ;         ;
+; components/register_bank.vhd        ; yes             ; User VHDL File  ; F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd        ;         ;
+; components/controller.vhd           ; yes             ; User VHDL File  ; F:/QuartusProjects/fpga-riscv32-minimal/components/controller.vhd           ;         ;
 ; components/register32b.vhd          ; yes             ; User VHDL File  ; F:/QuartusProjects/fpga-riscv32-minimal/components/register32b.vhd          ;         ;
 ; components/pc.vhd                   ; yes             ; User VHDL File  ; F:/QuartusProjects/fpga-riscv32-minimal/components/pc.vhd                   ;         ;
 ; components/datapath.vhd             ; yes             ; User VHDL File  ; F:/QuartusProjects/fpga-riscv32-minimal/components/datapath.vhd             ;         ;
 ; components/alu.vhd                  ; yes             ; User VHDL File  ; F:/QuartusProjects/fpga-riscv32-minimal/components/alu.vhd                  ;         ;
 ; components/fpga-riscv32-minimal.vhd ; yes             ; User VHDL File  ; F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd ;         ;
+; components/instmem.vhd              ; yes             ; User VHDL File  ; F:/QuartusProjects/fpga-riscv32-minimal/components/instmem.vhd              ;         ;
+; components/adder.vhd                ; yes             ; User VHDL File  ; F:/QuartusProjects/fpga-riscv32-minimal/components/adder.vhd                ;         ;
+; components/mux2.vhd                 ; yes             ; User VHDL File  ; F:/QuartusProjects/fpga-riscv32-minimal/components/mux2.vhd                 ;         ;
+; ifid_register.vhd                   ; yes             ; User VHDL File  ; F:/QuartusProjects/fpga-riscv32-minimal/ifid_register.vhd                   ;         ;
+; components/mux32_1.vhd              ; yes             ; User VHDL File  ; F:/QuartusProjects/fpga-riscv32-minimal/components/mux32_1.vhd              ;         ;
+; idex_register.vhd                   ; yes             ; User VHDL File  ; F:/QuartusProjects/fpga-riscv32-minimal/idex_register.vhd                   ;         ;
+; components/register2b.vhd           ; yes             ; User VHDL File  ; F:/QuartusProjects/fpga-riscv32-minimal/components/register2b.vhd           ;         ;
+; components/register3b.vhd           ; yes             ; User VHDL File  ; F:/QuartusProjects/fpga-riscv32-minimal/components/register3b.vhd           ;         ;
+; components/register5b.vhd           ; yes             ; User VHDL File  ; F:/QuartusProjects/fpga-riscv32-minimal/components/register5b.vhd           ;         ;
 +-------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
 
 
@@ -203,13 +218,13 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;       ;
 ; Dedicated logic registers                   ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 34    ;
+; I/O pins                                    ; 66    ;
 ;                                             ;       ;
 ; Total DSP Blocks                            ; 0     ;
 ;                                             ;       ;
 ; Maximum fan-out node                        ; clock ;
 ; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 34    ;
+; Total fan-out                               ; 66    ;
 ; Average fan-out                             ; 0.50  ;
 +---------------------------------------------+-------+
 
@@ -219,51 +234,31 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------+----------------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name   ; Entity Name          ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------+----------------------+--------------+
-; |fpga_riscv32_minimal      ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 34   ; 0            ; |fpga_riscv32_minimal ; fpga_riscv32_minimal ; work         ;
+; |fpga_riscv32_minimal      ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 66   ; 0            ; |fpga_riscv32_minimal ; fpga_riscv32_minimal ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                           ;
-+---------------------------------------------------------------------+----------------------------------------+
-; Register name                                                       ; Reason for Removal                     ;
-+---------------------------------------------------------------------+----------------------------------------+
-; pc:program_counter|register32b:count_register|register_value[0..31] ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 32                              ;                                        ;
-+---------------------------------------------------------------------+----------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                            ;
++---------------------------------------------------------------------+---------------------------------------------------------+
+; Register name                                                       ; Reason for Removal                                      ;
++---------------------------------------------------------------------+---------------------------------------------------------+
+; pc:program_counter|register32b:count_register|register_value[0..31] ; Stuck at GND due to stuck port data_in                  ;
+; instmem:instruction_memory|memblock_read[1..31]                     ; Merged with instmem:instruction_memory|memblock_read[0] ;
+; instmem:instruction_memory|memblock_read[0]                         ; Stuck at GND due to stuck port data_in                  ;
+; Total Number of Removed Registers = 64                              ;                                                         ;
++---------------------------------------------------------------------+---------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                     ;
-+------------------------------------------------------------------+---------------------------+------------------------------------------------------------------+
-; Register name                                                    ; Reason for Removal        ; Registers Removed due to This Register                           ;
-+------------------------------------------------------------------+---------------------------+------------------------------------------------------------------+
-; pc:program_counter|register32b:count_register|register_value[31] ; Stuck at GND              ; pc:program_counter|register32b:count_register|register_value[8]  ;
-;                                                                  ; due to stuck port data_in ;                                                                  ;
-; pc:program_counter|register32b:count_register|register_value[30] ; Stuck at GND              ; pc:program_counter|register32b:count_register|register_value[9]  ;
-;                                                                  ; due to stuck port data_in ;                                                                  ;
-; pc:program_counter|register32b:count_register|register_value[29] ; Stuck at GND              ; pc:program_counter|register32b:count_register|register_value[10] ;
-;                                                                  ; due to stuck port data_in ;                                                                  ;
-; pc:program_counter|register32b:count_register|register_value[28] ; Stuck at GND              ; pc:program_counter|register32b:count_register|register_value[11] ;
-;                                                                  ; due to stuck port data_in ;                                                                  ;
-; pc:program_counter|register32b:count_register|register_value[27] ; Stuck at GND              ; pc:program_counter|register32b:count_register|register_value[12] ;
-;                                                                  ; due to stuck port data_in ;                                                                  ;
-; pc:program_counter|register32b:count_register|register_value[26] ; Stuck at GND              ; pc:program_counter|register32b:count_register|register_value[13] ;
-;                                                                  ; due to stuck port data_in ;                                                                  ;
-; pc:program_counter|register32b:count_register|register_value[25] ; Stuck at GND              ; pc:program_counter|register32b:count_register|register_value[14] ;
-;                                                                  ; due to stuck port data_in ;                                                                  ;
-; pc:program_counter|register32b:count_register|register_value[24] ; Stuck at GND              ; pc:program_counter|register32b:count_register|register_value[15] ;
-;                                                                  ; due to stuck port data_in ;                                                                  ;
-; pc:program_counter|register32b:count_register|register_value[23] ; Stuck at GND              ; pc:program_counter|register32b:count_register|register_value[16] ;
-;                                                                  ; due to stuck port data_in ;                                                                  ;
-; pc:program_counter|register32b:count_register|register_value[22] ; Stuck at GND              ; pc:program_counter|register32b:count_register|register_value[17] ;
-;                                                                  ; due to stuck port data_in ;                                                                  ;
-; pc:program_counter|register32b:count_register|register_value[21] ; Stuck at GND              ; pc:program_counter|register32b:count_register|register_value[18] ;
-;                                                                  ; due to stuck port data_in ;                                                                  ;
-; pc:program_counter|register32b:count_register|register_value[20] ; Stuck at GND              ; pc:program_counter|register32b:count_register|register_value[19] ;
-;                                                                  ; due to stuck port data_in ;                                                                  ;
-+------------------------------------------------------------------+---------------------------+------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                ;
++------------------------------------------------------------------+---------------------------+---------------------------------------------+
+; Register name                                                    ; Reason for Removal        ; Registers Removed due to This Register      ;
++------------------------------------------------------------------+---------------------------+---------------------------------------------+
+; pc:program_counter|register32b:count_register|register_value[31] ; Stuck at GND              ; instmem:instruction_memory|memblock_read[0] ;
+;                                                                  ; due to stuck port data_in ;                                             ;
++------------------------------------------------------------------+---------------------------+---------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -281,6 +276,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++------------------------------------------------+
+; Port Connectivity Checks: "adder:alu_pc"       ;
++--------------+-------+----------+--------------+
+; Port         ; Type  ; Severity ; Details      ;
++--------------+-------+----------+--------------+
+; datab[31..3] ; Input ; Info     ; Stuck at GND ;
+; datab[1..0]  ; Input ; Info     ; Stuck at GND ;
+; datab[2]     ; Input ; Info     ; Stuck at VCC ;
++--------------+-------+----------+--------------+
+
+
 +---------------------------------------------------------------------------+
 ; Port Connectivity Checks: "pc:program_counter|register32b:count_register" ;
 +--------+-------+----------+-----------------------------------------------+
@@ -293,14 +299,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 +------------------------------------------------+
 ; Port Connectivity Checks: "pc:program_counter" ;
-+--------------+-------+----------+--------------+
-; Port         ; Type  ; Severity ; Details      ;
-+--------------+-------+----------+--------------+
-; pc_in[31..3] ; Input ; Info     ; Stuck at GND ;
-; pc_in[1..0]  ; Input ; Info     ; Stuck at GND ;
-; pc_in[2]     ; Input ; Info     ; Stuck at VCC ;
-; pc_enable    ; Input ; Info     ; Stuck at VCC ;
-+--------------+-------+----------+--------------+
++-----------+-------+----------+-----------------+
+; Port      ; Type  ; Severity ; Details         ;
++-----------+-------+----------+-----------------+
+; pc_enable ; Input ; Info     ; Stuck at VCC    ;
++-----------+-------+----------+-----------------+
 
 
 +-----------------------------------------------------+
@@ -311,7 +314,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; arriav_lcell_comb     ; 1                           ;
 ;     normal            ; 1                           ;
 ;         0 data inputs ; 1                           ;
-; boundary_port         ; 34                          ;
+; boundary_port         ; 66                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 0.00                        ;
 ; Average LUT depth     ; 0.00                        ;
@@ -323,7 +326,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -333,10 +336,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sun Nov 22 13:07:33 2020
+    Info: Processing started: Mon Nov 23 00:55:15 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fpga-riscv32-minimal -c fpga-riscv32-minimal
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file components/register4b.vhd
+    Info (12022): Found design unit 1: register4b-arch_register4b File: F:/QuartusProjects/fpga-riscv32-minimal/components/register4b.vhd Line: 12
+    Info (12023): Found entity 1: register4b File: F:/QuartusProjects/fpga-riscv32-minimal/components/register4b.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file components/register1b.vhd
+    Info (12022): Found design unit 1: register1b-arch_register1b File: F:/QuartusProjects/fpga-riscv32-minimal/components/register1b.vhd Line: 15
+    Info (12023): Found entity 1: register1b File: F:/QuartusProjects/fpga-riscv32-minimal/components/register1b.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file components/register32b_falling.vhd
+    Info (12022): Found design unit 1: register32b_falling-arch_register32b_falling File: F:/QuartusProjects/fpga-riscv32-minimal/components/register32b_falling.vhd Line: 13
+    Info (12023): Found entity 1: register32b_falling File: F:/QuartusProjects/fpga-riscv32-minimal/components/register32b_falling.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file components/register_bank.vhd
+    Info (12022): Found design unit 1: register_bank-arch_register_bank File: F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd Line: 18
+    Info (12023): Found entity 1: register_bank File: F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file components/controller.vhd
+    Info (12022): Found design unit 1: controller-Behavioral File: F:/QuartusProjects/fpga-riscv32-minimal/components/controller.vhd Line: 31
+    Info (12023): Found entity 1: controller File: F:/QuartusProjects/fpga-riscv32-minimal/components/controller.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file components/register32b.vhd
     Info (12022): Found design unit 1: register32b-description File: F:/QuartusProjects/fpga-riscv32-minimal/components/register32b.vhd Line: 13
     Info (12023): Found entity 1: register32b File: F:/QuartusProjects/fpga-riscv32-minimal/components/register32b.vhd Line: 5
@@ -348,58 +366,120 @@ Info (12021): Found 1 design units, including 1 entities, in source file compone
 Info (12021): Found 1 design units, including 1 entities, in source file components/alu.vhd
     Info (12023): Found entity 1: alu File: F:/QuartusProjects/fpga-riscv32-minimal/components/alu.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file components/fpga-riscv32-minimal.vhd
-    Info (12022): Found design unit 1: fpga_riscv32_minimal-behavioral File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 13
+    Info (12022): Found design unit 1: fpga_riscv32_minimal-arch_minimal_riscv32 File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 14
     Info (12023): Found entity 1: fpga_riscv32_minimal File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file components/instmem.vhd
+    Info (12022): Found design unit 1: instmem-description File: F:/QuartusProjects/fpga-riscv32-minimal/components/instmem.vhd Line: 13
+    Info (12023): Found entity 1: instmem File: F:/QuartusProjects/fpga-riscv32-minimal/components/instmem.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file components/adder.vhd
+    Info (12022): Found design unit 1: adder-adder32 File: F:/QuartusProjects/fpga-riscv32-minimal/components/adder.vhd Line: 13
+    Info (12023): Found entity 1: adder File: F:/QuartusProjects/fpga-riscv32-minimal/components/adder.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file components/mux2.vhd
+    Info (12022): Found design unit 1: mux2-behavioral File: F:/QuartusProjects/fpga-riscv32-minimal/components/mux2.vhd Line: 13
+    Info (12023): Found entity 1: mux2 File: F:/QuartusProjects/fpga-riscv32-minimal/components/mux2.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file ifid_register.vhd
+    Info (12022): Found design unit 1: ifid_register-behavioral File: F:/QuartusProjects/fpga-riscv32-minimal/ifid_register.vhd Line: 16
+    Info (12023): Found entity 1: ifid_register File: F:/QuartusProjects/fpga-riscv32-minimal/ifid_register.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file components/mux32_1.vhd
+    Info (12022): Found design unit 1: mux32_1-arch_mux32_1 File: F:/QuartusProjects/fpga-riscv32-minimal/components/mux32_1.vhd Line: 13
+    Info (12023): Found entity 1: mux32_1 File: F:/QuartusProjects/fpga-riscv32-minimal/components/mux32_1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file idex_register.vhd
+    Info (12022): Found design unit 1: idex_register-arch_idex_register File: F:/QuartusProjects/fpga-riscv32-minimal/idex_register.vhd Line: 73
+    Info (12023): Found entity 1: idex_register File: F:/QuartusProjects/fpga-riscv32-minimal/idex_register.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file components/register2b.vhd
+    Info (12022): Found design unit 1: register2b-arch_register2b File: F:/QuartusProjects/fpga-riscv32-minimal/components/register2b.vhd Line: 15
+    Info (12023): Found entity 1: register2b File: F:/QuartusProjects/fpga-riscv32-minimal/components/register2b.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file components/register3b.vhd
+    Info (12022): Found design unit 1: register3b-arch_register3b File: F:/QuartusProjects/fpga-riscv32-minimal/components/register3b.vhd Line: 15
+    Info (12023): Found entity 1: register3b File: F:/QuartusProjects/fpga-riscv32-minimal/components/register3b.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file components/register5b.vhd
+    Info (12022): Found design unit 1: register5b-arch_register5b File: F:/QuartusProjects/fpga-riscv32-minimal/components/register5b.vhd Line: 12
+    Info (12023): Found entity 1: register5b File: F:/QuartusProjects/fpga-riscv32-minimal/components/register5b.vhd Line: 4
 Info (12127): Elaborating entity "fpga_riscv32_minimal" for the top level hierarchy
-Warning (10540): VHDL Signal Declaration warning at fpga-riscv32-minimal.vhd(14): used explicit default value for signal "next_pc_count" because signal was never assigned a value File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 14
-Info (12128): Elaborating entity "pc" for hierarchy "pc:program_counter" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 16
+Warning (10541): VHDL Signal Declaration warning at fpga-riscv32-minimal.vhd(15): used implicit default value for signal "pc_sel" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 15
+Info (12128): Elaborating entity "pc" for hierarchy "pc:program_counter" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 20
 Warning (10540): VHDL Signal Declaration warning at pc.vhd(16): used explicit default value for signal "count_address" because signal was never assigned a value File: F:/QuartusProjects/fpga-riscv32-minimal/components/pc.vhd Line: 16
 Info (12128): Elaborating entity "register32b" for hierarchy "pc:program_counter|register32b:count_register" File: F:/QuartusProjects/fpga-riscv32-minimal/components/pc.vhd Line: 21
+Info (12128): Elaborating entity "instmem" for hierarchy "instmem:instruction_memory" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 21
+Info (12128): Elaborating entity "adder" for hierarchy "adder:alu_pc" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 22
+Info (12128): Elaborating entity "mux2" for hierarchy "mux2:pc_mux" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 23
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "pc_count[0]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[1]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[2]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[3]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[4]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[5]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[6]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[7]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[8]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[9]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[10]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[11]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[12]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[13]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[14]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[15]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[16]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[17]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[18]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[19]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[20]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[21]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[22]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[23]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[24]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[25]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[26]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[27]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[28]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[29]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[30]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
-    Warning (13410): Pin "pc_count[31]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (13410): Pin "instruction[0]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[1]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[2]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[3]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[4]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[5]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[6]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[7]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[8]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[9]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[10]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[11]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[12]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[13]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[14]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[15]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[16]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[17]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[18]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[19]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[20]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[21]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[22]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[23]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[24]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[25]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[26]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[27]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[28]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[29]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[30]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
+    Warning (13410): Pin "instruction[31]" is stuck at GND File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 10
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
+Warning (21074): Design contains 34 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "clock" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 8
     Warning (15610): No output dependent on input pin "clear" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 8
-Info (21057): Implemented 34 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
+    Warning (15610): No output dependent on input pin "alu_res[0]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[1]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[2]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[3]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[4]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[5]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[6]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[7]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[8]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[9]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[10]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[11]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[12]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[13]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[14]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[15]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[16]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[17]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[18]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[19]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[20]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[21]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[22]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[23]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[24]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[25]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[26]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[27]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[28]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[29]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[30]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+    Warning (15610): No output dependent on input pin "alu_res[31]" File: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd Line: 9
+Info (21057): Implemented 66 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 34 input pins
     Info (21059): Implemented 32 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 39 warnings
-    Info: Peak virtual memory: 4860 megabytes
-    Info: Processing ended: Sun Nov 22 13:07:48 2020
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:19
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 71 warnings
+    Info: Peak virtual memory: 4853 megabytes
+    Info: Processing ended: Mon Nov 23 00:55:24 2020
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:18
 
 
