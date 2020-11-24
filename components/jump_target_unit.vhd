@@ -16,6 +16,6 @@ end entity jump_target_unit;
 architecture arch_jump_unit of jump_target_unit is
 	signal mux_output : std_logic_vector (31 downto 0) := X"00000000";
 begin
-	internal_mux : mux_2_1 port map(mux_sel, current_instruction_address, regfile_address, mux_output);
+	internal_mux : mux2 port map(current_instruction_address, regfile_address, mux_sel, mux_output);
 	internal_adder : adder port map(mux_output, immediate, target_address);
 end architecture arch_jump_unit;

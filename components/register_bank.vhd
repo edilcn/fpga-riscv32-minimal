@@ -9,7 +9,7 @@ use work.all;
 entity register_bank is
 	port (
 		clock, clear, wr_reg_enable: in std_logic;
-		r1_reg_in, r2_reg_in, wr_reg_in: in std_logic_vector(31 downto 0);
+		r1_reg_in, r2_reg_in, wr_reg_in: in std_logic_vector(4 downto 0);
 		wr_data_in: in std_logic_vector(31 downto 0);
 		r1_data_out, r2_data_out: out std_logic_vector(31 downto 0)
 	);

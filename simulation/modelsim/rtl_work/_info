@@ -1,0 +1,320 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim
+Emux32_1
+w1606176599
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 7
+R0
+8F:/QuartusProjects/fpga-riscv32-minimal/components/mux32_1.vhd
+FF:/QuartusProjects/fpga-riscv32-minimal/components/mux32_1.vhd
+l0
+L4 1
+VGHzaLFTe:h]oiI0=NdlO?0
+!s100 `9kQ4BknWlCkT5kJic>aP0
+Z3 OV;C;2020.1;71
+31
+!s110 1606184963
+!i10b 1
+!s108 1606184963.000000
+!s90 -reportprogress|300|-93|-work|work|F:/QuartusProjects/fpga-riscv32-minimal/components/mux32_1.vhd|
+!s107 F:/QuartusProjects/fpga-riscv32-minimal/components/mux32_1.vhd|
+!i113 1
+Z4 o-93 -work work
+Z5 tExplicit 1 CvgOpt 0
+Eregister1b
+Z6 w1606103326
+R1
+R2
+!i122 6
+R0
+Z7 8F:/QuartusProjects/fpga-riscv32-minimal/components/register1b.vhd
+Z8 FF:/QuartusProjects/fpga-riscv32-minimal/components/register1b.vhd
+l0
+L7 1
+VE?:Ul[hbSXR7EMK1XN4Q61
+!s100 :[=f65zzIiWB>`P1Z?_9E0
+R3
+31
+Z9 !s110 1606184962
+!i10b 1
+Z10 !s108 1606184962.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|F:/QuartusProjects/fpga-riscv32-minimal/components/register1b.vhd|
+Z12 !s107 F:/QuartusProjects/fpga-riscv32-minimal/components/register1b.vhd|
+!i113 1
+R4
+R5
+Aarch_register1b
+R1
+R2
+DEx4 work 10 register1b 0 22 E?:Ul[hbSXR7EMK1XN4Q61
+!i122 6
+l17
+Z13 L15 17
+V95NURIGbaIdL[UWz1>zbP1
+!s100 >:5H;^EVGdZ7F`_>LGPWY3
+R3
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R4
+R5
+Eregister2b
+Z14 w1606103316
+R1
+R2
+!i122 5
+R0
+Z15 8F:/QuartusProjects/fpga-riscv32-minimal/components/register2b.vhd
+Z16 FF:/QuartusProjects/fpga-riscv32-minimal/components/register2b.vhd
+l0
+L7 1
+V3lAXG1FiGUJhK<Z]@Y03U1
+!s100 7H@a7A>]K:OmE3<b9kbD_3
+R3
+31
+R9
+!i10b 1
+R10
+Z17 !s90 -reportprogress|300|-93|-work|work|F:/QuartusProjects/fpga-riscv32-minimal/components/register2b.vhd|
+Z18 !s107 F:/QuartusProjects/fpga-riscv32-minimal/components/register2b.vhd|
+!i113 1
+R4
+R5
+Aarch_register2b
+R1
+R2
+DEx4 work 10 register2b 0 22 3lAXG1FiGUJhK<Z]@Y03U1
+!i122 5
+l17
+R13
+V>_?eGN]PkTSaV53:jW^W@1
+!s100 c>AmeOh3Z74fSnPVcQIo13
+R3
+31
+R9
+!i10b 1
+R10
+R17
+R18
+!i113 1
+R4
+R5
+Eregister32b
+Z19 w1606091524
+R1
+R2
+!i122 1
+R0
+Z20 8F:/QuartusProjects/fpga-riscv32-minimal/components/register32b.vhd
+Z21 FF:/QuartusProjects/fpga-riscv32-minimal/components/register32b.vhd
+l0
+L5 1
+V2IQ7gd3Kj_lMNKlg:ci>T0
+!s100 7:Uj[@IlIFSS2ibA[elRK2
+R3
+31
+Z22 !s110 1606184961
+!i10b 1
+Z23 !s108 1606184961.000000
+Z24 !s90 -reportprogress|300|-93|-work|work|F:/QuartusProjects/fpga-riscv32-minimal/components/register32b.vhd|
+Z25 !s107 F:/QuartusProjects/fpga-riscv32-minimal/components/register32b.vhd|
+!i113 1
+R4
+R5
+Adescription
+R1
+R2
+DEx4 work 11 register32b 0 22 2IQ7gd3Kj_lMNKlg:ci>T0
+!i122 1
+l15
+Z26 L13 17
+V3J[aW4W4<mT<>Y=KzS[H>3
+!s100 9MS60Kgf]`MU9A^7@S7??3
+R3
+31
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R4
+R5
+Eregister32b_falling
+Z27 w1606101565
+R1
+R2
+!i122 0
+R0
+Z28 8F:/QuartusProjects/fpga-riscv32-minimal/components/register32b_falling.vhd
+Z29 FF:/QuartusProjects/fpga-riscv32-minimal/components/register32b_falling.vhd
+l0
+L5 1
+V:1nU`P;0VAf@jOejoUDGR3
+!s100 gNjTdgWXH0;Vi^Ec>2[W62
+R3
+31
+R22
+!i10b 1
+Z30 !s108 1606184960.000000
+Z31 !s90 -reportprogress|300|-93|-work|work|F:/QuartusProjects/fpga-riscv32-minimal/components/register32b_falling.vhd|
+Z32 !s107 F:/QuartusProjects/fpga-riscv32-minimal/components/register32b_falling.vhd|
+!i113 1
+R4
+R5
+Aarch_register32b_falling
+R1
+R2
+DEx4 work 19 register32b_falling 0 22 :1nU`P;0VAf@jOejoUDGR3
+!i122 0
+l15
+R26
+VZ2;i<PC?Z7:Ng2nJ3B0P20
+!s100 UAz[oVz7_`9a0^da>TLG>0
+R3
+31
+R22
+!i10b 1
+R30
+R31
+R32
+!i113 1
+R4
+R5
+Eregister3b
+Z33 w1606103318
+R1
+R2
+!i122 4
+R0
+Z34 8F:/QuartusProjects/fpga-riscv32-minimal/components/register3b.vhd
+Z35 FF:/QuartusProjects/fpga-riscv32-minimal/components/register3b.vhd
+l0
+L7 1
+V0>G8g:Vf68V>fajG[^>ge0
+!s100 >l9kYO99Mb]blG6W5C6JV0
+R3
+31
+R9
+!i10b 1
+R10
+Z36 !s90 -reportprogress|300|-93|-work|work|F:/QuartusProjects/fpga-riscv32-minimal/components/register3b.vhd|
+Z37 !s107 F:/QuartusProjects/fpga-riscv32-minimal/components/register3b.vhd|
+!i113 1
+R4
+R5
+Aarch_register3b
+R1
+R2
+DEx4 work 10 register3b 0 22 0>G8g:Vf68V>fajG[^>ge0
+!i122 4
+l17
+R13
+V[hfCD<BKIWYEV^hM<iB=_2
+!s100 d9;SFfPYb]@iKeeP?]XbN1
+R3
+31
+R9
+!i10b 1
+R10
+R36
+R37
+!i113 1
+R4
+R5
+Eregister4b
+Z38 w1606103395
+R1
+R2
+!i122 3
+R0
+Z39 8F:/QuartusProjects/fpga-riscv32-minimal/components/register4b.vhd
+Z40 FF:/QuartusProjects/fpga-riscv32-minimal/components/register4b.vhd
+l0
+L4 1
+V7H;_iTWa2DZR?2_l0zT7I3
+!s100 GgBn:E8?W446Jb4Sz>:PR0
+R3
+31
+R9
+!i10b 1
+R10
+Z41 !s90 -reportprogress|300|-93|-work|work|F:/QuartusProjects/fpga-riscv32-minimal/components/register4b.vhd|
+Z42 !s107 F:/QuartusProjects/fpga-riscv32-minimal/components/register4b.vhd|
+!i113 1
+R4
+R5
+Aarch_register4b
+R1
+R2
+DEx4 work 10 register4b 0 22 7H;_iTWa2DZR?2_l0zT7I3
+!i122 3
+l14
+Z43 L12 17
+VT7i_2@gKBSm;za6QXXhL30
+!s100 gf9SVm=5_bcRL08ezV0953
+R3
+31
+R9
+!i10b 1
+R10
+R41
+R42
+!i113 1
+R4
+R5
+Eregister5b
+Z44 w1606103472
+R1
+R2
+!i122 2
+R0
+Z45 8F:/QuartusProjects/fpga-riscv32-minimal/components/register5b.vhd
+Z46 FF:/QuartusProjects/fpga-riscv32-minimal/components/register5b.vhd
+l0
+L4 1
+VlTC8hB:IMXZPkKoQG>D9E3
+!s100 oQPTKcE8d_6bJ>3[gDJoi1
+R3
+31
+R22
+!i10b 1
+R23
+Z47 !s90 -reportprogress|300|-93|-work|work|F:/QuartusProjects/fpga-riscv32-minimal/components/register5b.vhd|
+Z48 !s107 F:/QuartusProjects/fpga-riscv32-minimal/components/register5b.vhd|
+!i113 1
+R4
+R5
+Aarch_register5b
+R1
+R2
+DEx4 work 10 register5b 0 22 lTC8hB:IMXZPkKoQG>D9E3
+!i122 2
+l14
+R43
+VN[Eea<H4C0[DW9IdBN;TY0
+!s100 ^ZdJ8LCFAL[AIRR:Z>m_F1
+R3
+31
+R22
+!i10b 1
+R23
+R47
+R48
+!i113 1
+R4
+R5

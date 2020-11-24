@@ -1,0 +1,370 @@
+F:/QuartusProjects/fpga-riscv32-minimal/components/register32b.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/register32b.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity register32b
+-- Compiling architecture description of register32b
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/register5b.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/register5b.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity register5b
+-- Compiling architecture arch_register5b of register5b
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/mux3_1.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/mux3_1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux3_1
+-- Compiling architecture arch_mux3_1 of mux3_1
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/memwb_pipeline.vhd {0 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/memwb_pipeline.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity memwb_pipeline
+-- Compiling architecture arch_memwb_register of memwb_pipeline
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/memwb_pipeline.vhd(65): (vcom-1141) Identifier "register2b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/memwb_pipeline.vhd(66): (vcom-1141) Identifier "register1b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/memwb_pipeline.vhd(67): (vcom-1141) Identifier "register5b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/memwb_pipeline.vhd(70): (vcom-1141) Identifier "register32b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/memwb_pipeline.vhd(71): (vcom-1141) Identifier "register32b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/memwb_pipeline.vhd(72): (vcom-1141) Identifier "register32b" does not identify a component declaration.
+** Note: F:/QuartusProjects/fpga-riscv32-minimal/components/memwb_pipeline.vhd(98): VHDL Compiler exiting
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/mux5_1.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/mux5_1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux5_1
+-- Compiling architecture arch_mux5_1 of mux5_1
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd {0 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity register_bank
+-- Compiling architecture arch_register_bank of register_bank
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(129): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(130): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(131): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(132): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(133): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(134): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(135): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(136): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(137): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(138): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(139): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(140): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(141): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(142): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(143): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(144): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(145): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(146): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(147): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(148): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(149): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(150): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(151): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(152): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(153): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(154): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(155): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(156): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(157): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(158): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(159): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(160): (vcom-1141) Identifier "register32b_falling" does not identify a component declaration.
+-- Loading entity mux32_1
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(162): (vcom-1141) Identifier "mux32_1" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(168): (vcom-1141) Identifier "mux32_1" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(58): (vcom-1339) Case statement choices cover only 32 out of 59049 cases.
+** Note: F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd(174): VHDL Compiler exiting
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/register2b.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/register2b.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity register2b
+-- Compiling architecture arch_register2b of register2b
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/jump_target_unit.vhd {0 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/jump_target_unit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity jump_target_unit
+-- Compiling architecture arch_jump_unit of jump_target_unit
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/jump_target_unit.vhd(19): (vcom-1141) Identifier "mux2" does not identify a component declaration.
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading entity adder
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/jump_target_unit.vhd(20): (vcom-1141) Identifier "adder" does not identify a component declaration.
+** Note: F:/QuartusProjects/fpga-riscv32-minimal/components/jump_target_unit.vhd(21): VHDL Compiler exiting
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/datamem.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/datamem.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity datamem
+-- Compiling architecture behavioural of datamem
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/hazard_control_unit.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/hazard_control_unit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity hazard_control_unit
+-- Compiling architecture arch_hazard_unit of hazard_control_unit
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/alu.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/alu.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ALU
+-- Compiling architecture arch_alu of ALU
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/forwarding_unit.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/forwarding_unit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity forwarding_unit
+-- Compiling architecture arch_forwarding of forwarding_unit
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/register4b.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/register4b.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity register4b
+-- Compiling architecture arch_register4b of register4b
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/pc.vhd {0 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/pc.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity pc
+-- Compiling architecture behavioral of pc
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/pc.vhd(21): (vcom-1141) Identifier "register32b" does not identify a component declaration.
+** Note: F:/QuartusProjects/fpga-riscv32-minimal/components/pc.vhd(23): VHDL Compiler exiting
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd {0 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity fpga_riscv32_minimal
+-- Compiling architecture arch_minimal_riscv32 of fpga_riscv32_minimal
+-- Loading package NUMERIC_STD
+-- Loading entity datapath
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd(114): (vcom-1141) Identifier "datapath" does not identify a component declaration.
+** Note: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd(131): VHDL Compiler exiting
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/mux2.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/mux2.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2
+-- Compiling architecture behavioral of mux2
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/controller.vhd {0 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/controller.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity controller
+-- Compiling architecture Behavioral of controller
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/controller.vhd(97): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/controller.vhd(149): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/controller.vhd(164): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/controller.vhd(179): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/controller.vhd(194): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/controller.vhd(213): (vcom-1339) Case statement choices cover only 2 out of 9 cases.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/controller.vhd(224): (vcom-1339) Case statement choices cover only 8 out of 729 cases.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/controller.vhd(226): (vcom-1339) Case statement choices cover only 2 out of 9 cases.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/controller.vhd(241): (vcom-1339) Case statement choices cover only 2 out of 9 cases.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/controller.vhd(260): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/controller.vhd(275): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
+** Note: F:/QuartusProjects/fpga-riscv32-minimal/components/controller.vhd(497): VHDL Compiler exiting
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/instmem.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/instmem.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity instmem
+-- Compiling architecture description of instmem
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/idex_register.vhd {0 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/idex_register.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity idex_register
+-- Compiling architecture arch_idex_register of idex_register
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/idex_register.vhd(136): (vcom-1141) Identifier "register4b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/idex_register.vhd(137): (vcom-1141) Identifier "register1b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/idex_register.vhd(138): (vcom-1141) Identifier "register3b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/idex_register.vhd(139): (vcom-1141) Identifier "register1b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/idex_register.vhd(140): (vcom-1141) Identifier "register1b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/idex_register.vhd(143): (vcom-1141) Identifier "register3b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/idex_register.vhd(144): (vcom-1141) Identifier "register1b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/idex_register.vhd(145): (vcom-1141) Identifier "register1b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/idex_register.vhd(148): (vcom-1141) Identifier "register2b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/idex_register.vhd(149): (vcom-1141) Identifier "register1b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/idex_register.vhd(150): (vcom-1141) Identifier "register5b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/idex_register.vhd(153): (vcom-1141) Identifier "register32b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/idex_register.vhd(154): (vcom-1141) Identifier "register32b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/idex_register.vhd(155): (vcom-1141) Identifier "register32b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/idex_register.vhd(156): (vcom-1141) Identifier "register32b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/idex_register.vhd(159): (vcom-1141) Identifier "register5b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/idex_register.vhd(160): (vcom-1141) Identifier "register5b" does not identify a component declaration.
+** Note: F:/QuartusProjects/fpga-riscv32-minimal/components/idex_register.vhd(220): VHDL Compiler exiting
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/mux32_1.vhd {0 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/mux32_1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux32_1
+-- Compiling architecture arch_mux32_1 of mux32_1
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/mux32_1.vhd(15): (vcom-1339) Selected signal assignment choices cover only 32 out of 59049 cases.
+** Note: F:/QuartusProjects/fpga-riscv32-minimal/components/mux32_1.vhd(50): VHDL Compiler exiting
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/datapath.vhd {0 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/datapath.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity datapath
+-- Compiling architecture structural of datapath
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/datapath.vhd(136): (vcom-1141) Identifier "pc" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/datapath.vhd(137): (vcom-1141) Identifier "instmem" does not identify a component declaration.
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading entity adder
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/datapath.vhd(138): (vcom-1141) Identifier "adder" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/datapath.vhd(139): (vcom-1141) Identifier "mux2" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/datapath.vhd(144): (vcom-1141) Identifier "ifid_register" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/datapath.vhd(147): (vcom-1141) Identifier "mux3_1" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/datapath.vhd(148): (vcom-1141) Identifier "register_bank" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/datapath.vhd(151): (vcom-1141) Identifier "idex_register" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/datapath.vhd(153): (vcom-1141) Identifier "forwarding_unit" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/datapath.vhd(154): (vcom-1141) Identifier "mux5_1" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/datapath.vhd(155): (vcom-1141) Identifier "mux5_1" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/datapath.vhd(157): (vcom-1141) Identifier "mux2" does not identify a component declaration.
+-- Loading entity ALU
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/datapath.vhd(158): (vcom-1141) Identifier "ALU" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/datapath.vhd(160): (vcom-1141) Identifier "jump_target_unit" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/datapath.vhd(162): (vcom-1141) Identifier "exmem_pipeline" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/datapath.vhd(164): (vcom-1141) Identifier "hazard_control_unit" does not identify a component declaration.
+-- Loading entity datamem_interface
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/datapath.vhd(166): (vcom-1141) Identifier "datamem_interface" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/datapath.vhd(168): (vcom-1141) Identifier "memwb_pipeline" does not identify a component declaration.
+** Note: F:/QuartusProjects/fpga-riscv32-minimal/components/datapath.vhd(192): VHDL Compiler exiting
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/register32b_falling.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/register32b_falling.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity register32b_falling
+-- Compiling architecture arch_register32b_falling of register32b_falling
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/register1b.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/register1b.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity register1b
+-- Compiling architecture arch_register1b of register1b
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/adder.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/adder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity adder
+-- Compiling architecture adder32 of adder
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/ifid_register.vhd {0 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/ifid_register.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ifid_register
+-- Compiling architecture behavioral of ifid_register
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/ifid_register.vhd(21): (vcom-1141) Identifier "register32b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/ifid_register.vhd(22): (vcom-1141) Identifier "register32b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/ifid_register.vhd(23): (vcom-1141) Identifier "register32b" does not identify a component declaration.
+** Note: F:/QuartusProjects/fpga-riscv32-minimal/components/ifid_register.vhd(33): VHDL Compiler exiting
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/datamem_interface.vhd {0 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/datamem_interface.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity datamem_interface
+-- Compiling architecture behavioural of datamem_interface
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading entity datamem
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/datamem_interface.vhd(220): (vcom-1141) Identifier "datamem" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/datamem_interface.vhd(221): (vcom-1141) Identifier "datamem" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/datamem_interface.vhd(222): (vcom-1141) Identifier "datamem" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/datamem_interface.vhd(223): (vcom-1141) Identifier "datamem" does not identify a component declaration.
+** Note: F:/QuartusProjects/fpga-riscv32-minimal/components/datamem_interface.vhd(225): VHDL Compiler exiting
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/exmem_pipeline.vhd {0 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/exmem_pipeline.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity exmem_pipeline
+-- Compiling architecture arch_exmem of exmem_pipeline
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/exmem_pipeline.vhd(89): (vcom-1141) Identifier "register3b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/exmem_pipeline.vhd(90): (vcom-1141) Identifier "register1b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/exmem_pipeline.vhd(91): (vcom-1141) Identifier "register1b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/exmem_pipeline.vhd(94): (vcom-1141) Identifier "register2b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/exmem_pipeline.vhd(95): (vcom-1141) Identifier "register1b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/exmem_pipeline.vhd(96): (vcom-1141) Identifier "register5b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/exmem_pipeline.vhd(99): (vcom-1141) Identifier "register32b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/exmem_pipeline.vhd(100): (vcom-1141) Identifier "register32b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/exmem_pipeline.vhd(101): (vcom-1141) Identifier "register1b" does not identify a component declaration.
+** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/exmem_pipeline.vhd(102): (vcom-1141) Identifier "register32b" does not identify a component declaration.
+** Note: F:/QuartusProjects/fpga-riscv32-minimal/components/exmem_pipeline.vhd(140): VHDL Compiler exiting
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/register3b.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/register3b.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity register3b
+-- Compiling architecture arch_register3b of register3b
+
+} {} {}}

@@ -1,0 +1,29 @@
+# Compile of adder.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of controller.vhd failed with 11 errors.
+# Compile of datamem.vhd was successful.
+# Compile of datamem_interface.vhd failed with 4 errors.
+# Compile of datapath.vhd failed with 18 errors.
+# Compile of exmem_pipeline.vhd failed with 10 errors.
+# Compile of forwarding_unit.vhd was successful.
+# Compile of fpga-riscv32-minimal.vhd failed with 1 errors.
+# Compile of hazard_control_unit.vhd was successful.
+# Compile of idex_register.vhd failed with 17 errors.
+# Compile of ifid_register.vhd failed with 3 errors.
+# Compile of instmem.vhd was successful.
+# Compile of jump_target_unit.vhd failed with 2 errors.
+# Compile of memwb_pipeline.vhd failed with 6 errors.
+# Compile of mux2.vhd was successful.
+# Compile of mux3_1.vhd was successful.
+# Compile of mux5_1.vhd was successful.
+# Compile of mux32_1.vhd failed with 1 errors.
+# Compile of pc.vhd failed with 1 errors.
+# Compile of register_bank.vhd failed with 35 errors.
+# Compile of register1b.vhd was successful.
+# Compile of register2b.vhd was successful.
+# Compile of register3b.vhd was successful.
+# Compile of register4b.vhd was successful.
+# Compile of register5b.vhd was successful.
+# Compile of register32b.vhd was successful.
+# Compile of register32b_falling.vhd was successful.
+# 28 compiles, 12 failed with 109 errors.

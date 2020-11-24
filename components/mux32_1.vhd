@@ -12,73 +12,39 @@ end entity mux32_1;
 
 architecture arch_mux32_1 of mux32_1 is
 begin
-	process(selection)
-	begin
-		if (selection = "00000") then
-			output_0 <= input_0;
-		elsif (selection = "00001") then
-			output_0 <= input_1;
-		 elsif (selection = "00010") then
-			output_0 <= input_2;
-		 elsif (selection = "00011") then
-			output_0 <= input_3;
-		 elsif (selection = "00100") then
-			output_0 <= input_4;
-		 elsif (selection = "00101") then
-			output_0 <= input_5;
-		 elsif (selection = "00110") then
-			output_0 <= input_6;
-		 elsif (selection = "00111") then
-			output_0 <= input_7;
-		 elsif (selection = "01000") then
-			output_0 <= input_8;
-		 elsif (selection = "01001") then
-			output_0 <= input_9;
-		 elsif (selection = "01010") then
-			output_0 <= input_10;
-		 elsif (selection = "01011") then
-			output_0 <= input_11;
-		 elsif (selection = "01100") then
-			output_0 <= input_12;
-		 elsif (selection = "01101") then
-			output_0 <= input_13;
-		 elsif (selection = "01110") then
-			output_0 <= input_14;
-		 elsif (selection = "01111") then
-			output_0 <= input_15;
-		 elsif (selection = "10000") then
-			output_0 <= input_16;
-		 elsif (selection = "10001") then
-			output_0 <= input_17;
-		 elsif (selection = "10010") then
-			output_0 <= input_18;
-		 elsif (selection = "10011") then
-			output_0 <= input_19;
-		 elsif (selection = "10100") then
-			output_0 <= input_20;
-		 elsif (selection = "10101") then
-			output_0 <= input_21;
-		 elsif (selection = "10110") then
-			output_0 <= input_22;
-		 elsif (selection = "10111") then
-			output_0 <= input_23;
-		 elsif (selection = "11000") then
-			output_0 <= input_24;
-		 elsif (selection = "11001") then
-			output_0 <= input_25;
-		 elsif (selection = "11010") then
-			output_0 <= input_26;
-		 elsif (selection = "11011") then
-			output_0 <= input_27;
-		 elsif (selection = "11100") then
-			output_0 <= input_28;
-		 elsif (selection = "11101") then
-			output_0 <= input_29;
-		 elsif (selection = "11110") then
-			output_0 <= input_30;
-		 elsif (selection = "11111") then
-			output_0 <= input_31;
-       end if;
-	end process;
-
+		with selection select
+		output_0 <=
+		input_0 when "00000",
+		input_1 when "00001",
+		input_2 when "00010",
+		input_3 when "00011",
+		input_4 when "00100",
+		input_5 when "00101",
+		input_6 when "00110",
+		input_7 when "00111",
+		input_8 when "01000",
+		input_9 when "01001",
+		input_10 when "01010",
+		input_11 when "01011",
+		input_12 when "01100",
+		input_13 when "01101",
+		input_14 when "01110",
+		input_15 when "01111",
+		input_16 when "10000",
+		input_17 when "10001",
+		input_18 when "10010",
+		input_19 when "10011",
+		input_20 when "10100",
+		input_21 when "10101",
+		input_22 when "10110",
+		input_23 when "10111",
+		input_24 when "11000",
+		input_25 when "11001",
+		input_26 when "11010",
+		input_27 when "11011",
+		input_28 when "11100",
+		input_29 when "11101",
+		input_30 when "11110",
+		input_31 when "11111";
+		
 end architecture arch_mux32_1;

@@ -1,0 +1,26 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/register4b.vhd}
+vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/register1b.vhd}
+vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/register32b_falling.vhd}
+vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/register32b.vhd}
+vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/alu.vhd}
+vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/instmem.vhd}
+vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/adder.vhd}
+vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/mux2.vhd}
+vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/mux32_1.vhd}
+vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/register2b.vhd}
+vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/register3b.vhd}
+vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/register5b.vhd}
+vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd}
+vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/pc.vhd}
+vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd}
+vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/ifid_register.vhd}
+vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/idex_register.vhd}
+vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/controller.vhd}
+

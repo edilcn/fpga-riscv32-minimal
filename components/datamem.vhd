@@ -12,7 +12,7 @@ entity datamem is
 	);
 end datamem;
 architecture behavioural of datamem is
-	type ram_type is array (65536 downto 0) of std_logic_vector (7 downto 0);
+	type ram_type is array (8192 downto 0) of std_logic_vector (7 downto 0);
 	signal RAM : ram_type;
 begin
 	process (clock, write_enable)
