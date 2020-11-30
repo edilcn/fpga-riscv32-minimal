@@ -10,7 +10,7 @@ entity register32b is
     );
 end register32b;
 
-architecture description of register32b is
+architecture arch_register32b of register32b is
 	signal register_value: std_logic_vector(31 downto 0) := X"00000000";
 	begin
 		process (clock, clear, load, register_value)
@@ -26,4 +26,4 @@ architecture description of register32b is
 			end if;
 			reg_out <= register_value;
 		end process;
-end description;
+end arch_register32b;

@@ -1,0 +1,78 @@
+vsim work2.\\tb.vhd\\
+# vsim work2.\tb.vhd\ 
+# Start time: 22:14:24 on Nov 29,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work2.\tb.vhd\(\tb.vhd_arch\)
+# Loading ieee.numeric_std(body)
+# Loading work2.fpga_riscv32_minimal(arch_minimal_riscv32)
+# Loading work2.datapath(arch_datapath)
+# Loading work2.pc(behavioral)
+# Loading work2.register32b(arch_register32b)
+# Loading work2.instmem(description)
+# Loading work2.adder(adder32)
+# Loading work2.mux2(behavioral)
+# Loading work2.ifid_register(behavioral)
+# Loading work2.mux3_1(arch_mux3_1)
+# Loading work2.register_bank(arch_register_bank)
+# Loading work2.register32b_falling(arch_register32b_falling)
+# Loading work2.mux32_1(arch_mux32_1)
+# Loading work2.idex_register(arch_idex_register)
+# Loading work2.register4b(arch_register4b)
+# Loading work2.register1b(arch_register1b)
+# Loading work2.register3b(arch_register3b)
+# Loading work2.register2b(arch_register2b)
+# Loading work2.register5b(arch_register5b)
+# Loading work2.forwarding_unit(arch_forwarding)
+# Loading work2.mux5_1(arch_mux5_1)
+# Loading work2.alu(arch_alu)
+# Loading work2.jump_target_unit(arch_jump_unit)
+# Loading work2.exmem_pipeline(arch_exmem)
+# Loading work2.hazard_control_unit(arch_hazard_unit)
+# Loading work2.datamem_interface(behavioural)
+# Loading work2.datamem(behavioural)
+# Loading work2.memwb_pipeline(arch_memwb_register)
+# ** Warning: (vsim-8683) Uninitialized out port /\tb.vhd\/DUT/debug_regfile_x31_output(31 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /\tb.vhd\/DUT/debug_regfile_x1_output(31 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /\tb.vhd\/DUT/debug_regfile_x2_output(31 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /\tb.vhd\/DUT/debug_instruction(31 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+do F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/RISC/wave.do
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /\tb.vhd\/DUT/datapath_0/datamem_module_0/datamem_0
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /\tb.vhd\/DUT/datapath_0/datamem_module_0/datamem_0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /\tb.vhd\/DUT/datapath_0/datamem_module_0/datamem_1
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /\tb.vhd\/DUT/datapath_0/datamem_module_0/datamem_1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /\tb.vhd\/DUT/datapath_0/datamem_module_0/datamem_2
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /\tb.vhd\/DUT/datapath_0/datamem_module_0/datamem_2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /\tb.vhd\/DUT/datapath_0/datamem_module_0/datamem_3
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /\tb.vhd\/DUT/datapath_0/datamem_module_0/datamem_3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /\tb.vhd\/DUT/datapath_0/JTU_0/internal_adder
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /\tb.vhd\/DUT/datapath_0/JTU_0/internal_adder
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /\tb.vhd\/DUT/datapath_0/alu_pc
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /\tb.vhd\/DUT/datapath_0/JTU_0/internal_adder
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ps  Iteration: 6  Instance: /\tb.vhd\/DUT/datapath_0/JTU_0/internal_adder
+run
+run
+run
+run

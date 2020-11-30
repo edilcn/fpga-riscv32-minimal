@@ -13,11 +13,10 @@ entity pc is
 end pc;
 
 architecture behavioral of pc is
-    signal count_address: std_logic_vector(31 downto 0):= X"00000000";
 	-- signal next_count_int: std_logic_vector(31 downto 0);
 	 signal next_count: std_logic_vector(31 downto 0);
 
 begin
-    count_register : register32b port map (clock, clear, '1', count_address, next_count);
+    count_register : entity work.register32b(arch_register32b) port map (clock, clear, '1', pc_in, next_count);
 	 pc_count <= next_count; 
 end behavioral;

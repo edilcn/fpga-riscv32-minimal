@@ -144,6 +144,8 @@ begin
 										when others =>
 											decoded_opcode <= INVALID;
 									end case;
+									when others =>
+										decoded_opcode <= INVALID;
 							end case;
 						when "001" =>
 							case (fetched_instruction(6 downto 5)) is
@@ -159,6 +161,9 @@ begin
 								when "11" => --JALR
 									decoded_cluster <= JALR;
 									decoded_opcode <= JALR;
+								when others =>
+									decoded_opcode <= INVALID;
+									decoded_cluster <= INVALID;
 							end case;
 						when "010" =>
 							case (fetched_instruction(6 downto 5)) is
@@ -174,6 +179,9 @@ begin
 								when "11" => --Reserved
 									decoded_cluster <= INVALID;
 									decoded_opcode <= INVALID;
+								when others =>
+									decoded_opcode <= INVALID;
+									decoded_cluster <= INVALID;
 							end case;
 						when "011" =>
 							case (fetched_instruction(6 downto 5)) is
@@ -189,6 +197,9 @@ begin
 								when "11" => --JAL
 									decoded_cluster <= JAL;
 									decoded_opcode <= JAL;
+								when others =>
+									decoded_opcode <= INVALID;
+									decoded_cluster <= INVALID;
 							end case;
 						when "100" =>
 							case (fetched_instruction(6 downto 5)) is
@@ -215,9 +226,13 @@ begin
 													decoded_opcode <= SRLI;
 												when '1' => --Shift right arithmetic immediate
 													decoded_opcode <= SRAI;
+												when others =>
+													decoded_opcode <= INVALID;
+													decoded_cluster <= INVALID;
 											end case;
 										when others =>
 											decoded_opcode <= INVALID;
+											decoded_cluster <= INVALID;
 									end case;
 								when "01" => --OP
 									decoded_cluster <= OP;
@@ -228,6 +243,9 @@ begin
 													decoded_opcode <= ADD;
 												when '1' => --Sub
 													decoded_opcode <= SUB;
+												when others =>
+													decoded_opcode <= INVALID;
+													decoded_cluster <= INVALID;
 											end case;
 										when "001" => --Shift left logical
 											decoded_opcode <= inst_SLL;
@@ -243,11 +261,17 @@ begin
 													decoded_opcode <= inst_SRL;
 												when '1' => --Shift right arithmetic
 													decoded_opcode <= inst_SRA;
+												when others =>
+													decoded_opcode <= INVALID;
+													decoded_cluster <= INVALID;
 											end case;
 										when "110" => --OR
 											decoded_opcode <= inst_OR;
 										when "111" => --AND
 											decoded_opcode <= inst_AND;
+										when others =>
+											decoded_opcode <= INVALID;
+											decoded_cluster <= INVALID;
 									end case;
 								when "10" => --OP-FP
 									decoded_cluster <= INVALID;
@@ -255,6 +279,9 @@ begin
 								when "11" => --SYSTEM
 									decoded_cluster <= INVALID;
 									decoded_opcode <= INVALID;
+								when others =>
+									decoded_opcode <= INVALID;
+									decoded_cluster <= INVALID;
 							end case;
 						when "101" =>
 							case (fetched_instruction(6 downto 5)) is
@@ -270,6 +297,9 @@ begin
 								when "11" => --Reserved
 									decoded_cluster <= INVALID;
 									decoded_opcode <= INVALID;
+								when others =>
+									decoded_opcode <= INVALID;
+									decoded_cluster <= INVALID;
 							end case;
 						when "110" =>
 							case (fetched_instruction(6 downto 5)) is
@@ -285,8 +315,13 @@ begin
 								when "11" => --rv128
 									decoded_cluster <= INVALID;
 									decoded_opcode <= INVALID;
+								when others =>
+									decoded_opcode <= INVALID;
+									decoded_cluster <= INVALID;
 							end case;
 						when others =>
+							decoded_opcode <= INVALID;
+							decoded_cluster <= INVALID;
 					end case;
 				end if;
 

@@ -18,9 +18,9 @@ architecture behavioral of ifid_register is
 	signal output_instruction, output_pc_count, output_pc_added: std_logic_vector(31 downto 0);
 	
 begin
-	ifid_instruction_register: register32b port map(clock, clear, '1', input_instruction, output_instruction);
-	ifid_pc_count_register: register32b port map(clock, clear, '1', input_pc_count, output_pc_count);
-	ifid_pc_added_register: register32b port map(clock, clear, '1', input_pc_added, output_pc_added);
+	ifid_instruction_register: entity work.register32b port map(clock, clear, '1', input_instruction, output_instruction);
+	ifid_pc_count_register: entity work.register32b port map(clock, clear, '1', input_pc_count, output_pc_count);
+	ifid_pc_added_register: entity work.register32b port map(clock, clear, '1', input_pc_added, output_pc_added);
 	
 	input_pc_count 		<=	pc_count_in;
 	input_pc_added			<=	pc_added_in;

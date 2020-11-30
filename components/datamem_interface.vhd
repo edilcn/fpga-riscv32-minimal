@@ -217,9 +217,9 @@ begin
 	--	datamem_1 : datamem port map(clock, clear, internal_load(1), memory_input_1, membank_address(7 downto 0), memory_output_1);
 	--	datamem_0 : datamem port map(clock, clear, internal_load(0), memory_input_0, membank_address(7 downto 0), memory_output_0);
 
-	datamem_3 : datamem port map(clock, internal_load(3), membank_address(15 downto 0), memory_input_3, memory_output_3);
-	datamem_2 : datamem port map(clock, internal_load(2), membank_address(15 downto 0), memory_input_2, memory_output_2);
-	datamem_1 : datamem port map(clock, internal_load(1), membank_address(15 downto 0), memory_input_1, memory_output_1);
-	datamem_0 : datamem port map(clock, internal_load(0), membank_address(15 downto 0), memory_input_0, memory_output_0);
+	datamem_3 : entity work.datamem port map(clock, internal_load(3), membank_address(15 downto 0), memory_input_3, memory_output_3);
+	datamem_2 : entity work.datamem port map(clock, internal_load(2), membank_address(15 downto 0), memory_input_2, memory_output_2);
+	datamem_1 : entity work.datamem port map(clock, internal_load(1), membank_address(15 downto 0), memory_input_1, memory_output_1);
+	datamem_0 : entity work.datamem port map(clock, internal_load(0), membank_address(15 downto 0), memory_input_0, memory_output_0);
 
 end architecture behavioural;

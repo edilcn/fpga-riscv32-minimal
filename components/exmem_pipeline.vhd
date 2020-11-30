@@ -86,20 +86,20 @@ begin
 	--INTERNAL REGISTERS
 
 	--MEM control signals
-	data_format_reg : register3b port map(data_format_input_signal, '1', clock, clear, data_format_output_signal);
-	datamem_write_reg : register1b port map(datamem_write_input_signal, '1', clock, clear, datamem_write_output_signal);
-	jump_flag_reg : register1b port map(jump_flag_input_signal, '1', clock, clear, jump_flag_output_signal);
+	data_format_reg : entity work.register3b port map(data_format_input_signal, '1', clock, clear, data_format_output_signal);
+	datamem_write_reg : entity work.register1b port map(datamem_write_input_signal, '1', clock, clear, datamem_write_output_signal);
+	jump_flag_reg : entity work.register1b port map(jump_flag_input_signal, '1', clock, clear, jump_flag_output_signal);
 
 	--WB control signals
-	mux0_sel_reg : register2b port map(mux0_sel_input_signal, '1', clock, clear, mux0_sel_output_signal);
-	reg_file_write_reg : register1b port map(reg_file_write_input_signal, '1', clock, clear, reg_file_write_output_signal);
-	reg_file_write_address_reg : register5b port map(reg_file_write_address_input_signal, '1', clock, clear, reg_file_write_address_output_signal);
+	mux0_sel_reg : entity work.register2b port map(mux0_sel_input_signal, '1', clock, clear, mux0_sel_output_signal);
+	reg_file_write_reg : entity work.register1b port map(reg_file_write_input_signal, '1', clock, clear, reg_file_write_output_signal);
+	reg_file_write_address_reg : entity work.register5b port map(reg_file_write_address_input_signal, '1', clock, clear, reg_file_write_address_output_signal);
 
 	--Data
-	ALU_output_reg : register32b port map(clock, clear, '1', ALU_output_input_signal, ALU_output_output_signal);
-	register_file_output_1_reg : register32b port map(clock, clear, '1', register_file_output_1_input_signal, register_file_output_1_output_signal);
-	ALU_branch_respose_reg : register1b port map(ALU_branch_response_input_signal, '1', clock, clear, ALU_branch_response_output_signal);
-	instruction_address_reg : register32b port map(clock, clear, '1', instruction_address_input_signal, instruction_address_output_signal);
+	ALU_output_reg : entity work.register32b port map(clock, clear, '1', ALU_output_input_signal, ALU_output_output_signal);
+	register_file_output_1_reg : entity work.register32b port map(clock, clear, '1', register_file_output_1_input_signal, register_file_output_1_output_signal);
+	ALU_branch_respose_reg : entity work.register1b port map(ALU_branch_response_input_signal, '1', clock, clear, ALU_branch_response_output_signal);
+	instruction_address_reg : entity work.register32b port map(clock, clear, '1', instruction_address_input_signal, instruction_address_output_signal);
 
 	--WIRING INPUT PORTS
 

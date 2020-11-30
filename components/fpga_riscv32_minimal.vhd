@@ -107,16 +107,11 @@ begin
 		
 		-- Signals for 
 
---		debug_datapath: datapath port map (clock, reset, rs1_reg_idx, rs2_reg_idx, wr_data,	wr_reg_idx,	
+--		debug_datapath: entity work.datapath port map (clock, reset, rs1_reg_idx, rs2_reg_idx, wr_data,	wr_reg_idx,	
 --		immediate, alu_operation, alu_branch, alu_branch_control, JTU_mux_sel, data_format, datamem_write,
 --		jump_flag, mux0_sel,	mux1_sel, instruction);
 		
-		debug_datapath: datapath port map (clock, reset, rs1_reg_idx, rs2_reg_idx, wr_data,	wr_reg_idx,	
-		immediate, alu_operation, alu_branch, alu_branch_control, JTU_mux_sel, data_format, datamem_write,
-		jump_flag, mux0_sel,	mux1_sel, instruction,	debug_instruction_address,	debug_alu_output, debug_alu_input_0, debug_alu_input_1,
-		debug_forward_mux_0,	debug_forward_mux_1,	debug_rs1_reg_idx_ID_EXE, debug_wr_reg_idx_EX_MEM,	debug_mux0_sel_MEM_WB,
-		debug_wr_data_MEM_WB, debug_wr_reg_idx_MEM_WB, debug_alu_output_MEM_WB,	debug_alu_output_EX_MEM, 
-		debug_register_bank_output_0,	debug_register_bank_output_1,	debug_register_bank_output_0_ID_EX,	debug_register_bank_output_1_ID_EX);
+		datapath_0: entity work.datapath port map (clock, reset, rs1_reg_idx, rs2_reg_idx, wr_data, wr_reg_idx, immediate, alu_operation, alu_branch, alu_branch_control, JTU_mux_sel, data_format, datamem_write, jump_flag, mux0_sel, mux1_sel, instruction, debug_instruction_address, debug_alu_output, debug_alu_input_0, debug_alu_input_1, debug_forward_mux_0, debug_forward_mux_1, debug_rs1_reg_idx_ID_EXE, debug_wr_reg_idx_EX_MEM, debug_mux0_sel_MEM_WB, debug_wr_data_MEM_WB, debug_wr_reg_idx_MEM_WB, debug_alu_output_MEM_WB, debug_alu_output_EX_MEM, debug_register_bank_output_0, debug_register_bank_output_1, debug_register_bank_output_0_ID_EX, debug_register_bank_output_1_ID_EX);
 		
 --		
 --		debug_datapath: datapath port map (clock, reset, rs1_reg_idx, rs2_reg_idx, wr_data,	wr_reg_idx,	

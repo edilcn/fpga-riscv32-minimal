@@ -45,6 +45,7 @@ begin
 		input_28 when "11100",
 		input_29 when "11101",
 		input_30 when "11110",
-		input_31 when "11111";
+		input_31 when "11111",
+		X"00000000" when others;
 		
 end architecture arch_mux32_1;
