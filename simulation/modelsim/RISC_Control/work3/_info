@@ -1,0 +1,1324 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC
+E\tb.vhd\
+Z0 w1606764385
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 161
+Z6 d/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control
+Z7 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/tb.vhd
+Z8 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/tb.vhd
+l0
+L9 1
+V[UIn7D?M:Pik3BIYJ>?b;1
+!s100 X_K`2k=h1kgG5CQb5A>663
+Z9 OV;C;2020.1;71
+32
+Z10 !s110 1606771522
+!i10b 1
+Z11 !s108 1606771522.000000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/tb.vhd|
+Z13 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/tb.vhd|
+!i113 1
+Z14 o-work work -2002 -explicit
+Z15 tExplicit 1 CvgOpt 0
+n@134tb.vhd@134
+A\tb.vhd_arch\
+R1
+R2
+R3
+R4
+R5
+DEx4 work 8 \tb.vhd\ 0 22 [UIn7D?M:Pik3BIYJ>?b;1
+!i122 161
+l76
+L12 120
+VEi0jm>5^`W8E6WoUn]i?R0
+!s100 UJa:^?ALFzd>iCQmIzYb>3
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+n@134tb.vhd_arch@134
+Eadder
+Z16 w1606137708
+R1
+R2
+R4
+R5
+!i122 163
+R6
+Z17 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/adder.vhd
+Z18 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/adder.vhd
+l0
+L5 1
+V08W1BgJ0;zbV4^ELERJgz0
+!s100 7YT:af3:Q=iQPOiHC4Ia51
+R9
+33
+Z19 !s110 1606772803
+!i10b 1
+Z20 !s108 1606772803.000000
+Z21 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/adder.vhd|
+Z22 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/adder.vhd|
+!i113 1
+Z23 o-work work3 -2008 -explicit
+R15
+Aadder32
+R1
+R2
+R4
+R5
+Z24 DEx4 work 5 adder 0 22 08W1BgJ0;zbV4^ELERJgz0
+!i122 163
+l14
+L13 4
+V5`A76n7D8ol]CV5ffVcPU3
+!s100 X]hbMibkSdcjRN@iUgLDI0
+R9
+33
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R23
+R15
+Ealu
+Z25 w1606143599
+Z26 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R4
+R5
+!i122 164
+R6
+Z27 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/alu.vhd
+Z28 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/alu.vhd
+l0
+L5 1
+VCM1]<_P@M?CLn1_hHc;<l2
+!s100 jo7M?j4M@][`M4z;6IQAl2
+R9
+33
+R19
+!i10b 1
+R20
+Z29 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/alu.vhd|
+Z30 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/alu.vhd|
+!i113 1
+R23
+R15
+Aarch_alu
+R26
+R4
+R5
+Z31 DEx4 work 3 alu 0 22 CM1]<_P@M?CLn1_hHc;<l2
+!i122 164
+l20
+L16 114
+V3VFW]hFZOYIBFOEDYjJGm3
+!s100 hI;HH0W5UId<5aj;VF;4[0
+R9
+33
+R19
+!i10b 1
+R20
+R29
+R30
+!i113 1
+R23
+R15
+Econtroller
+Z32 w1606758729
+R26
+R4
+R5
+!i122 165
+R6
+Z33 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/controller.vhd
+Z34 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/controller.vhd
+l0
+L9 1
+VZV`CD]8Z3YmVld<h3i;290
+!s100 dLchVIKY<bl42]SBWkl3L2
+R9
+33
+R19
+!i10b 1
+R20
+Z35 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/controller.vhd|
+Z36 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/controller.vhd|
+!i113 1
+R23
+R15
+Abehavioral
+R26
+R4
+R5
+Z37 DEx4 work 10 controller 0 22 ZV`CD]8Z3YmVld<h3i;290
+!i122 165
+l60
+L31 502
+V5ggZfb==]fD=^FWE?APm;0
+!s100 I<BgnYO^8ia>0ES5CcV8T1
+R9
+33
+R19
+!i10b 1
+R20
+R35
+R36
+!i113 1
+R23
+R15
+Edatamem
+R32
+R1
+R2
+R4
+R5
+!i122 166
+R6
+Z38 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/datamem.vhd
+Z39 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/datamem.vhd
+l0
+L5 1
+V]U]P[GTMCEAFF]U=APXSC3
+!s100 gOn@ZXk=idN[8<CVAmTZM0
+R9
+33
+R19
+!i10b 1
+R20
+Z40 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/datamem.vhd|
+Z41 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/datamem.vhd|
+!i113 1
+R23
+R15
+Abehavioural
+R1
+R2
+R4
+R5
+Z42 DEx4 work 7 datamem 0 22 ]U]P[GTMCEAFF]U=APXSC3
+!i122 166
+l17
+L14 12
+VSonChm8PcKkg4_h5kSjTj0
+!s100 A5ZDFhQC:Zd64LebAiZnE1
+R9
+33
+R19
+!i10b 1
+R20
+R40
+R41
+!i113 1
+R23
+R15
+Edatamem_interface
+R32
+R26
+R4
+R5
+!i122 167
+R6
+Z43 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/datamem_interface.vhd
+Z44 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/datamem_interface.vhd
+l0
+L6 1
+VW;T>Ha3hhDX6mgEoo3R`A1
+!s100 9c3QWBMia?>6SKXL6PMbW2
+R9
+33
+Z45 !s110 1606772804
+!i10b 1
+R20
+Z46 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/datamem_interface.vhd|
+Z47 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/datamem_interface.vhd|
+!i113 1
+R23
+R15
+Abehavioural
+R1
+R2
+R42
+R26
+R4
+R5
+Z48 DEx4 work 17 datamem_interface 0 22 W;T>Ha3hhDX6mgEoo3R`A1
+!i122 167
+l33
+L16 210
+V:EEFi017BCH8<OY@WOanY0
+!s100 ?PANC>_h>[Fo?_c_m@]`o1
+R9
+33
+R45
+!i10b 1
+R20
+R46
+R47
+!i113 1
+R23
+R15
+Edatapath
+R32
+R26
+R4
+R5
+!i122 189
+R6
+Z49 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/datapath.vhd
+Z50 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/datapath.vhd
+l0
+L6 1
+Vi:OM3`C@]j]==GfI8K=I]2
+!s100 7h9f<W?UG0hRFUQ7nYdSn0
+R9
+33
+Z51 !s110 1606772805
+!i10b 1
+Z52 !s108 1606772805.000000
+Z53 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/datapath.vhd|
+Z54 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/datapath.vhd|
+!i113 1
+R23
+R15
+Aarch_datapath
+Z55 DEx4 work 14 memwb_pipeline 0 22 Q6W@2Z^_8K9:Y@`d1bYk81
+R48
+Z56 DEx4 work 19 hazard_control_unit 0 22 T6OO=`:BbNJH<T:?M:FSz1
+Z57 DEx4 work 14 exmem_pipeline 0 22 :RDVf[PhiC7:TAPFogj8N0
+Z58 DEx4 work 16 jump_target_unit 0 22 56K>KlQEjT`_F9LhShchf1
+R31
+Z59 DEx4 work 6 mux5_1 0 22 5a;ZaZl4nUflAi?Ue5k^;1
+Z60 DEx4 work 15 forwarding_unit 0 22 h8kRXzKGFm4<YfNmL3HkM1
+Z61 DEx4 work 13 idex_register 0 22 aD@kez[DF=n79iR8zfTo20
+Z62 DEx4 work 13 register_bank 0 22 Y<f3:8;@84F@jLAcRXPF<2
+Z63 DEx4 work 6 mux3_1 0 22 5LmXIolOfMnkBQ02Sl_gH0
+Z64 DEx4 work 13 ifid_register 0 22 S]HZLIh7DTzYjS8naHV@?0
+Z65 DEx4 work 4 mux2 0 22 Wn:B>eNaN[:]65@^nRUG61
+R1
+R2
+R24
+Z66 DEx4 work 7 instmem 0 22 ANPbnG4aSS6I62Ee5k:NT1
+Z67 DEx4 work 2 pc 0 22 GTBhiO0N6ZM3E7IK2:]XW1
+R26
+R4
+R5
+Z68 DEx4 work 8 datapath 0 22 i:OM3`C@]j]==GfI8K=I]2
+!i122 189
+l133
+L50 143
+VE0P2P8eeFk7kSz?goDP3b2
+!s100 aCmb>e4F4Uaam9g3aUk:<2
+R9
+33
+R51
+!i10b 1
+R52
+R53
+R54
+!i113 1
+R23
+R15
+Eexmem_pipeline
+R32
+R4
+R5
+!i122 183
+R6
+Z69 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/exmem_pipeline.vhd
+Z70 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/exmem_pipeline.vhd
+l0
+L5 1
+V:RDVf[PhiC7:TAPFogj8N0
+!s100 T<7B54XlISnT@95dX?4Tz0
+R9
+33
+R51
+!i10b 1
+R52
+Z71 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/exmem_pipeline.vhd|
+Z72 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/exmem_pipeline.vhd|
+!i113 1
+R23
+R15
+Aarch_exmem
+Z73 DEx4 work 11 register32b 0 22 `Gf4`26lihY2XQ80gM5B=0
+Z74 DEx4 work 10 register5b 0 22 lK4OOBL3K]ZIR6Wj0DG6L3
+Z75 DEx4 work 10 register2b 0 22 Oc^K[Vk0BZgaf=F=LhaIf1
+Z76 DEx4 work 10 register1b 0 22 2C?zcUeKmhValUCf?Y_BJ1
+Z77 DEx4 work 10 register3b 0 22 a;8`cJ4eoM;=GfPQ3]^LT1
+R4
+R5
+R57
+!i122 183
+l84
+L48 93
+V>iAi@FSLnndOF04P2WOj@3
+!s100 X<AkPkn9YmCNz63LzV_BJ2
+R9
+33
+R51
+!i10b 1
+R52
+R71
+R72
+!i113 1
+R23
+R15
+Eforwarding_unit
+Z78 w1606139584
+R4
+R5
+!i122 168
+R6
+Z79 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/forwarding_unit.vhd
+Z80 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/forwarding_unit.vhd
+l0
+L5 1
+Vh8kRXzKGFm4<YfNmL3HkM1
+!s100 OKidCWWE1dK]X1M5SWTQM3
+R9
+33
+R45
+!i10b 1
+Z81 !s108 1606772804.000000
+Z82 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/forwarding_unit.vhd|
+Z83 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/forwarding_unit.vhd|
+!i113 1
+R23
+R15
+Aarch_forwarding
+R4
+R5
+R60
+!i122 168
+l28
+L23 51
+VMYMB^RI]M7hXeT=I9=3f50
+!s100 C]HM3lYgzVQ8PS947k>Cf3
+R9
+33
+R45
+!i10b 1
+R81
+R82
+R83
+!i113 1
+R23
+R15
+Efpga_riscv32_minimal
+Z84 w1606760996
+R4
+R5
+!i122 190
+R6
+Z85 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/fpga_riscv32_minimal.vhd
+Z86 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/fpga_riscv32_minimal.vhd
+l0
+L6 1
+V28GAT1<SklZ3AJb6>Odiz2
+!s100 :f;;Z]gaeGeD_Y::NOj]G0
+R9
+33
+R51
+!i10b 1
+R52
+Z87 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/fpga_riscv32_minimal.vhd|
+Z88 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/fpga_riscv32_minimal.vhd|
+!i113 1
+R23
+R15
+Aarch_minimal_riscv32
+R68
+R26
+R37
+R4
+R5
+DEx4 work 20 fpga_riscv32_minimal 0 22 28GAT1<SklZ3AJb6>Odiz2
+!i122 190
+l58
+L40 33
+VN[i=_mhjzM]V_7MJOaN@l1
+!s100 FahU`3XCTE:ik1bjmlEK>2
+R9
+33
+R51
+!i10b 1
+R52
+R87
+R88
+!i113 1
+R23
+R15
+Ehazard_control_unit
+Z89 w1606140485
+R4
+R5
+!i122 169
+R6
+Z90 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/hazard_control_unit.vhd
+Z91 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/hazard_control_unit.vhd
+l0
+L5 1
+VT6OO=`:BbNJH<T:?M:FSz1
+!s100 e?EF=hKQ036^aaFg3B9dD3
+R9
+33
+R45
+!i10b 1
+R81
+Z92 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/hazard_control_unit.vhd|
+Z93 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/hazard_control_unit.vhd|
+!i113 1
+R23
+R15
+Aarch_hazard_unit
+R4
+R5
+R56
+!i122 169
+l17
+L13 26
+Vj<YzFCzmXggX1d=kEP02j3
+!s100 :_;TM>F_jb2T5>z7h@N9O1
+R9
+33
+R45
+!i10b 1
+R81
+R92
+R93
+!i113 1
+R23
+R15
+Eidex_register
+R32
+R4
+R5
+!i122 184
+R6
+Z94 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/idex_register.vhd
+Z95 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/idex_register.vhd
+l0
+L8 1
+VaD@kez[DF=n79iR8zfTo20
+!s100 N`HBWjo6`QO=Y1?0[:V223
+R9
+33
+R51
+!i10b 1
+R52
+Z96 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/idex_register.vhd|
+Z97 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/idex_register.vhd|
+!i113 1
+R23
+R15
+Aarch_idex_register
+R73
+R74
+R75
+R77
+R76
+Z98 DEx4 work 10 register4b 0 22 NbB?7RNW>M@JG`aBYTERI1
+R4
+R5
+R61
+!i122 184
+l131
+L73 148
+VA58?flDfH[I6^l>RzSF[c1
+!s100 8`L?;KHmRhMXi1DzBNgF93
+R9
+33
+R51
+!i10b 1
+R52
+R96
+R97
+!i113 1
+R23
+R15
+Eifid_register
+R32
+R4
+R5
+!i122 185
+R6
+Z99 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/ifid_register.vhd
+Z100 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/ifid_register.vhd
+l0
+L6 1
+VS]HZLIh7DTzYjS8naHV@?0
+!s100 Wc]SZ2]8;7>fUciaZ6RZF0
+R9
+33
+R51
+!i10b 1
+R52
+Z101 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/ifid_register.vhd|
+Z102 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/ifid_register.vhd|
+!i113 1
+R23
+R15
+Abehavioral
+R73
+R4
+R5
+R64
+!i122 185
+l20
+L16 18
+V4=VLRXZ=3bY1gNiUbzMGl1
+!s100 j4N0W:W[nhig:QUzJ0Yai0
+R9
+33
+R51
+!i10b 1
+R52
+R101
+R102
+!i113 1
+R23
+R15
+Einstmem
+R32
+R4
+R5
+!i122 170
+R6
+Z103 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/instmem.vhd
+Z104 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/instmem.vhd
+l0
+L5 1
+VANPbnG4aSS6I62Ee5k:NT1
+!s100 hYlVZc0RhhJCYAdgU3o<Q1
+R9
+33
+R45
+!i10b 1
+R81
+Z105 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/instmem.vhd|
+Z106 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/instmem.vhd|
+!i113 1
+R23
+R15
+Adescription
+R4
+R5
+R66
+!i122 170
+l15
+L13 21
+VW3l;L1?WS1QgdYQ3md[eH0
+!s100 ;<NAeO_an0lKFnRi^`Nm63
+R9
+33
+R45
+!i10b 1
+R81
+R105
+R106
+!i113 1
+R23
+R15
+Ejump_target_unit
+R32
+R26
+R4
+R5
+!i122 186
+R6
+Z107 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/jump_target_unit.vhd
+Z108 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/jump_target_unit.vhd
+l0
+L6 1
+V56K>KlQEjT`_F9LhShchf1
+!s100 gIU^V`V^2LVQ^LnCK:mW@2
+R9
+33
+R51
+!i10b 1
+R52
+Z109 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/jump_target_unit.vhd|
+Z110 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/jump_target_unit.vhd|
+!i113 1
+R23
+R15
+Aarch_jump_unit
+R1
+R2
+R24
+R65
+R26
+R4
+R5
+R58
+!i122 186
+l18
+L16 6
+Vd5BjXWm:ROz?:[jO=ckzZ1
+!s100 R1Ne9>YJzA12kJDlQ]=nn3
+R9
+33
+R51
+!i10b 1
+R52
+R109
+R110
+!i113 1
+R23
+R15
+Ememwb_pipeline
+R32
+R4
+R5
+!i122 187
+R6
+Z111 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/memwb_pipeline.vhd
+Z112 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/memwb_pipeline.vhd
+l0
+L5 1
+VQ6W@2Z^_8K9:Y@`d1bYk81
+!s100 EXLVzoW<WOz=a_0PXTJ@C3
+R9
+33
+R51
+!i10b 1
+R52
+Z113 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/memwb_pipeline.vhd|
+Z114 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/memwb_pipeline.vhd|
+!i113 1
+R23
+R15
+Aarch_memwb_register
+R73
+R74
+R76
+R75
+R4
+R5
+R55
+!i122 187
+l60
+L36 63
+VoCY=i@UM8z5OPe=g58c>33
+!s100 O2:7V_^B_FO;G5:^QlUQD3
+R9
+33
+R51
+!i10b 1
+R52
+R113
+R114
+!i113 1
+R23
+R15
+Emux2
+R16
+R4
+R5
+!i122 171
+R6
+Z115 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/mux2.vhd
+Z116 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/mux2.vhd
+l0
+L5 1
+VWn:B>eNaN[:]65@^nRUG61
+!s100 1zCX@b`ib^^ROF<S9jY;13
+R9
+33
+R45
+!i10b 1
+R81
+Z117 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/mux2.vhd|
+Z118 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/mux2.vhd|
+!i113 1
+R23
+R15
+Abehavioral
+R4
+R5
+R65
+!i122 171
+l15
+L13 13
+Vkcic4E7mU`im_[SdD;z`B2
+!s100 5Lj]495Y6A;JWQWYN_CFA1
+R9
+33
+R45
+!i10b 1
+R81
+R117
+R118
+!i113 1
+R23
+R15
+Emux32_1
+R32
+R4
+R5
+!i122 174
+R6
+Z119 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/mux32_1.vhd
+Z120 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/mux32_1.vhd
+l0
+L4 1
+V5DNl3]Sni915emSm=GFjc0
+!s100 `9kQ4BknWlCkT5kJic>aP0
+R9
+33
+R45
+!i10b 1
+R81
+Z121 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/mux32_1.vhd|
+Z122 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/mux32_1.vhd|
+!i113 1
+R23
+R15
+Aarch_mux32_1
+R4
+R5
+Z123 DEx4 work 7 mux32_1 0 22 5DNl3]Sni915emSm=GFjc0
+!i122 174
+l14
+L13 39
+VA1V89I_lG;KRJl:0O26@;0
+!s100 kIeMfHE7G^o6B=]4X_oi73
+R9
+33
+R45
+!i10b 1
+R81
+R121
+R122
+!i113 1
+R23
+R15
+Emux3_1
+Z124 w1606139411
+R4
+R5
+!i122 172
+R6
+Z125 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/mux3_1.vhd
+Z126 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/mux3_1.vhd
+l0
+L4 1
+V5LmXIolOfMnkBQ02Sl_gH0
+!s100 <2EGj0^40lhN?lHK4f3R>2
+R9
+33
+R45
+!i10b 1
+R81
+Z127 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/mux3_1.vhd|
+Z128 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/mux3_1.vhd|
+!i113 1
+R23
+R15
+Aarch_mux3_1
+R4
+R5
+R63
+!i122 172
+l13
+L12 9
+VLbmFl9c8gIa5bWQgk;O=b1
+!s100 _KdjO3b<hSiB80Hm1:zaA2
+R9
+33
+R45
+!i10b 1
+R81
+R127
+R128
+!i113 1
+R23
+R15
+Emux5_1
+Z129 w1606139342
+R4
+R5
+!i122 173
+R6
+Z130 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/mux5_1.vhd
+Z131 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/mux5_1.vhd
+l0
+L4 1
+V5a;ZaZl4nUflAi?Ue5k^;1
+!s100 6X>AUidin69K``W3_d4M^1
+R9
+33
+R45
+!i10b 1
+R81
+Z132 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/mux5_1.vhd|
+Z133 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/mux5_1.vhd|
+!i113 1
+R23
+R15
+Aarch_mux5_1
+R4
+R5
+R59
+!i122 173
+l13
+L12 11
+VLl]ABVH;dLjoEiKQe0EB21
+!s100 ?LhhI;RDZjUCLmToTb`U?3
+R9
+33
+R45
+!i10b 1
+R81
+R132
+R133
+!i113 1
+R23
+R15
+Epc
+R32
+R26
+R4
+R5
+!i122 188
+R6
+Z134 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/pc.vhd
+Z135 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/pc.vhd
+l0
+L6 1
+VGTBhiO0N6ZM3E7IK2:]XW1
+!s100 XLX<iJ[mlETImfO`GH=mR0
+R9
+33
+R51
+!i10b 1
+R52
+Z136 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/pc.vhd|
+Z137 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/pc.vhd|
+!i113 1
+R23
+R15
+Abehavioral
+R73
+R26
+R4
+R5
+R67
+!i122 188
+l19
+L15 8
+VA4gCejo98h0C=kISEJVWV0
+!s100 RI9E=Y;mMc_i7DCH9SeFS3
+R9
+33
+R51
+!i10b 1
+R52
+R136
+R137
+!i113 1
+R23
+R15
+Eregister1b
+R16
+R4
+R5
+!i122 175
+R6
+Z138 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register1b.vhd
+Z139 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register1b.vhd
+l0
+L7 1
+V2C?zcUeKmhValUCf?Y_BJ1
+!s100 :[=f65zzIiWB>`P1Z?_9E0
+R9
+33
+R45
+!i10b 1
+R81
+Z140 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register1b.vhd|
+Z141 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register1b.vhd|
+!i113 1
+R23
+R15
+Aarch_register1b
+R4
+R5
+R76
+!i122 175
+l17
+Z142 L15 17
+VUXZSCcgl_]C<EkXVNm]Cc0
+!s100 >:5H;^EVGdZ7F`_>LGPWY3
+R9
+33
+R45
+!i10b 1
+R81
+R140
+R141
+!i113 1
+R23
+R15
+Eregister2b
+R16
+R4
+R5
+!i122 176
+R6
+Z143 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register2b.vhd
+Z144 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register2b.vhd
+l0
+L7 1
+VOc^K[Vk0BZgaf=F=LhaIf1
+!s100 7H@a7A>]K:OmE3<b9kbD_3
+R9
+33
+R45
+!i10b 1
+R81
+Z145 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register2b.vhd|
+Z146 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register2b.vhd|
+!i113 1
+R23
+R15
+Aarch_register2b
+R4
+R5
+R75
+!i122 176
+l17
+R142
+V]oUCoPFazIoo1>K2K27DM0
+!s100 c>AmeOh3Z74fSnPVcQIo13
+R9
+33
+R45
+!i10b 1
+R81
+R145
+R146
+!i113 1
+R23
+R15
+Eregister32b
+R32
+R4
+R5
+!i122 180
+R6
+Z147 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register32b.vhd
+Z148 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register32b.vhd
+l0
+L5 1
+V`Gf4`26lihY2XQ80gM5B=0
+!s100 7:Uj[@IlIFSS2ibA[elRK2
+R9
+33
+R51
+!i10b 1
+R52
+Z149 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register32b.vhd|
+Z150 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register32b.vhd|
+!i113 1
+R23
+R15
+Aarch_register32b
+R4
+R5
+R73
+!i122 180
+l15
+Z151 L13 17
+V7@l:<zW4B1NAGTmNBHB@Y1
+!s100 H?Y08V_[cJ3?846RJg9J70
+R9
+33
+R51
+!i10b 1
+R52
+R149
+R150
+!i113 1
+R23
+R15
+Eregister32b_falling
+R16
+R4
+R5
+!i122 181
+R6
+Z152 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register32b_falling.vhd
+Z153 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register32b_falling.vhd
+l0
+L5 1
+V39D?0aH_eNRmC8fP;mLY90
+!s100 gNjTdgWXH0;Vi^Ec>2[W62
+R9
+33
+R51
+!i10b 1
+R52
+Z154 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register32b_falling.vhd|
+Z155 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register32b_falling.vhd|
+!i113 1
+R23
+R15
+Aarch_register32b_falling
+R4
+R5
+Z156 DEx4 work 19 register32b_falling 0 22 39D?0aH_eNRmC8fP;mLY90
+!i122 181
+l15
+R151
+V4naYe@ID@_n?nS87E0B^_1
+!s100 UAz[oVz7_`9a0^da>TLG>0
+R9
+33
+R51
+!i10b 1
+R52
+R154
+R155
+!i113 1
+R23
+R15
+Eregister3b
+R16
+R4
+R5
+!i122 177
+R6
+Z157 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register3b.vhd
+Z158 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register3b.vhd
+l0
+L7 1
+Va;8`cJ4eoM;=GfPQ3]^LT1
+!s100 >l9kYO99Mb]blG6W5C6JV0
+R9
+33
+R45
+!i10b 1
+R81
+Z159 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register3b.vhd|
+Z160 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register3b.vhd|
+!i113 1
+R23
+R15
+Aarch_register3b
+R4
+R5
+R77
+!i122 177
+l17
+R142
+V45ZY9odOG]UB?BL?feO8]0
+!s100 d9;SFfPYb]@iKeeP?]XbN1
+R9
+33
+R45
+!i10b 1
+R81
+R159
+R160
+!i113 1
+R23
+R15
+Eregister4b
+R16
+R4
+R5
+!i122 178
+R6
+Z161 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register4b.vhd
+Z162 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register4b.vhd
+l0
+L4 1
+VNbB?7RNW>M@JG`aBYTERI1
+!s100 GgBn:E8?W446Jb4Sz>:PR0
+R9
+33
+R45
+!i10b 1
+R81
+Z163 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register4b.vhd|
+Z164 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register4b.vhd|
+!i113 1
+R23
+R15
+Aarch_register4b
+R4
+R5
+R98
+!i122 178
+l14
+Z165 L12 17
+V=@WzLbHg6c1fd>^OS<H[J3
+!s100 gf9SVm=5_bcRL08ezV0953
+R9
+33
+R45
+!i10b 1
+R81
+R163
+R164
+!i113 1
+R23
+R15
+Eregister5b
+R16
+R4
+R5
+!i122 179
+R6
+Z166 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register5b.vhd
+Z167 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register5b.vhd
+l0
+L4 1
+VlK4OOBL3K]ZIR6Wj0DG6L3
+!s100 oQPTKcE8d_6bJ>3[gDJoi1
+R9
+33
+R45
+!i10b 1
+R81
+Z168 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register5b.vhd|
+Z169 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register5b.vhd|
+!i113 1
+R23
+R15
+Aarch_register5b
+R4
+R5
+R74
+!i122 179
+l14
+R165
+VeM86aBGQJB1bJZhB8<LL91
+!s100 ^ZdJ8LCFAL[AIRR:Z>m_F1
+R9
+33
+R45
+!i10b 1
+R81
+R168
+R169
+!i113 1
+R23
+R15
+Eregister_bank
+R32
+R4
+R5
+!i122 182
+R6
+Z170 8/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register_bank.vhd
+Z171 F/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register_bank.vhd
+l0
+L9 1
+VY<f3:8;@84F@jLAcRXPF<2
+!s100 aIJniH?kW<igz3WEE=PjU1
+R9
+33
+R51
+!i10b 1
+R52
+Z172 !s90 -reportprogress|300|-work|work3|-2008|-explicit|-stats=none|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register_bank.vhd|
+Z173 !s107 /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/register_bank.vhd|
+!i113 1
+R23
+R15
+Aarch_register_bank
+R123
+R156
+R4
+R5
+R62
+!i122 182
+l54
+L18 159
+Vg5GOX[jMU[M3jcoJJ1T1z0
+!s100 fk5@<1MP^@Aj>CHR;7P=N0
+R9
+33
+R51
+!i10b 1
+R52
+R172
+R173
+!i113 1
+R23
+R15
+Etb
+Z174 w1606772614
+R1
+R2
+R3
+R5
+R4
+R26
+!i122 192
+R6
+R7
+R8
+l0
+L10 1
+VA8@PSHT_hbNf?hEDfamUb2
+!s100 ^MH7I;EV]J^VCV0g]ggXH1
+R9
+32
+Z175 !s110 1606772812
+!i10b 1
+Z176 !s108 1606772812.000000
+Z177 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/tb.vhd|
+R13
+!i113 1
+R14
+R15
+Atb_arch
+R1
+R2
+R3
+R5
+R4
+R26
+Z178 DEx4 work 2 tb 0 22 A8@PSHT_hbNf?hEDfamUb2
+!i122 192
+l51
+Z179 L13 112
+Z180 VbaWa_[4caSC_5XUmK9`Gd3
+Z181 !s100 @K4d`bh[TJ8P75]ZI;:c00
+R9
+32
+R175
+!i10b 1
+R176
+R177
+R13
+!i113 1
+R14
+R15

@@ -1,0 +1,28 @@
+# Current time Mon Nov 30 18:04:40 2020
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vish
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = "linuxaloem"
+# 0    0x0830fb53: '<unknown (@0x830fb53)>'
+# 1    0x08310874: 'wave_ModifyPatternData + 0x4c4' in '/home/edilcn/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/vish'
+# 2    0x08349b89: '<unknown (@0x8349b89)>'
+# 3    0x0857e27a: '<unknown (@0x857e27a)>'
+# 4    0xfffffffb: '<unknown (@0xfffffffb)>'
+# End of Stack Trace
+
+# Current time Mon Nov 30 18:09:07 2020
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vish
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = "linuxaloem"
+# 0    0x0830f92a: '<unknown (@0x830f92a)>'
+# 1    0x08310874: 'wave_ModifyPatternData + 0x4c4' in '/home/edilcn/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/vish'
+# 2    0x08349b89: '<unknown (@0x8349b89)>'
+# 3    0x0857e27a: '<unknown (@0x857e27a)>'
+# 4    0xfffffffb: '<unknown (@0xfffffffb)>'
+# End of Stack Trace
+

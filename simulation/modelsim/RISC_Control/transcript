@@ -1,0 +1,425 @@
+# Compile of adder.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of datamem.vhd was successful.
+# Compile of datamem_interface.vhd was successful.
+# Compile of forwarding_unit.vhd was successful.
+# Compile of hazard_control_unit.vhd was successful.
+# Compile of instmem.vhd was successful.
+# Compile of mux2.vhd was successful.
+# Compile of mux3_1.vhd was successful.
+# Compile of mux5_1.vhd was successful.
+# Compile of mux32_1.vhd was successful.
+# Compile of register1b.vhd was successful.
+# Compile of register2b.vhd was successful.
+# Compile of register3b.vhd was successful.
+# Compile of register4b.vhd was successful.
+# Compile of register5b.vhd was successful.
+# Compile of register32b.vhd was successful.
+# Compile of register32b_falling.vhd was successful.
+# Compile of register_bank.vhd was successful.
+# Compile of exmem_pipeline.vhd was successful.
+# Compile of idex_register.vhd was successful.
+# Compile of ifid_register.vhd was successful.
+# Compile of jump_target_unit.vhd was successful.
+# Compile of memwb_pipeline.vhd was successful.
+# Compile of pc.vhd was successful.
+# Compile of datapath.vhd was successful.
+# Compile of fpga_riscv32_minimal.vhd was successful.
+# Compile of tb.vhd was successful.
+# 29 compiles, 0 failed with no errors.
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+wave create -pattern none -portmode in -language vhdl /controller/clock
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+# controller
+wave create -pattern none -portmode in -language vhdl /controller/reset
+# controller
+wave create -pattern none -portmode in -language vhdl -range 31 0 /controller/instruction
+# controller
+wave create -pattern none -portmode out -language vhdl -range 4 0 /controller/r1_reg_idx
+# controller
+wave create -pattern none -portmode out -language vhdl -range 4 0 /controller/r2_reg_idx
+# controller
+wave create -pattern none -portmode out -language vhdl /controller/reg_file_write
+# controller
+wave create -pattern none -portmode out -language vhdl -range 4 0 /controller/wr_reg_idx
+# controller
+wave create -pattern none -portmode out -language vhdl -range 31 0 /controller/immediate
+# controller
+wave create -pattern none -portmode out -language vhdl -range 3 0 /controller/ALU_operation
+# controller
+wave create -pattern none -portmode out -language vhdl /controller/ALU_branch
+# controller
+wave create -pattern none -portmode out -language vhdl -range 2 0 /controller/ALU_branch_control
+# controller
+wave create -pattern none -portmode out -language vhdl /controller/JTU_mux_sel
+# controller
+wave create -pattern none -portmode out -language vhdl -range 2 0 /controller/data_format
+# controller
+wave create -pattern none -portmode out -language vhdl /controller/datamem_write
+# controller
+wave create -pattern none -portmode out -language vhdl /controller/jump_flag
+# controller
+wave create -pattern none -portmode out -language vhdl -range 1 0 /controller/mux0_sel
+# controller
+wave create -pattern none -portmode out -language vhdl /controller/mux1_sel
+# controller
+wave modify -driver freeze -pattern clock -initialvalue (no value) -period 100ns -dutycycle 50 -starttime 0ns -endtime 1000ns NewSig:/controller/clock
+# ** UI-Msg: (vish-4026) Value "(no" does not represent a literal of the enumeration type.
+#Invalid value to -initialvalue switch: (no
+# 
+wave modify -driver freeze -pattern constant -value 0 -starttime 0ns -endtime 1000ns NewSig:/controller/reset
+# controller
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 100ns -dutycycle 50 -starttime 0ns -endtime 1000ns NewSig:/controller/clock
+# controller
+wave modify -driver freeze -pattern constant -value 000000000001000001000000000110011 -range 31 0 -starttime 0ns -endtime 200ns NewSig:/controller/instruction
+# Value length (33) does not equal array index length (32).
+# 
+#Invalid value to -value switch: 000000000001000001000000000110011
+# Usage: wave create -driver <freeze|deposit|drive|expectedOutput> -pattern constant -value <value> [-range <msb lsb>] -starttime <Time> -endtime <Time> netName
+wave modify -driver freeze -pattern constant -value 00000000001000001000000000110011 -range 31 0 -starttime 0ns -endtime 200ns NewSig:/controller/instruction
+# controller
+wave modify -driver freeze -pattern constant -value 0000000000100000100000000011001100000000010100100000000110110011 -range 31 0 -starttime 200ns -endtime 400ns NewSig:/controller/instruction
+# Value length (64) does not equal array index length (32).
+# 
+#Invalid value to -value switch: 0000000000100000100000000011001100000000010100100000000110110011
+# Usage: wave modify -driver <freeze|deposit|drive|expectedOutput> -pattern constant -value <value> [-range <msb lsb>] -starttime <Time> -endtime <Time> netName
+wave modify -driver freeze -pattern constant -value 00000000010100100000000110110011 -range 31 0 -starttime 200ns -endtime 400ns NewSig:/controller/instruction
+# controller
+wave modify -driver freeze -pattern constant -value 01000000000100100000010100110011 -range 31 0 -starttime 400ns -endtime 600ns NewSig:/controller/instruction
+# controller
+wave modify -driver freeze -pattern constant -value 00000000001100101000000000110011 -range 31 0 -starttime 600ns -endtime 800ns NewSig:/controller/instruction
+# controller
+wave modify -driver freeze -pattern constant -value 0000000000001010010000110000010 -range 31 0 -starttime 800ns -endtime 1000ns NewSig:/controller/instruction
+# Value length (31) does not equal array index length (32).
+# 
+#Invalid value to -value switch: 0000000000001010010000110000010
+# Usage: wave modify -driver <freeze|deposit|drive|expectedOutput> -pattern constant -value <value> [-range <msb lsb>] -starttime <Time> -endtime <Time> netName
+wave modify -driver freeze -pattern constant -value 0000000000001010010000110000010 -range 31 0 -starttime 800ns -endtime 1000ns NewSig:/controller/instruction
+# Value length (31) does not equal array index length (32).
+# 
+#Invalid value to -value switch: 0000000000001010010000110000010
+# Usage: wave modify -driver <freeze|deposit|drive|expectedOutput> -pattern constant -value <value> [-range <msb lsb>] -starttime <Time> -endtime <Time> netName
+wave modify -driver freeze -pattern constant -value 00000000000001010010000110000010 -range 31 0 -starttime 800ns -endtime 1000ns NewSig:/controller/instruction
+# controller
+wave export -file tb -starttime 0 -endtime 1000 -format vhdl -designunit controller
+# File "tb.vhd" already exists. Use -f to overwrite the file.
+wave export -file tb -starttime 0 -endtime 1000 -format vhdl -designunit controller
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+wave editwrite -file /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/wave.do
+vsim work.controller
+# vsim work.controller 
+# Start time: 18:44:33 on Nov 30,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.controller(behavioral)
+do wave.do
+# .main_pane.wave.interior.cs.body.pw.wf
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# ** Error: Netname is not editable or not present in the active waveform window
+# Usage: wave modify -driver <freeze|deposit|drive|expectedOutput> -pattern constant -value <value> [-range <msb lsb>] -starttime <Time> -endtime <Time> netName
+# Error in macro ./wave.do line 20
+# Netname is not editable or not present in the active waveform window
+# Usage: wave modify -driver <freeze|deposit|drive|expectedOutput> -pattern constant -value <value> [-range <msb lsb>] -starttime <Time> -endtime <Time> netName
+#     while executing
+# ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data modify_wave -driver freeze -pattern constant -value 0 -starttime 0ns -endtime 1000ns NewSig..."
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $wave_widget modify_wave $args"
+#     (procedure "wave_edit_modify" line 9)
+#     invoked from within
+# "wave_edit_modify -driver freeze -pattern constant -value 0 -starttime 0ns -endtime 1000ns NewSig:/controller/reset"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $procname $args"
+#     (procedure "wave_edit_command" line 8)
+#     invoked from within
+# "wave_edit_command modify {*}$args"
+#     (procedure "::wave::modify" line 3)
+#     invoked from within
+# "wave modify -driver freeze -pattern constant -value 0 -starttime 0ns -endtime 1000ns NewSig:/controller/reset "
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position insertpoint sim:/controller/*
+quit -sim
+# End time: 18:46:19 on Nov 30,2020, Elapsed time: 0:01:46
+# Errors: 1, Warnings: 2
+# Compile of tb.vhd was successful.
+# Compile of adder.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of datamem.vhd was successful.
+# Compile of datamem_interface.vhd was successful.
+# Compile of forwarding_unit.vhd was successful.
+# Compile of hazard_control_unit.vhd was successful.
+# Compile of instmem.vhd was successful.
+# Compile of mux2.vhd was successful.
+# Compile of mux3_1.vhd was successful.
+# Compile of mux5_1.vhd was successful.
+# Compile of mux32_1.vhd was successful.
+# Compile of register1b.vhd was successful.
+# Compile of register2b.vhd was successful.
+# Compile of register3b.vhd was successful.
+# Compile of register4b.vhd was successful.
+# Compile of register5b.vhd was successful.
+# Compile of register32b.vhd was successful.
+# Compile of register32b_falling.vhd was successful.
+# Compile of register_bank.vhd was successful.
+# Compile of exmem_pipeline.vhd was successful.
+# Compile of idex_register.vhd was successful.
+# Compile of ifid_register.vhd was successful.
+# Compile of jump_target_unit.vhd was successful.
+# Compile of memwb_pipeline.vhd was successful.
+# Compile of pc.vhd was successful.
+# Compile of datapath.vhd was successful.
+# Compile of fpga_riscv32_minimal.vhd was successful.
+# Compile of tb.vhd was successful.
+# 29 compiles, 0 failed with no errors.
+vcom -work work -2002 -explicit /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:46:52 on Nov 30,2020
+# vcom -reportprogress 300 -work work -2002 -explicit /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity tb
+# -- Compiling architecture tb_arch of tb
+# End time: 18:46:52 on Nov 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.\\tb.vhd\\
+# vsim work.\tb.vhd\ 
+# Start time: 18:47:01 on Nov 30,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.\tb.vhd\(\tb.vhd_arch\)
+# Loading ieee.numeric_std(body)
+# Loading work.fpga_riscv32_minimal(arch_minimal_riscv32)
+# Loading work.controller(behavioral)
+# Loading work.datapath(arch_datapath)
+# Loading work.pc(behavioral)
+# Loading work.register32b(arch_register32b)
+# Loading work.instmem(description)
+# Loading work.adder(adder32)
+# Loading work.mux2(behavioral)
+# Loading work.ifid_register(behavioral)
+# Loading work.mux3_1(arch_mux3_1)
+# Loading work.register_bank(arch_register_bank)
+# Loading work.register32b_falling(arch_register32b_falling)
+# Loading work.mux32_1(arch_mux32_1)
+# Loading work.idex_register(arch_idex_register)
+# Loading work.register4b(arch_register4b)
+# Loading work.register1b(arch_register1b)
+# Loading work.register3b(arch_register3b)
+# Loading work.register2b(arch_register2b)
+# Loading work.register5b(arch_register5b)
+# Loading work.forwarding_unit(arch_forwarding)
+# Loading work.mux5_1(arch_mux5_1)
+# Loading work.alu(arch_alu)
+# Loading work.jump_target_unit(arch_jump_unit)
+# Loading work.exmem_pipeline(arch_exmem)
+# Loading work.hazard_control_unit(arch_hazard_unit)
+# Loading work.datamem_interface(behavioural)
+# Loading work.datamem(behavioural)
+# Loading work.memwb_pipeline(arch_memwb_register)
+# ** Warning: (vsim-8683) Uninitialized out port /\tb.vhd\/DUT/debug_pc_output(31 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /\tb.vhd\/DUT/debug_regfile_x31_output(31 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /\tb.vhd\/DUT/debug_regfile_x1_output(31 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /\tb.vhd\/DUT/debug_regfile_x2_output(31 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+add wave -position end {sim:/\tb.vhd\/*}
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /\tb.vhd\/DUT/datapath_0/datamem_module_0/datamem_0
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /\tb.vhd\/DUT/datapath_0/datamem_module_0/datamem_0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /\tb.vhd\/DUT/datapath_0/datamem_module_0/datamem_1
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /\tb.vhd\/DUT/datapath_0/datamem_module_0/datamem_1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /\tb.vhd\/DUT/datapath_0/datamem_module_0/datamem_2
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /\tb.vhd\/DUT/datapath_0/datamem_module_0/datamem_2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /\tb.vhd\/DUT/datapath_0/datamem_module_0/datamem_3
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /\tb.vhd\/DUT/datapath_0/datamem_module_0/datamem_3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /\tb.vhd\/DUT/datapath_0/JTU_0/internal_adder
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /\tb.vhd\/DUT/datapath_0/JTU_0/internal_adder
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /\tb.vhd\/DUT/datapath_0/alu_pc
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /\tb.vhd\/DUT/datapath_0/JTU_0/internal_adder
+# WARNING: No extended dataflow license exists
+run
+run
+run
+do wave.do
+# .main_pane.wave.interior.cs.body.pw.wf
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# ** Error: invalid command name "wave export -file tb -starttime 0 -endtime 1000 -format vhdl -designunit controller"
+# Error in macro ./wave.do line 27
+# invalid command name "wave export -file tb -starttime 0 -endtime 1000 -format vhdl -designunit controller"
+#     while executing
+# "{wave export -file tb -starttime 0 -endtime 1000 -format vhdl -designunit controller} "
+do /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/wave.do
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Error: /controller/clock already exists in the wave, cannot add twice
+# Usage: wave create -pattern <clock|constant|random|repeater|counter|none> <args>
+# See Command Reference manual for pattern specific <args>
+# Error in macro /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/wave.do line 3
+# /controller/clock already exists in the wave, cannot add twice
+# Usage: wave create -pattern <clock|constant|random|repeater|counter|none> <args>
+# See Command Reference manual for pattern specific <args>
+#     while executing
+# "add wave -editable 1 -pattern none -portmode in -language vhdl /controller/clock"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval add wave -editable 1 $args"
+#     (procedure "wave_edit_create" line 2)
+#     invoked from within
+# "wave_edit_create -pattern none -portmode in -language vhdl /controller/clock"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $procname $args"
+#     (procedure "wave_edit_command" line 8)
+#     invoked from within
+# "wave_edit_command create {*}$args"
+#     (procedure "::wave::create" line 3)
+#     invoked from within
+# "wave create -pattern none -portmode in -language vhdl /controller/clock "
+run
+do /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/wave.do
+# .main_pane.wave.interior.cs.body.pw.wf
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# controller
+# ** Error: invalid command name "wave export -file tb -starttime 0 -endtime 1000 -format vhdl -designunit controller"
+# Error in macro /home/edilcn/Documents/fpga-riscv32-minimal/simulation/modelsim/RISC_Control/wave.do line 27
+# invalid command name "wave export -file tb -starttime 0 -endtime 1000 -format vhdl -designunit controller"
+#     while executing
+# "{wave export -file tb -starttime 0 -endtime 1000 -format vhdl -designunit controller} "
+run
+run
