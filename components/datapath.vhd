@@ -41,8 +41,8 @@ entity datapath is
 		debug_register_bank_output_0 : out std_logic_vector(31 downto 0);
 		debug_register_bank_output_1 : out std_logic_vector(31 downto 0);
 		debug_register_bank_output_0_ID_EX : out std_logic_vector(31 downto 0);
-		debug_register_bank_output_1_ID_EX : out std_logic_vector(31 downto 0)
---		debug_instruction : out std_logic_vector(31 downto 0)
+		debug_register_bank_output_1_ID_EX : out std_logic_vector(31 downto 0);
+		debug_instruction : out std_logic_vector(31 downto 0)
 
 	);
 end entity datapath;
@@ -135,7 +135,7 @@ begin
 	
 	program_counter : entity work.pc port map (clock, reset, next_pc_count, '1', PC_count);
 	instruction_memory : entity work.instmem port map (PC_count, instruction_address_IF_ID, clock);
-	alu_pc: entity work.adder port map (PC_next_address, "00000000000000000000000000000100", pc_added);
+	alu_pc: entity work.adder port map (PC_next_address, X"00000004", pc_added);
 	pc_mux: entity work.mux2(behavioral) port map (pc_added, JTU_output, alu_branch_response or jump_flag_ID_EX, next_pc_count);
 	
 --	pc_0 : pc port map(reset, clock, alu_branch_response or jump_flag_ID_EX, std_logic_vector(unsigned(PC_output) + 4), JTU_output, PC_next_address, PC_output);
@@ -187,6 +187,6 @@ begin
 	debug_register_bank_output_1 <= register_bank_output_1;
 	debug_register_bank_output_0_ID_EX <= register_bank_output_0_ID_EX;
 	debug_register_bank_output_1_ID_EX <= register_bank_output_1_ID_EX;
---	debug_instruction <= progmem_output;
+	debug_instruction <= instruction_address_IF_ID;
 
 end architecture arch_datapath;
