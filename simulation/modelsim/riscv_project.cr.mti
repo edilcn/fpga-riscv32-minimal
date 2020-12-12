@@ -1,0 +1,281 @@
+F:/QuartusProjects/fpga-riscv32-minimal/components/register32b.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/register32b.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity register32b
+-- Compiling architecture arch_register32b of register32b
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/register5b.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/register5b.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity register5b
+-- Compiling architecture arch_register5b of register5b
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/memwb_pipeline.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/memwb_pipeline.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity memwb_pipeline
+-- Compiling architecture arch_memwb_register of memwb_pipeline
+-- Loading entity register2b
+-- Loading entity register1b
+-- Loading entity register5b
+-- Loading entity register32b
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/mux3_1.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/mux3_1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux3_1
+-- Compiling architecture arch_mux3_1 of mux3_1
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/mux5_1.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/mux5_1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux5_1
+-- Compiling architecture arch_mux5_1 of mux5_1
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/register_bank.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity register_bank
+-- Compiling architecture arch_register_bank of register_bank
+-- Loading entity register32b_falling
+-- Loading entity mux32_1
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/hazard_control_unit.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/hazard_control_unit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity hazard_control_unit
+-- Compiling architecture arch_hazard_unit of hazard_control_unit
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/jump_target_unit.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/jump_target_unit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity jump_target_unit
+-- Compiling architecture arch_jump_unit of jump_target_unit
+-- Loading entity mux2
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading entity adder
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/datamem.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/datamem.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity datamem
+-- Compiling architecture behavioural of datamem
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/register2b.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/register2b.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity register2b
+-- Compiling architecture arch_register2b of register2b
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/alu.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/alu.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ALU
+-- Compiling architecture arch_alu of ALU
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/forwarding_unit.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/forwarding_unit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity forwarding_unit
+-- Compiling architecture arch_forwarding of forwarding_unit
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/register4b.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/register4b.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity register4b
+-- Compiling architecture arch_register4b of register4b
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/fpga-riscv32-minimal.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity fpga_riscv32_minimal
+-- Compiling architecture arch_minimal_riscv32 of fpga_riscv32_minimal
+-- Loading package NUMERIC_STD
+-- Loading entity datapath
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/pc.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/pc.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity pc
+-- Compiling architecture behavioral of pc
+-- Loading entity register32b
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/controller.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/controller.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity controller
+-- Compiling architecture Behavioral of controller
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/mux2.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/mux2.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2
+-- Compiling architecture behavioral of mux2
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/instmem.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/instmem.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity instmem
+-- Compiling architecture description of instmem
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/idex_register.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/idex_register.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity idex_register
+-- Compiling architecture arch_idex_register of idex_register
+-- Loading entity register4b
+-- Loading entity register1b
+-- Loading entity register3b
+-- Loading entity register2b
+-- Loading entity register5b
+-- Loading entity register32b
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/mux32_1.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/mux32_1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux32_1
+-- Compiling architecture arch_mux32_1 of mux32_1
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/datapath.vhd {1 {vcom -work work -2008 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/datapath.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity datapath
+-- Compiling architecture arch_datapath of datapath
+-- Loading entity pc
+-- Loading entity instmem
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading entity adder
+-- Loading entity mux2
+-- Loading entity ifid_register
+-- Loading entity mux3_1
+-- Loading entity register_bank
+-- Loading entity idex_register
+-- Loading entity forwarding_unit
+-- Loading entity mux5_1
+-- Loading entity ALU
+-- Loading entity jump_target_unit
+-- Loading entity exmem_pipeline
+-- Loading entity hazard_control_unit
+-- Loading entity datamem_interface
+-- Loading entity memwb_pipeline
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/ifid_register.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/ifid_register.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ifid_register
+-- Compiling architecture behavioral of ifid_register
+-- Loading entity register32b
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/adder.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/adder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity adder
+-- Compiling architecture adder32 of adder
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/register32b_falling.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/register32b_falling.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity register32b_falling
+-- Compiling architecture arch_register32b_falling of register32b_falling
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/register1b.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/register1b.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity register1b
+-- Compiling architecture arch_register1b of register1b
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/datamem_interface.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/datamem_interface.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity datamem_interface
+-- Compiling architecture behavioural of datamem_interface
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading entity datamem
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/exmem_pipeline.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/exmem_pipeline.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity exmem_pipeline
+-- Compiling architecture arch_exmem of exmem_pipeline
+-- Loading entity register3b
+-- Loading entity register1b
+-- Loading entity register2b
+-- Loading entity register5b
+-- Loading entity register32b
+
+} {} {}} F:/QuartusProjects/fpga-riscv32-minimal/components/register3b.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/QuartusProjects/fpga-riscv32-minimal/components/register3b.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity register3b
+-- Compiling architecture arch_register3b of register3b
+
+} {} {}}

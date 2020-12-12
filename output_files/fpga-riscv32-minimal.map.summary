@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Mon Nov 23 23:21:18 2020
+Analysis & Synthesis Status : Successful - Sun Dec 06 15:09:28 2020
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : fpga-riscv32-minimal
 Top-level Entity Name : fpga_riscv32_minimal
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 263446
-Total pins : 604
+Total registers : 454
+Total pins : 555
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

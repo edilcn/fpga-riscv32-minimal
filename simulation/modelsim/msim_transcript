@@ -10,201 +10,198 @@
 # Copying F:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/register32b_falling.vhd}
+# vcom -2008 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/adder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:29:20 on Nov 23,2020
-# vcom -reportprogress 300 -93 -work work F:/QuartusProjects/fpga-riscv32-minimal/components/register32b_falling.vhd 
+# Start time: 22:53:54 on Nov 30,2020
+# vcom -reportprogress 300 -2008 -work work F:/QuartusProjects/fpga-riscv32-minimal/components/adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity adder
+# -- Compiling architecture adder32 of adder
+# End time: 22:53:55 on Nov 30,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/register32b_falling.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:53:55 on Nov 30,2020
+# vcom -reportprogress 300 -2008 -work work F:/QuartusProjects/fpga-riscv32-minimal/components/register32b_falling.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity register32b_falling
 # -- Compiling architecture arch_register32b_falling of register32b_falling
-# End time: 23:29:21 on Nov 23,2020, Elapsed time: 0:00:01
+# End time: 22:53:55 on Nov 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/register32b.vhd}
+# vcom -2008 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/register32b.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:29:21 on Nov 23,2020
-# vcom -reportprogress 300 -93 -work work F:/QuartusProjects/fpga-riscv32-minimal/components/register32b.vhd 
+# Start time: 22:53:55 on Nov 30,2020
+# vcom -reportprogress 300 -2008 -work work F:/QuartusProjects/fpga-riscv32-minimal/components/register32b.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity register32b
-# -- Compiling architecture description of register32b
-# End time: 23:29:21 on Nov 23,2020, Elapsed time: 0:00:00
+# -- Compiling architecture arch_register32b of register32b
+# End time: 22:53:55 on Nov 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/register5b.vhd}
+# vcom -2008 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/register5b.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:29:21 on Nov 23,2020
-# vcom -reportprogress 300 -93 -work work F:/QuartusProjects/fpga-riscv32-minimal/components/register5b.vhd 
+# Start time: 22:53:56 on Nov 30,2020
+# vcom -reportprogress 300 -2008 -work work F:/QuartusProjects/fpga-riscv32-minimal/components/register5b.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity register5b
 # -- Compiling architecture arch_register5b of register5b
-# End time: 23:29:21 on Nov 23,2020, Elapsed time: 0:00:00
+# End time: 22:53:56 on Nov 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/register4b.vhd}
+# vcom -2008 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/register4b.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:29:22 on Nov 23,2020
-# vcom -reportprogress 300 -93 -work work F:/QuartusProjects/fpga-riscv32-minimal/components/register4b.vhd 
+# Start time: 22:53:56 on Nov 30,2020
+# vcom -reportprogress 300 -2008 -work work F:/QuartusProjects/fpga-riscv32-minimal/components/register4b.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity register4b
 # -- Compiling architecture arch_register4b of register4b
-# End time: 23:29:22 on Nov 23,2020, Elapsed time: 0:00:00
+# End time: 22:53:56 on Nov 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/register3b.vhd}
+# vcom -2008 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/register3b.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:29:22 on Nov 23,2020
-# vcom -reportprogress 300 -93 -work work F:/QuartusProjects/fpga-riscv32-minimal/components/register3b.vhd 
+# Start time: 22:53:56 on Nov 30,2020
+# vcom -reportprogress 300 -2008 -work work F:/QuartusProjects/fpga-riscv32-minimal/components/register3b.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity register3b
 # -- Compiling architecture arch_register3b of register3b
-# End time: 23:29:22 on Nov 23,2020, Elapsed time: 0:00:00
+# End time: 22:53:56 on Nov 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/register2b.vhd}
+# vcom -2008 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/register2b.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:29:22 on Nov 23,2020
-# vcom -reportprogress 300 -93 -work work F:/QuartusProjects/fpga-riscv32-minimal/components/register2b.vhd 
+# Start time: 22:53:56 on Nov 30,2020
+# vcom -reportprogress 300 -2008 -work work F:/QuartusProjects/fpga-riscv32-minimal/components/register2b.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity register2b
 # -- Compiling architecture arch_register2b of register2b
-# End time: 23:29:22 on Nov 23,2020, Elapsed time: 0:00:00
+# End time: 22:53:56 on Nov 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/register1b.vhd}
+# vcom -2008 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/register1b.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:29:22 on Nov 23,2020
-# vcom -reportprogress 300 -93 -work work F:/QuartusProjects/fpga-riscv32-minimal/components/register1b.vhd 
+# Start time: 22:53:57 on Nov 30,2020
+# vcom -reportprogress 300 -2008 -work work F:/QuartusProjects/fpga-riscv32-minimal/components/register1b.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity register1b
 # -- Compiling architecture arch_register1b of register1b
-# End time: 23:29:22 on Nov 23,2020, Elapsed time: 0:00:00
+# End time: 22:53:57 on Nov 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/mux32_1.vhd}
+# vcom -2008 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/mux32_1.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:29:23 on Nov 23,2020
-# vcom -reportprogress 300 -93 -work work F:/QuartusProjects/fpga-riscv32-minimal/components/mux32_1.vhd 
+# Start time: 22:53:57 on Nov 30,2020
+# vcom -reportprogress 300 -2008 -work work F:/QuartusProjects/fpga-riscv32-minimal/components/mux32_1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux32_1
 # -- Compiling architecture arch_mux32_1 of mux32_1
-# ** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/mux32_1.vhd(15): (vcom-1339) Selected signal assignment choices cover only 32 out of 59049 cases.
-# ** Note: F:/QuartusProjects/fpga-riscv32-minimal/components/mux32_1.vhd(50): VHDL Compiler exiting
-# End time: 23:29:23 on Nov 23,2020, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
+# End time: 22:53:57 on Nov 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/mux5_1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:53:57 on Nov 30,2020
+# vcom -reportprogress 300 -2008 -work work F:/QuartusProjects/fpga-riscv32-minimal/components/mux5_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux5_1
+# -- Compiling architecture arch_mux5_1 of mux5_1
+# End time: 22:53:57 on Nov 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/mux3_1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:53:57 on Nov 30,2020
+# vcom -reportprogress 300 -2008 -work work F:/QuartusProjects/fpga-riscv32-minimal/components/mux3_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux3_1
+# -- Compiling architecture arch_mux3_1 of mux3_1
+# End time: 22:53:58 on Nov 30,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/mux2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:53:58 on Nov 30,2020
+# vcom -reportprogress 300 -2008 -work work F:/QuartusProjects/fpga-riscv32-minimal/components/mux2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2
+# -- Compiling architecture behavioral of mux2
+# End time: 22:53:58 on Nov 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/instmem.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:53:58 on Nov 30,2020
+# vcom -reportprogress 300 -2008 -work work F:/QuartusProjects/fpga-riscv32-minimal/components/instmem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity instmem
+# -- Compiling architecture description of instmem
+# End time: 22:53:58 on Nov 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/datamem.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:53:58 on Nov 30,2020
+# vcom -reportprogress 300 -2008 -work work F:/QuartusProjects/fpga-riscv32-minimal/components/datamem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity datamem
+# -- Compiling architecture behavioural of datamem
+# End time: 22:53:59 on Nov 30,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/alu.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:53:59 on Nov 30,2020
+# vcom -reportprogress 300 -2008 -work work F:/QuartusProjects/fpga-riscv32-minimal/components/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture arch_alu of ALU
+# End time: 22:53:59 on Nov 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/fpga_riscv32_minimal.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:53:59 on Nov 30,2020
+# vcom -reportprogress 300 -2008 -work work F:/QuartusProjects/fpga-riscv32-minimal/components/fpga_riscv32_minimal.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fpga_riscv32_minimal
+# -- Compiling architecture arch_minimal_riscv32 of fpga_riscv32_minimal
+# ** Error: (vcom-11) Could not find work.controller.
+# ** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/fpga_riscv32_minimal.vhd(62): (vcom-1195) Cannot find expanded name "work.controller".
+# ** Error: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga_riscv32_minimal.vhd(62): Unknown expanded name.
+# ** Error: (vcom-11) Could not find work.datapath.
+# ** Error (suppressible): F:/QuartusProjects/fpga-riscv32-minimal/components/fpga_riscv32_minimal.vhd(63): (vcom-1195) Cannot find expanded name "work.datapath".
+# ** Error: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga_riscv32_minimal.vhd(63): Unknown expanded name.
+# ** Note: F:/QuartusProjects/fpga-riscv32-minimal/components/fpga_riscv32_minimal.vhd(72): VHDL Compiler exiting
+# End time: 22:53:59 on Nov 30,2020, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
 # ** Error: F:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./fpga-riscv32-minimal_run_msim_rtl_vhdl.do line 15
+# Error in macro ./fpga-riscv32-minimal_run_msim_rtl_vhdl.do line 23
 # F:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
 #     while executing
-# "vcom -93 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/mux32_1.vhd}"
-project open fpga-riscv32-minimal.mpf
-# Project file F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/fpga-riscv32-minimal.mpf was not found.
-# Unable to open project.
-ls
-# fpga-riscv32-minimal.sft                        
-# fpga-riscv32-minimal.vho                        
-# fpga-riscv32-minimal_modelsim.xrf               
-# fpga-riscv32-minimal_run_msim_rtl_vhdl.do       
-# fpga-riscv32-minimal_run_msim_rtl_vhdl.do.bak   
-# fpga-riscv32-minimal_run_msim_rtl_vhdl.do.bak1  
-# fpga-riscv32-minimal_run_msim_rtl_vhdl.do.bak2  
-# fpga-riscv32-minimal_run_msim_rtl_vhdl.do.bak3  
-# fpga-riscv32-minimal_run_msim_rtl_vhdl.do.bak4  
-# fpga-riscv32-minimal_run_msim_rtl_vhdl.do.bak5  
-# fpga-riscv32-minimal_run_msim_rtl_vhdl.do.bak6  
-# fpga-riscv32-minimal_run_msim_rtl_vhdl.do.bak7  
-# fpga-riscv32-minimal_run_msim_rtl_vhdl.do.bak8  
-# modelsim.ini                                    
-# msim_transcript                                 
-# rtl_work                                        
-# tb.vhd                                          
-# vish_stacktrace.vstf                            
-# vsim.wlf                                        
-# wave.do                                         
-# work                                            
-cd ..
+# "vcom -2008 -work work {F:/QuartusProjects/fpga-riscv32-minimal/components/fpga_riscv32_minimal.vhd}"
 # reading F:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini
-ls
-# modelsim                    
-cd ..
-ls
-# .qsys_edit                                      
-# LICENSE                                         
-# README.md                                       
-# c5_pin_model_dump.txt                           
-# components                                      
-# db                                              
-# docs                                            
-# fpga-riscv32-minimal.qpf                        
-# fpga-riscv32-minimal.qsf                        
-# fpga-riscv32-minimal_description.txt            
-# fpga-riscv32-minimal_nativelink_simulation.rpt  
-# idex_register.vhd.bak                           
-# ifid_register.vhd.bak                           
-# incremental_db                                  
-# output_files                                    
-# simulation                                      
-# timing                                          
-project open fpga-riscv32-minimal.qpf
-# Project file F:/QuartusProjects/fpga-riscv32-minimal/fpga-riscv32-minimal.qpf.mpf was not found.
-# Unable to open project.
-project open fpga-riscv32-minimal.mpf
-# Project file F:/QuartusProjects/fpga-riscv32-minimal/fpga-riscv32-minimal.mpf was not found.
-# Unable to open project.
-cd simulation/modelsim/
-# reading modelsim.ini
-project open fpga-riscv32-minimal_modelsim.xrf
-# Project file F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/fpga-riscv32-minimal_modelsim.xrf.mpf was not found.
-# Unable to open project.
-project open fpga-riscv32-minimal.sft
-# Project file F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/fpga-riscv32-minimal.sft.mpf was not found.
-# Unable to open project.
-project open fpga-riscv32-minimal.vho
-# Project file F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/fpga-riscv32-minimal.vho.mpf was not found.
-# Unable to open project.
-project open fpga-riscv32-minimal_run_msim_rtl_vhdl.do
-# Project file F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/fpga-riscv32-minimal_run_msim_rtl_vhdl.do.mpf was not found.
-# Unable to open project.
-*.do fpga-riscv32-minimal_run_msim_rtl_vhdl.do
-# invalid command name "*.do"
-*.do
-# invalid command name "*.do"
-compileall
-# invalid command name "compileall"
-compile all
-# wrong # args: should be "compile w cmd ?arg ...?"
-compile w all
-# couldn't execute "F:\intelFPGA\20.1\modelsim_ase\win32aloem\all": no such file or directory
-compile w 
-# wrong # args: should be "compile w cmd ?arg ...?"
-project compileall
-# A project is not currently open.
-vmap work work
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work work 
-# Modifying modelsim.ini
-vsim work.fpga_riscv32_minimal
-# vsim work.fpga_riscv32_minimal 
-# Start time: 23:34:28 on Nov 23,2020
-# Loading std.standard
-# ** Error: (vsim-13) Recompile work.fpga_riscv32_minimal(structure) because work.fpga_riscv32_minimal has changed.
-# Error loading design
-# End time: 23:34:28 on Nov 23,2020, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vmake work
-# The vmake utility must be run from a Unix shell or a Windows/DOS prompt.
-vmake work work
-# The vmake utility must be run from a Unix shell or a Windows/DOS prompt.
-vmake work
-# The vmake utility must be run from a Unix shell or a Windows/DOS prompt.
-vmake -f datapath.vhd
-# The vmake utility must be run from a Unix shell or a Windows/DOS prompt.
-# Loading project riscv
+# Loading project RISC_Control

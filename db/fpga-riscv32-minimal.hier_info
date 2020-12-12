@@ -1,168 +1,40 @@
 |fpga_riscv32_minimal
-clock => datapath:debug_datapath.clock
-clear => ~NO_FANOUT~
-alu_res[0] => ~NO_FANOUT~
-alu_res[1] => ~NO_FANOUT~
-alu_res[2] => ~NO_FANOUT~
-alu_res[3] => ~NO_FANOUT~
-alu_res[4] => ~NO_FANOUT~
-alu_res[5] => ~NO_FANOUT~
-alu_res[6] => ~NO_FANOUT~
-alu_res[7] => ~NO_FANOUT~
-alu_res[8] => ~NO_FANOUT~
-alu_res[9] => ~NO_FANOUT~
-alu_res[10] => ~NO_FANOUT~
-alu_res[11] => ~NO_FANOUT~
-alu_res[12] => ~NO_FANOUT~
-alu_res[13] => ~NO_FANOUT~
-alu_res[14] => ~NO_FANOUT~
-alu_res[15] => ~NO_FANOUT~
-alu_res[16] => ~NO_FANOUT~
-alu_res[17] => ~NO_FANOUT~
-alu_res[18] => ~NO_FANOUT~
-alu_res[19] => ~NO_FANOUT~
-alu_res[20] => ~NO_FANOUT~
-alu_res[21] => ~NO_FANOUT~
-alu_res[22] => ~NO_FANOUT~
-alu_res[23] => ~NO_FANOUT~
-alu_res[24] => ~NO_FANOUT~
-alu_res[25] => ~NO_FANOUT~
-alu_res[26] => ~NO_FANOUT~
-alu_res[27] => ~NO_FANOUT~
-alu_res[28] => ~NO_FANOUT~
-alu_res[29] => ~NO_FANOUT~
-alu_res[30] => ~NO_FANOUT~
-alu_res[31] => ~NO_FANOUT~
-instruction[0] <= datapath:debug_datapath.instruction[0]
-instruction[1] <= datapath:debug_datapath.instruction[1]
-instruction[2] <= datapath:debug_datapath.instruction[2]
-instruction[3] <= datapath:debug_datapath.instruction[3]
-instruction[4] <= datapath:debug_datapath.instruction[4]
-instruction[5] <= datapath:debug_datapath.instruction[5]
-instruction[6] <= datapath:debug_datapath.instruction[6]
-instruction[7] <= datapath:debug_datapath.instruction[7]
-instruction[8] <= datapath:debug_datapath.instruction[8]
-instruction[9] <= datapath:debug_datapath.instruction[9]
-instruction[10] <= datapath:debug_datapath.instruction[10]
-instruction[11] <= datapath:debug_datapath.instruction[11]
-instruction[12] <= datapath:debug_datapath.instruction[12]
-instruction[13] <= datapath:debug_datapath.instruction[13]
-instruction[14] <= datapath:debug_datapath.instruction[14]
-instruction[15] <= datapath:debug_datapath.instruction[15]
-instruction[16] <= datapath:debug_datapath.instruction[16]
-instruction[17] <= datapath:debug_datapath.instruction[17]
-instruction[18] <= datapath:debug_datapath.instruction[18]
-instruction[19] <= datapath:debug_datapath.instruction[19]
-instruction[20] <= datapath:debug_datapath.instruction[20]
-instruction[21] <= datapath:debug_datapath.instruction[21]
-instruction[22] <= datapath:debug_datapath.instruction[22]
-instruction[23] <= datapath:debug_datapath.instruction[23]
-instruction[24] <= datapath:debug_datapath.instruction[24]
-instruction[25] <= datapath:debug_datapath.instruction[25]
-instruction[26] <= datapath:debug_datapath.instruction[26]
-instruction[27] <= datapath:debug_datapath.instruction[27]
-instruction[28] <= datapath:debug_datapath.instruction[28]
-instruction[29] <= datapath:debug_datapath.instruction[29]
-instruction[30] <= datapath:debug_datapath.instruction[30]
-instruction[31] <= datapath:debug_datapath.instruction[31]
-reset => datapath:debug_datapath.reset
-rs1_reg_idx[0] => datapath:debug_datapath.rs1_reg_idx[0]
-rs1_reg_idx[1] => datapath:debug_datapath.rs1_reg_idx[1]
-rs1_reg_idx[2] => datapath:debug_datapath.rs1_reg_idx[2]
-rs1_reg_idx[3] => datapath:debug_datapath.rs1_reg_idx[3]
-rs1_reg_idx[4] => datapath:debug_datapath.rs1_reg_idx[4]
-rs2_reg_idx[0] => datapath:debug_datapath.rs2_reg_idx[0]
-rs2_reg_idx[1] => datapath:debug_datapath.rs2_reg_idx[1]
-rs2_reg_idx[2] => datapath:debug_datapath.rs2_reg_idx[2]
-rs2_reg_idx[3] => datapath:debug_datapath.rs2_reg_idx[3]
-rs2_reg_idx[4] => datapath:debug_datapath.rs2_reg_idx[4]
-wr_data => datapath:debug_datapath.wr_data
-wr_reg_idx[0] => datapath:debug_datapath.wr_reg_idx[0]
-wr_reg_idx[1] => datapath:debug_datapath.wr_reg_idx[1]
-wr_reg_idx[2] => datapath:debug_datapath.wr_reg_idx[2]
-wr_reg_idx[3] => datapath:debug_datapath.wr_reg_idx[3]
-wr_reg_idx[4] => datapath:debug_datapath.wr_reg_idx[4]
-immediate[0] => datapath:debug_datapath.immediate[0]
-immediate[1] => datapath:debug_datapath.immediate[1]
-immediate[2] => datapath:debug_datapath.immediate[2]
-immediate[3] => datapath:debug_datapath.immediate[3]
-immediate[4] => datapath:debug_datapath.immediate[4]
-immediate[5] => datapath:debug_datapath.immediate[5]
-immediate[6] => datapath:debug_datapath.immediate[6]
-immediate[7] => datapath:debug_datapath.immediate[7]
-immediate[8] => datapath:debug_datapath.immediate[8]
-immediate[9] => datapath:debug_datapath.immediate[9]
-immediate[10] => datapath:debug_datapath.immediate[10]
-immediate[11] => datapath:debug_datapath.immediate[11]
-immediate[12] => datapath:debug_datapath.immediate[12]
-immediate[13] => datapath:debug_datapath.immediate[13]
-immediate[14] => datapath:debug_datapath.immediate[14]
-immediate[15] => datapath:debug_datapath.immediate[15]
-immediate[16] => datapath:debug_datapath.immediate[16]
-immediate[17] => datapath:debug_datapath.immediate[17]
-immediate[18] => datapath:debug_datapath.immediate[18]
-immediate[19] => datapath:debug_datapath.immediate[19]
-immediate[20] => datapath:debug_datapath.immediate[20]
-immediate[21] => datapath:debug_datapath.immediate[21]
-immediate[22] => datapath:debug_datapath.immediate[22]
-immediate[23] => datapath:debug_datapath.immediate[23]
-immediate[24] => datapath:debug_datapath.immediate[24]
-immediate[25] => datapath:debug_datapath.immediate[25]
-immediate[26] => datapath:debug_datapath.immediate[26]
-immediate[27] => datapath:debug_datapath.immediate[27]
-immediate[28] => datapath:debug_datapath.immediate[28]
-immediate[29] => datapath:debug_datapath.immediate[29]
-immediate[30] => datapath:debug_datapath.immediate[30]
-immediate[31] => datapath:debug_datapath.immediate[31]
-alu_operation[0] => datapath:debug_datapath.alu_operation[0]
-alu_operation[1] => datapath:debug_datapath.alu_operation[1]
-alu_operation[2] => datapath:debug_datapath.alu_operation[2]
-alu_operation[3] => datapath:debug_datapath.alu_operation[3]
-alu_branch => datapath:debug_datapath.alu_branch
-alu_branch_control[0] => datapath:debug_datapath.alu_branch_control[0]
-alu_branch_control[1] => datapath:debug_datapath.alu_branch_control[1]
-alu_branch_control[2] => datapath:debug_datapath.alu_branch_control[2]
-JTU_mux_sel => datapath:debug_datapath.JTU_mux_sel
-data_format[0] => datapath:debug_datapath.data_format[0]
-data_format[1] => datapath:debug_datapath.data_format[1]
-data_format[2] => datapath:debug_datapath.data_format[2]
-datamem_write => datapath:debug_datapath.datamem_write
-jump_flag => datapath:debug_datapath.jump_flag
-mux0_sel[0] => datapath:debug_datapath.mux0_sel[0]
-mux0_sel[1] => datapath:debug_datapath.mux0_sel[1]
-mux1_sel => datapath:debug_datapath.mux1_sel
-debug_instruction_address[0] <= datapath:debug_datapath.debug_instruction_address[0]
-debug_instruction_address[1] <= datapath:debug_datapath.debug_instruction_address[1]
-debug_instruction_address[2] <= datapath:debug_datapath.debug_instruction_address[2]
-debug_instruction_address[3] <= datapath:debug_datapath.debug_instruction_address[3]
-debug_instruction_address[4] <= datapath:debug_datapath.debug_instruction_address[4]
-debug_instruction_address[5] <= datapath:debug_datapath.debug_instruction_address[5]
-debug_instruction_address[6] <= datapath:debug_datapath.debug_instruction_address[6]
-debug_instruction_address[7] <= datapath:debug_datapath.debug_instruction_address[7]
-debug_instruction_address[8] <= datapath:debug_datapath.debug_instruction_address[8]
-debug_instruction_address[9] <= datapath:debug_datapath.debug_instruction_address[9]
-debug_instruction_address[10] <= datapath:debug_datapath.debug_instruction_address[10]
-debug_instruction_address[11] <= datapath:debug_datapath.debug_instruction_address[11]
-debug_instruction_address[12] <= datapath:debug_datapath.debug_instruction_address[12]
-debug_instruction_address[13] <= datapath:debug_datapath.debug_instruction_address[13]
-debug_instruction_address[14] <= datapath:debug_datapath.debug_instruction_address[14]
-debug_instruction_address[15] <= datapath:debug_datapath.debug_instruction_address[15]
-debug_instruction_address[16] <= datapath:debug_datapath.debug_instruction_address[16]
-debug_instruction_address[17] <= datapath:debug_datapath.debug_instruction_address[17]
-debug_instruction_address[18] <= datapath:debug_datapath.debug_instruction_address[18]
-debug_instruction_address[19] <= datapath:debug_datapath.debug_instruction_address[19]
-debug_instruction_address[20] <= datapath:debug_datapath.debug_instruction_address[20]
-debug_instruction_address[21] <= datapath:debug_datapath.debug_instruction_address[21]
-debug_instruction_address[22] <= datapath:debug_datapath.debug_instruction_address[22]
-debug_instruction_address[23] <= datapath:debug_datapath.debug_instruction_address[23]
-debug_instruction_address[24] <= datapath:debug_datapath.debug_instruction_address[24]
-debug_instruction_address[25] <= datapath:debug_datapath.debug_instruction_address[25]
-debug_instruction_address[26] <= datapath:debug_datapath.debug_instruction_address[26]
-debug_instruction_address[27] <= datapath:debug_datapath.debug_instruction_address[27]
-debug_instruction_address[28] <= datapath:debug_datapath.debug_instruction_address[28]
-debug_instruction_address[29] <= datapath:debug_datapath.debug_instruction_address[29]
-debug_instruction_address[30] <= datapath:debug_datapath.debug_instruction_address[30]
-debug_instruction_address[31] <= datapath:debug_datapath.debug_instruction_address[31]
+clock => controller:controller_0.clock
+clock => datapath:datapath_0.clock
+reset => controller:controller_0.reset
+reset => datapath:datapath_0.reset
+debug_pc_output[0] <= debug_pc_output[0].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[1] <= debug_pc_output[1].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[2] <= debug_pc_output[2].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[3] <= debug_pc_output[3].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[4] <= debug_pc_output[4].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[5] <= debug_pc_output[5].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[6] <= debug_pc_output[6].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[7] <= debug_pc_output[7].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[8] <= debug_pc_output[8].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[9] <= debug_pc_output[9].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[10] <= debug_pc_output[10].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[11] <= debug_pc_output[11].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[12] <= debug_pc_output[12].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[13] <= debug_pc_output[13].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[14] <= debug_pc_output[14].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[15] <= debug_pc_output[15].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[16] <= debug_pc_output[16].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[17] <= debug_pc_output[17].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[18] <= debug_pc_output[18].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[19] <= debug_pc_output[19].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[20] <= debug_pc_output[20].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[21] <= debug_pc_output[21].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[22] <= debug_pc_output[22].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[23] <= debug_pc_output[23].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[24] <= debug_pc_output[24].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[25] <= debug_pc_output[25].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[26] <= debug_pc_output[26].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[27] <= debug_pc_output[27].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[28] <= debug_pc_output[28].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[29] <= debug_pc_output[29].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[30] <= debug_pc_output[30].DB_MAX_OUTPUT_PORT_TYPE
+debug_pc_output[31] <= debug_pc_output[31].DB_MAX_OUTPUT_PORT_TYPE
 debug_regfile_x31_output[0] <= debug_regfile_x31_output[0].DB_MAX_OUTPUT_PORT_TYPE
 debug_regfile_x31_output[1] <= debug_regfile_x31_output[1].DB_MAX_OUTPUT_PORT_TYPE
 debug_regfile_x31_output[2] <= debug_regfile_x31_output[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -227,7 +99,7 @@ debug_regfile_x1_output[28] <= debug_regfile_x1_output[28].DB_MAX_OUTPUT_PORT_TY
 debug_regfile_x1_output[29] <= debug_regfile_x1_output[29].DB_MAX_OUTPUT_PORT_TYPE
 debug_regfile_x1_output[30] <= debug_regfile_x1_output[30].DB_MAX_OUTPUT_PORT_TYPE
 debug_regfile_x1_output[31] <= debug_regfile_x1_output[31].DB_MAX_OUTPUT_PORT_TYPE
-debug_regfile_x2_output[0] <= debug_regfile_x2_output[0].DB_MAX_OUTPUT_PORT_TYPE
+debug_regfile_x2_output[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
 debug_regfile_x2_output[1] <= debug_regfile_x2_output[1].DB_MAX_OUTPUT_PORT_TYPE
 debug_regfile_x2_output[2] <= debug_regfile_x2_output[2].DB_MAX_OUTPUT_PORT_TYPE
 debug_regfile_x2_output[3] <= debug_regfile_x2_output[3].DB_MAX_OUTPUT_PORT_TYPE
@@ -259,353 +131,687 @@ debug_regfile_x2_output[28] <= debug_regfile_x2_output[28].DB_MAX_OUTPUT_PORT_TY
 debug_regfile_x2_output[29] <= debug_regfile_x2_output[29].DB_MAX_OUTPUT_PORT_TYPE
 debug_regfile_x2_output[30] <= debug_regfile_x2_output[30].DB_MAX_OUTPUT_PORT_TYPE
 debug_regfile_x2_output[31] <= debug_regfile_x2_output[31].DB_MAX_OUTPUT_PORT_TYPE
-debug_alu_output[0] <= datapath:debug_datapath.debug_alu_output[0]
-debug_alu_output[1] <= datapath:debug_datapath.debug_alu_output[1]
-debug_alu_output[2] <= datapath:debug_datapath.debug_alu_output[2]
-debug_alu_output[3] <= datapath:debug_datapath.debug_alu_output[3]
-debug_alu_output[4] <= datapath:debug_datapath.debug_alu_output[4]
-debug_alu_output[5] <= datapath:debug_datapath.debug_alu_output[5]
-debug_alu_output[6] <= datapath:debug_datapath.debug_alu_output[6]
-debug_alu_output[7] <= datapath:debug_datapath.debug_alu_output[7]
-debug_alu_output[8] <= datapath:debug_datapath.debug_alu_output[8]
-debug_alu_output[9] <= datapath:debug_datapath.debug_alu_output[9]
-debug_alu_output[10] <= datapath:debug_datapath.debug_alu_output[10]
-debug_alu_output[11] <= datapath:debug_datapath.debug_alu_output[11]
-debug_alu_output[12] <= datapath:debug_datapath.debug_alu_output[12]
-debug_alu_output[13] <= datapath:debug_datapath.debug_alu_output[13]
-debug_alu_output[14] <= datapath:debug_datapath.debug_alu_output[14]
-debug_alu_output[15] <= datapath:debug_datapath.debug_alu_output[15]
-debug_alu_output[16] <= datapath:debug_datapath.debug_alu_output[16]
-debug_alu_output[17] <= datapath:debug_datapath.debug_alu_output[17]
-debug_alu_output[18] <= datapath:debug_datapath.debug_alu_output[18]
-debug_alu_output[19] <= datapath:debug_datapath.debug_alu_output[19]
-debug_alu_output[20] <= datapath:debug_datapath.debug_alu_output[20]
-debug_alu_output[21] <= datapath:debug_datapath.debug_alu_output[21]
-debug_alu_output[22] <= datapath:debug_datapath.debug_alu_output[22]
-debug_alu_output[23] <= datapath:debug_datapath.debug_alu_output[23]
-debug_alu_output[24] <= datapath:debug_datapath.debug_alu_output[24]
-debug_alu_output[25] <= datapath:debug_datapath.debug_alu_output[25]
-debug_alu_output[26] <= datapath:debug_datapath.debug_alu_output[26]
-debug_alu_output[27] <= datapath:debug_datapath.debug_alu_output[27]
-debug_alu_output[28] <= datapath:debug_datapath.debug_alu_output[28]
-debug_alu_output[29] <= datapath:debug_datapath.debug_alu_output[29]
-debug_alu_output[30] <= datapath:debug_datapath.debug_alu_output[30]
-debug_alu_output[31] <= datapath:debug_datapath.debug_alu_output[31]
-debug_alu_input_0[0] <= datapath:debug_datapath.debug_alu_input_0[0]
-debug_alu_input_0[1] <= datapath:debug_datapath.debug_alu_input_0[1]
-debug_alu_input_0[2] <= datapath:debug_datapath.debug_alu_input_0[2]
-debug_alu_input_0[3] <= datapath:debug_datapath.debug_alu_input_0[3]
-debug_alu_input_0[4] <= datapath:debug_datapath.debug_alu_input_0[4]
-debug_alu_input_0[5] <= datapath:debug_datapath.debug_alu_input_0[5]
-debug_alu_input_0[6] <= datapath:debug_datapath.debug_alu_input_0[6]
-debug_alu_input_0[7] <= datapath:debug_datapath.debug_alu_input_0[7]
-debug_alu_input_0[8] <= datapath:debug_datapath.debug_alu_input_0[8]
-debug_alu_input_0[9] <= datapath:debug_datapath.debug_alu_input_0[9]
-debug_alu_input_0[10] <= datapath:debug_datapath.debug_alu_input_0[10]
-debug_alu_input_0[11] <= datapath:debug_datapath.debug_alu_input_0[11]
-debug_alu_input_0[12] <= datapath:debug_datapath.debug_alu_input_0[12]
-debug_alu_input_0[13] <= datapath:debug_datapath.debug_alu_input_0[13]
-debug_alu_input_0[14] <= datapath:debug_datapath.debug_alu_input_0[14]
-debug_alu_input_0[15] <= datapath:debug_datapath.debug_alu_input_0[15]
-debug_alu_input_0[16] <= datapath:debug_datapath.debug_alu_input_0[16]
-debug_alu_input_0[17] <= datapath:debug_datapath.debug_alu_input_0[17]
-debug_alu_input_0[18] <= datapath:debug_datapath.debug_alu_input_0[18]
-debug_alu_input_0[19] <= datapath:debug_datapath.debug_alu_input_0[19]
-debug_alu_input_0[20] <= datapath:debug_datapath.debug_alu_input_0[20]
-debug_alu_input_0[21] <= datapath:debug_datapath.debug_alu_input_0[21]
-debug_alu_input_0[22] <= datapath:debug_datapath.debug_alu_input_0[22]
-debug_alu_input_0[23] <= datapath:debug_datapath.debug_alu_input_0[23]
-debug_alu_input_0[24] <= datapath:debug_datapath.debug_alu_input_0[24]
-debug_alu_input_0[25] <= datapath:debug_datapath.debug_alu_input_0[25]
-debug_alu_input_0[26] <= datapath:debug_datapath.debug_alu_input_0[26]
-debug_alu_input_0[27] <= datapath:debug_datapath.debug_alu_input_0[27]
-debug_alu_input_0[28] <= datapath:debug_datapath.debug_alu_input_0[28]
-debug_alu_input_0[29] <= datapath:debug_datapath.debug_alu_input_0[29]
-debug_alu_input_0[30] <= datapath:debug_datapath.debug_alu_input_0[30]
-debug_alu_input_0[31] <= datapath:debug_datapath.debug_alu_input_0[31]
-debug_alu_input_1[0] <= datapath:debug_datapath.debug_alu_input_1[0]
-debug_alu_input_1[1] <= datapath:debug_datapath.debug_alu_input_1[1]
-debug_alu_input_1[2] <= datapath:debug_datapath.debug_alu_input_1[2]
-debug_alu_input_1[3] <= datapath:debug_datapath.debug_alu_input_1[3]
-debug_alu_input_1[4] <= datapath:debug_datapath.debug_alu_input_1[4]
-debug_alu_input_1[5] <= datapath:debug_datapath.debug_alu_input_1[5]
-debug_alu_input_1[6] <= datapath:debug_datapath.debug_alu_input_1[6]
-debug_alu_input_1[7] <= datapath:debug_datapath.debug_alu_input_1[7]
-debug_alu_input_1[8] <= datapath:debug_datapath.debug_alu_input_1[8]
-debug_alu_input_1[9] <= datapath:debug_datapath.debug_alu_input_1[9]
-debug_alu_input_1[10] <= datapath:debug_datapath.debug_alu_input_1[10]
-debug_alu_input_1[11] <= datapath:debug_datapath.debug_alu_input_1[11]
-debug_alu_input_1[12] <= datapath:debug_datapath.debug_alu_input_1[12]
-debug_alu_input_1[13] <= datapath:debug_datapath.debug_alu_input_1[13]
-debug_alu_input_1[14] <= datapath:debug_datapath.debug_alu_input_1[14]
-debug_alu_input_1[15] <= datapath:debug_datapath.debug_alu_input_1[15]
-debug_alu_input_1[16] <= datapath:debug_datapath.debug_alu_input_1[16]
-debug_alu_input_1[17] <= datapath:debug_datapath.debug_alu_input_1[17]
-debug_alu_input_1[18] <= datapath:debug_datapath.debug_alu_input_1[18]
-debug_alu_input_1[19] <= datapath:debug_datapath.debug_alu_input_1[19]
-debug_alu_input_1[20] <= datapath:debug_datapath.debug_alu_input_1[20]
-debug_alu_input_1[21] <= datapath:debug_datapath.debug_alu_input_1[21]
-debug_alu_input_1[22] <= datapath:debug_datapath.debug_alu_input_1[22]
-debug_alu_input_1[23] <= datapath:debug_datapath.debug_alu_input_1[23]
-debug_alu_input_1[24] <= datapath:debug_datapath.debug_alu_input_1[24]
-debug_alu_input_1[25] <= datapath:debug_datapath.debug_alu_input_1[25]
-debug_alu_input_1[26] <= datapath:debug_datapath.debug_alu_input_1[26]
-debug_alu_input_1[27] <= datapath:debug_datapath.debug_alu_input_1[27]
-debug_alu_input_1[28] <= datapath:debug_datapath.debug_alu_input_1[28]
-debug_alu_input_1[29] <= datapath:debug_datapath.debug_alu_input_1[29]
-debug_alu_input_1[30] <= datapath:debug_datapath.debug_alu_input_1[30]
-debug_alu_input_1[31] <= datapath:debug_datapath.debug_alu_input_1[31]
-debug_forward_mux_0[0] <= datapath:debug_datapath.debug_forward_mux_0[0]
-debug_forward_mux_0[1] <= datapath:debug_datapath.debug_forward_mux_0[1]
-debug_forward_mux_0[2] <= datapath:debug_datapath.debug_forward_mux_0[2]
-debug_forward_mux_1[0] <= datapath:debug_datapath.debug_forward_mux_1[0]
-debug_forward_mux_1[1] <= datapath:debug_datapath.debug_forward_mux_1[1]
-debug_forward_mux_1[2] <= datapath:debug_datapath.debug_forward_mux_1[2]
-debug_rs1_reg_idx_ID_EXE[0] <= datapath:debug_datapath.debug_rs1_reg_idx_ID_EXE[0]
-debug_rs1_reg_idx_ID_EXE[1] <= datapath:debug_datapath.debug_rs1_reg_idx_ID_EXE[1]
-debug_rs1_reg_idx_ID_EXE[2] <= datapath:debug_datapath.debug_rs1_reg_idx_ID_EXE[2]
-debug_rs1_reg_idx_ID_EXE[3] <= datapath:debug_datapath.debug_rs1_reg_idx_ID_EXE[3]
-debug_rs1_reg_idx_ID_EXE[4] <= datapath:debug_datapath.debug_rs1_reg_idx_ID_EXE[4]
-debug_wr_reg_idx_EX_MEM[0] <= datapath:debug_datapath.debug_wr_reg_idx_EX_MEM[0]
-debug_wr_reg_idx_EX_MEM[1] <= datapath:debug_datapath.debug_wr_reg_idx_EX_MEM[1]
-debug_wr_reg_idx_EX_MEM[2] <= datapath:debug_datapath.debug_wr_reg_idx_EX_MEM[2]
-debug_wr_reg_idx_EX_MEM[3] <= datapath:debug_datapath.debug_wr_reg_idx_EX_MEM[3]
-debug_wr_reg_idx_EX_MEM[4] <= datapath:debug_datapath.debug_wr_reg_idx_EX_MEM[4]
-debug_mux0_sel_MEM_WB[0] <= datapath:debug_datapath.debug_mux0_sel_MEM_WB[0]
-debug_mux0_sel_MEM_WB[1] <= datapath:debug_datapath.debug_mux0_sel_MEM_WB[1]
-debug_wr_data_MEM_WB <= datapath:debug_datapath.debug_wr_data_MEM_WB
-debug_wr_reg_idx_MEM_WB[0] <= datapath:debug_datapath.debug_wr_reg_idx_MEM_WB[0]
-debug_wr_reg_idx_MEM_WB[1] <= datapath:debug_datapath.debug_wr_reg_idx_MEM_WB[1]
-debug_wr_reg_idx_MEM_WB[2] <= datapath:debug_datapath.debug_wr_reg_idx_MEM_WB[2]
-debug_wr_reg_idx_MEM_WB[3] <= datapath:debug_datapath.debug_wr_reg_idx_MEM_WB[3]
-debug_wr_reg_idx_MEM_WB[4] <= datapath:debug_datapath.debug_wr_reg_idx_MEM_WB[4]
-debug_alu_output_MEM_WB[0] <= datapath:debug_datapath.debug_alu_output_MEM_WB[0]
-debug_alu_output_MEM_WB[1] <= datapath:debug_datapath.debug_alu_output_MEM_WB[1]
-debug_alu_output_MEM_WB[2] <= datapath:debug_datapath.debug_alu_output_MEM_WB[2]
-debug_alu_output_MEM_WB[3] <= datapath:debug_datapath.debug_alu_output_MEM_WB[3]
-debug_alu_output_MEM_WB[4] <= datapath:debug_datapath.debug_alu_output_MEM_WB[4]
-debug_alu_output_MEM_WB[5] <= datapath:debug_datapath.debug_alu_output_MEM_WB[5]
-debug_alu_output_MEM_WB[6] <= datapath:debug_datapath.debug_alu_output_MEM_WB[6]
-debug_alu_output_MEM_WB[7] <= datapath:debug_datapath.debug_alu_output_MEM_WB[7]
-debug_alu_output_MEM_WB[8] <= datapath:debug_datapath.debug_alu_output_MEM_WB[8]
-debug_alu_output_MEM_WB[9] <= datapath:debug_datapath.debug_alu_output_MEM_WB[9]
-debug_alu_output_MEM_WB[10] <= datapath:debug_datapath.debug_alu_output_MEM_WB[10]
-debug_alu_output_MEM_WB[11] <= datapath:debug_datapath.debug_alu_output_MEM_WB[11]
-debug_alu_output_MEM_WB[12] <= datapath:debug_datapath.debug_alu_output_MEM_WB[12]
-debug_alu_output_MEM_WB[13] <= datapath:debug_datapath.debug_alu_output_MEM_WB[13]
-debug_alu_output_MEM_WB[14] <= datapath:debug_datapath.debug_alu_output_MEM_WB[14]
-debug_alu_output_MEM_WB[15] <= datapath:debug_datapath.debug_alu_output_MEM_WB[15]
-debug_alu_output_MEM_WB[16] <= datapath:debug_datapath.debug_alu_output_MEM_WB[16]
-debug_alu_output_MEM_WB[17] <= datapath:debug_datapath.debug_alu_output_MEM_WB[17]
-debug_alu_output_MEM_WB[18] <= datapath:debug_datapath.debug_alu_output_MEM_WB[18]
-debug_alu_output_MEM_WB[19] <= datapath:debug_datapath.debug_alu_output_MEM_WB[19]
-debug_alu_output_MEM_WB[20] <= datapath:debug_datapath.debug_alu_output_MEM_WB[20]
-debug_alu_output_MEM_WB[21] <= datapath:debug_datapath.debug_alu_output_MEM_WB[21]
-debug_alu_output_MEM_WB[22] <= datapath:debug_datapath.debug_alu_output_MEM_WB[22]
-debug_alu_output_MEM_WB[23] <= datapath:debug_datapath.debug_alu_output_MEM_WB[23]
-debug_alu_output_MEM_WB[24] <= datapath:debug_datapath.debug_alu_output_MEM_WB[24]
-debug_alu_output_MEM_WB[25] <= datapath:debug_datapath.debug_alu_output_MEM_WB[25]
-debug_alu_output_MEM_WB[26] <= datapath:debug_datapath.debug_alu_output_MEM_WB[26]
-debug_alu_output_MEM_WB[27] <= datapath:debug_datapath.debug_alu_output_MEM_WB[27]
-debug_alu_output_MEM_WB[28] <= datapath:debug_datapath.debug_alu_output_MEM_WB[28]
-debug_alu_output_MEM_WB[29] <= datapath:debug_datapath.debug_alu_output_MEM_WB[29]
-debug_alu_output_MEM_WB[30] <= datapath:debug_datapath.debug_alu_output_MEM_WB[30]
-debug_alu_output_MEM_WB[31] <= datapath:debug_datapath.debug_alu_output_MEM_WB[31]
-debug_alu_output_EX_MEM[0] <= datapath:debug_datapath.debug_alu_output_EX_MEM[0]
-debug_alu_output_EX_MEM[1] <= datapath:debug_datapath.debug_alu_output_EX_MEM[1]
-debug_alu_output_EX_MEM[2] <= datapath:debug_datapath.debug_alu_output_EX_MEM[2]
-debug_alu_output_EX_MEM[3] <= datapath:debug_datapath.debug_alu_output_EX_MEM[3]
-debug_alu_output_EX_MEM[4] <= datapath:debug_datapath.debug_alu_output_EX_MEM[4]
-debug_alu_output_EX_MEM[5] <= datapath:debug_datapath.debug_alu_output_EX_MEM[5]
-debug_alu_output_EX_MEM[6] <= datapath:debug_datapath.debug_alu_output_EX_MEM[6]
-debug_alu_output_EX_MEM[7] <= datapath:debug_datapath.debug_alu_output_EX_MEM[7]
-debug_alu_output_EX_MEM[8] <= datapath:debug_datapath.debug_alu_output_EX_MEM[8]
-debug_alu_output_EX_MEM[9] <= datapath:debug_datapath.debug_alu_output_EX_MEM[9]
-debug_alu_output_EX_MEM[10] <= datapath:debug_datapath.debug_alu_output_EX_MEM[10]
-debug_alu_output_EX_MEM[11] <= datapath:debug_datapath.debug_alu_output_EX_MEM[11]
-debug_alu_output_EX_MEM[12] <= datapath:debug_datapath.debug_alu_output_EX_MEM[12]
-debug_alu_output_EX_MEM[13] <= datapath:debug_datapath.debug_alu_output_EX_MEM[13]
-debug_alu_output_EX_MEM[14] <= datapath:debug_datapath.debug_alu_output_EX_MEM[14]
-debug_alu_output_EX_MEM[15] <= datapath:debug_datapath.debug_alu_output_EX_MEM[15]
-debug_alu_output_EX_MEM[16] <= datapath:debug_datapath.debug_alu_output_EX_MEM[16]
-debug_alu_output_EX_MEM[17] <= datapath:debug_datapath.debug_alu_output_EX_MEM[17]
-debug_alu_output_EX_MEM[18] <= datapath:debug_datapath.debug_alu_output_EX_MEM[18]
-debug_alu_output_EX_MEM[19] <= datapath:debug_datapath.debug_alu_output_EX_MEM[19]
-debug_alu_output_EX_MEM[20] <= datapath:debug_datapath.debug_alu_output_EX_MEM[20]
-debug_alu_output_EX_MEM[21] <= datapath:debug_datapath.debug_alu_output_EX_MEM[21]
-debug_alu_output_EX_MEM[22] <= datapath:debug_datapath.debug_alu_output_EX_MEM[22]
-debug_alu_output_EX_MEM[23] <= datapath:debug_datapath.debug_alu_output_EX_MEM[23]
-debug_alu_output_EX_MEM[24] <= datapath:debug_datapath.debug_alu_output_EX_MEM[24]
-debug_alu_output_EX_MEM[25] <= datapath:debug_datapath.debug_alu_output_EX_MEM[25]
-debug_alu_output_EX_MEM[26] <= datapath:debug_datapath.debug_alu_output_EX_MEM[26]
-debug_alu_output_EX_MEM[27] <= datapath:debug_datapath.debug_alu_output_EX_MEM[27]
-debug_alu_output_EX_MEM[28] <= datapath:debug_datapath.debug_alu_output_EX_MEM[28]
-debug_alu_output_EX_MEM[29] <= datapath:debug_datapath.debug_alu_output_EX_MEM[29]
-debug_alu_output_EX_MEM[30] <= datapath:debug_datapath.debug_alu_output_EX_MEM[30]
-debug_alu_output_EX_MEM[31] <= datapath:debug_datapath.debug_alu_output_EX_MEM[31]
-debug_register_bank_output_0[0] <= datapath:debug_datapath.debug_register_bank_output_0[0]
-debug_register_bank_output_0[1] <= datapath:debug_datapath.debug_register_bank_output_0[1]
-debug_register_bank_output_0[2] <= datapath:debug_datapath.debug_register_bank_output_0[2]
-debug_register_bank_output_0[3] <= datapath:debug_datapath.debug_register_bank_output_0[3]
-debug_register_bank_output_0[4] <= datapath:debug_datapath.debug_register_bank_output_0[4]
-debug_register_bank_output_0[5] <= datapath:debug_datapath.debug_register_bank_output_0[5]
-debug_register_bank_output_0[6] <= datapath:debug_datapath.debug_register_bank_output_0[6]
-debug_register_bank_output_0[7] <= datapath:debug_datapath.debug_register_bank_output_0[7]
-debug_register_bank_output_0[8] <= datapath:debug_datapath.debug_register_bank_output_0[8]
-debug_register_bank_output_0[9] <= datapath:debug_datapath.debug_register_bank_output_0[9]
-debug_register_bank_output_0[10] <= datapath:debug_datapath.debug_register_bank_output_0[10]
-debug_register_bank_output_0[11] <= datapath:debug_datapath.debug_register_bank_output_0[11]
-debug_register_bank_output_0[12] <= datapath:debug_datapath.debug_register_bank_output_0[12]
-debug_register_bank_output_0[13] <= datapath:debug_datapath.debug_register_bank_output_0[13]
-debug_register_bank_output_0[14] <= datapath:debug_datapath.debug_register_bank_output_0[14]
-debug_register_bank_output_0[15] <= datapath:debug_datapath.debug_register_bank_output_0[15]
-debug_register_bank_output_0[16] <= datapath:debug_datapath.debug_register_bank_output_0[16]
-debug_register_bank_output_0[17] <= datapath:debug_datapath.debug_register_bank_output_0[17]
-debug_register_bank_output_0[18] <= datapath:debug_datapath.debug_register_bank_output_0[18]
-debug_register_bank_output_0[19] <= datapath:debug_datapath.debug_register_bank_output_0[19]
-debug_register_bank_output_0[20] <= datapath:debug_datapath.debug_register_bank_output_0[20]
-debug_register_bank_output_0[21] <= datapath:debug_datapath.debug_register_bank_output_0[21]
-debug_register_bank_output_0[22] <= datapath:debug_datapath.debug_register_bank_output_0[22]
-debug_register_bank_output_0[23] <= datapath:debug_datapath.debug_register_bank_output_0[23]
-debug_register_bank_output_0[24] <= datapath:debug_datapath.debug_register_bank_output_0[24]
-debug_register_bank_output_0[25] <= datapath:debug_datapath.debug_register_bank_output_0[25]
-debug_register_bank_output_0[26] <= datapath:debug_datapath.debug_register_bank_output_0[26]
-debug_register_bank_output_0[27] <= datapath:debug_datapath.debug_register_bank_output_0[27]
-debug_register_bank_output_0[28] <= datapath:debug_datapath.debug_register_bank_output_0[28]
-debug_register_bank_output_0[29] <= datapath:debug_datapath.debug_register_bank_output_0[29]
-debug_register_bank_output_0[30] <= datapath:debug_datapath.debug_register_bank_output_0[30]
-debug_register_bank_output_0[31] <= datapath:debug_datapath.debug_register_bank_output_0[31]
-debug_register_bank_output_1[0] <= datapath:debug_datapath.debug_register_bank_output_1[0]
-debug_register_bank_output_1[1] <= datapath:debug_datapath.debug_register_bank_output_1[1]
-debug_register_bank_output_1[2] <= datapath:debug_datapath.debug_register_bank_output_1[2]
-debug_register_bank_output_1[3] <= datapath:debug_datapath.debug_register_bank_output_1[3]
-debug_register_bank_output_1[4] <= datapath:debug_datapath.debug_register_bank_output_1[4]
-debug_register_bank_output_1[5] <= datapath:debug_datapath.debug_register_bank_output_1[5]
-debug_register_bank_output_1[6] <= datapath:debug_datapath.debug_register_bank_output_1[6]
-debug_register_bank_output_1[7] <= datapath:debug_datapath.debug_register_bank_output_1[7]
-debug_register_bank_output_1[8] <= datapath:debug_datapath.debug_register_bank_output_1[8]
-debug_register_bank_output_1[9] <= datapath:debug_datapath.debug_register_bank_output_1[9]
-debug_register_bank_output_1[10] <= datapath:debug_datapath.debug_register_bank_output_1[10]
-debug_register_bank_output_1[11] <= datapath:debug_datapath.debug_register_bank_output_1[11]
-debug_register_bank_output_1[12] <= datapath:debug_datapath.debug_register_bank_output_1[12]
-debug_register_bank_output_1[13] <= datapath:debug_datapath.debug_register_bank_output_1[13]
-debug_register_bank_output_1[14] <= datapath:debug_datapath.debug_register_bank_output_1[14]
-debug_register_bank_output_1[15] <= datapath:debug_datapath.debug_register_bank_output_1[15]
-debug_register_bank_output_1[16] <= datapath:debug_datapath.debug_register_bank_output_1[16]
-debug_register_bank_output_1[17] <= datapath:debug_datapath.debug_register_bank_output_1[17]
-debug_register_bank_output_1[18] <= datapath:debug_datapath.debug_register_bank_output_1[18]
-debug_register_bank_output_1[19] <= datapath:debug_datapath.debug_register_bank_output_1[19]
-debug_register_bank_output_1[20] <= datapath:debug_datapath.debug_register_bank_output_1[20]
-debug_register_bank_output_1[21] <= datapath:debug_datapath.debug_register_bank_output_1[21]
-debug_register_bank_output_1[22] <= datapath:debug_datapath.debug_register_bank_output_1[22]
-debug_register_bank_output_1[23] <= datapath:debug_datapath.debug_register_bank_output_1[23]
-debug_register_bank_output_1[24] <= datapath:debug_datapath.debug_register_bank_output_1[24]
-debug_register_bank_output_1[25] <= datapath:debug_datapath.debug_register_bank_output_1[25]
-debug_register_bank_output_1[26] <= datapath:debug_datapath.debug_register_bank_output_1[26]
-debug_register_bank_output_1[27] <= datapath:debug_datapath.debug_register_bank_output_1[27]
-debug_register_bank_output_1[28] <= datapath:debug_datapath.debug_register_bank_output_1[28]
-debug_register_bank_output_1[29] <= datapath:debug_datapath.debug_register_bank_output_1[29]
-debug_register_bank_output_1[30] <= datapath:debug_datapath.debug_register_bank_output_1[30]
-debug_register_bank_output_1[31] <= datapath:debug_datapath.debug_register_bank_output_1[31]
-debug_register_bank_output_0_ID_EX[0] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[0]
-debug_register_bank_output_0_ID_EX[1] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[1]
-debug_register_bank_output_0_ID_EX[2] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[2]
-debug_register_bank_output_0_ID_EX[3] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[3]
-debug_register_bank_output_0_ID_EX[4] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[4]
-debug_register_bank_output_0_ID_EX[5] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[5]
-debug_register_bank_output_0_ID_EX[6] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[6]
-debug_register_bank_output_0_ID_EX[7] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[7]
-debug_register_bank_output_0_ID_EX[8] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[8]
-debug_register_bank_output_0_ID_EX[9] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[9]
-debug_register_bank_output_0_ID_EX[10] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[10]
-debug_register_bank_output_0_ID_EX[11] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[11]
-debug_register_bank_output_0_ID_EX[12] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[12]
-debug_register_bank_output_0_ID_EX[13] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[13]
-debug_register_bank_output_0_ID_EX[14] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[14]
-debug_register_bank_output_0_ID_EX[15] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[15]
-debug_register_bank_output_0_ID_EX[16] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[16]
-debug_register_bank_output_0_ID_EX[17] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[17]
-debug_register_bank_output_0_ID_EX[18] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[18]
-debug_register_bank_output_0_ID_EX[19] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[19]
-debug_register_bank_output_0_ID_EX[20] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[20]
-debug_register_bank_output_0_ID_EX[21] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[21]
-debug_register_bank_output_0_ID_EX[22] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[22]
-debug_register_bank_output_0_ID_EX[23] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[23]
-debug_register_bank_output_0_ID_EX[24] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[24]
-debug_register_bank_output_0_ID_EX[25] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[25]
-debug_register_bank_output_0_ID_EX[26] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[26]
-debug_register_bank_output_0_ID_EX[27] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[27]
-debug_register_bank_output_0_ID_EX[28] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[28]
-debug_register_bank_output_0_ID_EX[29] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[29]
-debug_register_bank_output_0_ID_EX[30] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[30]
-debug_register_bank_output_0_ID_EX[31] <= datapath:debug_datapath.debug_register_bank_output_0_ID_EX[31]
-debug_register_bank_output_1_ID_EX[0] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[0]
-debug_register_bank_output_1_ID_EX[1] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[1]
-debug_register_bank_output_1_ID_EX[2] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[2]
-debug_register_bank_output_1_ID_EX[3] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[3]
-debug_register_bank_output_1_ID_EX[4] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[4]
-debug_register_bank_output_1_ID_EX[5] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[5]
-debug_register_bank_output_1_ID_EX[6] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[6]
-debug_register_bank_output_1_ID_EX[7] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[7]
-debug_register_bank_output_1_ID_EX[8] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[8]
-debug_register_bank_output_1_ID_EX[9] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[9]
-debug_register_bank_output_1_ID_EX[10] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[10]
-debug_register_bank_output_1_ID_EX[11] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[11]
-debug_register_bank_output_1_ID_EX[12] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[12]
-debug_register_bank_output_1_ID_EX[13] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[13]
-debug_register_bank_output_1_ID_EX[14] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[14]
-debug_register_bank_output_1_ID_EX[15] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[15]
-debug_register_bank_output_1_ID_EX[16] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[16]
-debug_register_bank_output_1_ID_EX[17] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[17]
-debug_register_bank_output_1_ID_EX[18] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[18]
-debug_register_bank_output_1_ID_EX[19] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[19]
-debug_register_bank_output_1_ID_EX[20] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[20]
-debug_register_bank_output_1_ID_EX[21] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[21]
-debug_register_bank_output_1_ID_EX[22] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[22]
-debug_register_bank_output_1_ID_EX[23] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[23]
-debug_register_bank_output_1_ID_EX[24] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[24]
-debug_register_bank_output_1_ID_EX[25] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[25]
-debug_register_bank_output_1_ID_EX[26] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[26]
-debug_register_bank_output_1_ID_EX[27] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[27]
-debug_register_bank_output_1_ID_EX[28] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[28]
-debug_register_bank_output_1_ID_EX[29] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[29]
-debug_register_bank_output_1_ID_EX[30] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[30]
-debug_register_bank_output_1_ID_EX[31] <= datapath:debug_datapath.debug_register_bank_output_1_ID_EX[31]
-debug_instruction[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[1] <= debug_instruction[1].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[2] <= debug_instruction[2].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[3] <= debug_instruction[3].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[4] <= debug_instruction[4].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[5] <= debug_instruction[5].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[6] <= debug_instruction[6].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[7] <= debug_instruction[7].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[8] <= debug_instruction[8].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[9] <= debug_instruction[9].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[10] <= debug_instruction[10].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[11] <= debug_instruction[11].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[12] <= debug_instruction[12].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[13] <= debug_instruction[13].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[14] <= debug_instruction[14].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[15] <= debug_instruction[15].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[16] <= debug_instruction[16].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[17] <= debug_instruction[17].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[18] <= debug_instruction[18].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[19] <= debug_instruction[19].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[20] <= debug_instruction[20].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[21] <= debug_instruction[21].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[22] <= debug_instruction[22].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[23] <= debug_instruction[23].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[24] <= debug_instruction[24].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[25] <= debug_instruction[25].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[26] <= debug_instruction[26].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[27] <= debug_instruction[27].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[28] <= debug_instruction[28].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[29] <= debug_instruction[29].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[30] <= debug_instruction[30].DB_MAX_OUTPUT_PORT_TYPE
-debug_instruction[31] <= debug_instruction[31].DB_MAX_OUTPUT_PORT_TYPE
+debug_ALU_output[0] <= datapath:datapath_0.debug_alu_output[0]
+debug_ALU_output[1] <= datapath:datapath_0.debug_alu_output[1]
+debug_ALU_output[2] <= datapath:datapath_0.debug_alu_output[2]
+debug_ALU_output[3] <= datapath:datapath_0.debug_alu_output[3]
+debug_ALU_output[4] <= datapath:datapath_0.debug_alu_output[4]
+debug_ALU_output[5] <= datapath:datapath_0.debug_alu_output[5]
+debug_ALU_output[6] <= datapath:datapath_0.debug_alu_output[6]
+debug_ALU_output[7] <= datapath:datapath_0.debug_alu_output[7]
+debug_ALU_output[8] <= datapath:datapath_0.debug_alu_output[8]
+debug_ALU_output[9] <= datapath:datapath_0.debug_alu_output[9]
+debug_ALU_output[10] <= datapath:datapath_0.debug_alu_output[10]
+debug_ALU_output[11] <= datapath:datapath_0.debug_alu_output[11]
+debug_ALU_output[12] <= datapath:datapath_0.debug_alu_output[12]
+debug_ALU_output[13] <= datapath:datapath_0.debug_alu_output[13]
+debug_ALU_output[14] <= datapath:datapath_0.debug_alu_output[14]
+debug_ALU_output[15] <= datapath:datapath_0.debug_alu_output[15]
+debug_ALU_output[16] <= datapath:datapath_0.debug_alu_output[16]
+debug_ALU_output[17] <= datapath:datapath_0.debug_alu_output[17]
+debug_ALU_output[18] <= datapath:datapath_0.debug_alu_output[18]
+debug_ALU_output[19] <= datapath:datapath_0.debug_alu_output[19]
+debug_ALU_output[20] <= datapath:datapath_0.debug_alu_output[20]
+debug_ALU_output[21] <= datapath:datapath_0.debug_alu_output[21]
+debug_ALU_output[22] <= datapath:datapath_0.debug_alu_output[22]
+debug_ALU_output[23] <= datapath:datapath_0.debug_alu_output[23]
+debug_ALU_output[24] <= datapath:datapath_0.debug_alu_output[24]
+debug_ALU_output[25] <= datapath:datapath_0.debug_alu_output[25]
+debug_ALU_output[26] <= datapath:datapath_0.debug_alu_output[26]
+debug_ALU_output[27] <= datapath:datapath_0.debug_alu_output[27]
+debug_ALU_output[28] <= datapath:datapath_0.debug_alu_output[28]
+debug_ALU_output[29] <= datapath:datapath_0.debug_alu_output[29]
+debug_ALU_output[30] <= datapath:datapath_0.debug_alu_output[30]
+debug_ALU_output[31] <= datapath:datapath_0.debug_alu_output[31]
+debug_regfile_write <= controller:controller_0.reg_file_write
+debug_ALU_input_0[0] <= datapath:datapath_0.debug_alu_input_0[0]
+debug_ALU_input_0[1] <= datapath:datapath_0.debug_alu_input_0[1]
+debug_ALU_input_0[2] <= datapath:datapath_0.debug_alu_input_0[2]
+debug_ALU_input_0[3] <= datapath:datapath_0.debug_alu_input_0[3]
+debug_ALU_input_0[4] <= datapath:datapath_0.debug_alu_input_0[4]
+debug_ALU_input_0[5] <= datapath:datapath_0.debug_alu_input_0[5]
+debug_ALU_input_0[6] <= datapath:datapath_0.debug_alu_input_0[6]
+debug_ALU_input_0[7] <= datapath:datapath_0.debug_alu_input_0[7]
+debug_ALU_input_0[8] <= datapath:datapath_0.debug_alu_input_0[8]
+debug_ALU_input_0[9] <= datapath:datapath_0.debug_alu_input_0[9]
+debug_ALU_input_0[10] <= datapath:datapath_0.debug_alu_input_0[10]
+debug_ALU_input_0[11] <= datapath:datapath_0.debug_alu_input_0[11]
+debug_ALU_input_0[12] <= datapath:datapath_0.debug_alu_input_0[12]
+debug_ALU_input_0[13] <= datapath:datapath_0.debug_alu_input_0[13]
+debug_ALU_input_0[14] <= datapath:datapath_0.debug_alu_input_0[14]
+debug_ALU_input_0[15] <= datapath:datapath_0.debug_alu_input_0[15]
+debug_ALU_input_0[16] <= datapath:datapath_0.debug_alu_input_0[16]
+debug_ALU_input_0[17] <= datapath:datapath_0.debug_alu_input_0[17]
+debug_ALU_input_0[18] <= datapath:datapath_0.debug_alu_input_0[18]
+debug_ALU_input_0[19] <= datapath:datapath_0.debug_alu_input_0[19]
+debug_ALU_input_0[20] <= datapath:datapath_0.debug_alu_input_0[20]
+debug_ALU_input_0[21] <= datapath:datapath_0.debug_alu_input_0[21]
+debug_ALU_input_0[22] <= datapath:datapath_0.debug_alu_input_0[22]
+debug_ALU_input_0[23] <= datapath:datapath_0.debug_alu_input_0[23]
+debug_ALU_input_0[24] <= datapath:datapath_0.debug_alu_input_0[24]
+debug_ALU_input_0[25] <= datapath:datapath_0.debug_alu_input_0[25]
+debug_ALU_input_0[26] <= datapath:datapath_0.debug_alu_input_0[26]
+debug_ALU_input_0[27] <= datapath:datapath_0.debug_alu_input_0[27]
+debug_ALU_input_0[28] <= datapath:datapath_0.debug_alu_input_0[28]
+debug_ALU_input_0[29] <= datapath:datapath_0.debug_alu_input_0[29]
+debug_ALU_input_0[30] <= datapath:datapath_0.debug_alu_input_0[30]
+debug_ALU_input_0[31] <= datapath:datapath_0.debug_alu_input_0[31]
+debug_ALU_input_1[0] <= datapath:datapath_0.debug_alu_input_1[0]
+debug_ALU_input_1[1] <= datapath:datapath_0.debug_alu_input_1[1]
+debug_ALU_input_1[2] <= datapath:datapath_0.debug_alu_input_1[2]
+debug_ALU_input_1[3] <= datapath:datapath_0.debug_alu_input_1[3]
+debug_ALU_input_1[4] <= datapath:datapath_0.debug_alu_input_1[4]
+debug_ALU_input_1[5] <= datapath:datapath_0.debug_alu_input_1[5]
+debug_ALU_input_1[6] <= datapath:datapath_0.debug_alu_input_1[6]
+debug_ALU_input_1[7] <= datapath:datapath_0.debug_alu_input_1[7]
+debug_ALU_input_1[8] <= datapath:datapath_0.debug_alu_input_1[8]
+debug_ALU_input_1[9] <= datapath:datapath_0.debug_alu_input_1[9]
+debug_ALU_input_1[10] <= datapath:datapath_0.debug_alu_input_1[10]
+debug_ALU_input_1[11] <= datapath:datapath_0.debug_alu_input_1[11]
+debug_ALU_input_1[12] <= datapath:datapath_0.debug_alu_input_1[12]
+debug_ALU_input_1[13] <= datapath:datapath_0.debug_alu_input_1[13]
+debug_ALU_input_1[14] <= datapath:datapath_0.debug_alu_input_1[14]
+debug_ALU_input_1[15] <= datapath:datapath_0.debug_alu_input_1[15]
+debug_ALU_input_1[16] <= datapath:datapath_0.debug_alu_input_1[16]
+debug_ALU_input_1[17] <= datapath:datapath_0.debug_alu_input_1[17]
+debug_ALU_input_1[18] <= datapath:datapath_0.debug_alu_input_1[18]
+debug_ALU_input_1[19] <= datapath:datapath_0.debug_alu_input_1[19]
+debug_ALU_input_1[20] <= datapath:datapath_0.debug_alu_input_1[20]
+debug_ALU_input_1[21] <= datapath:datapath_0.debug_alu_input_1[21]
+debug_ALU_input_1[22] <= datapath:datapath_0.debug_alu_input_1[22]
+debug_ALU_input_1[23] <= datapath:datapath_0.debug_alu_input_1[23]
+debug_ALU_input_1[24] <= datapath:datapath_0.debug_alu_input_1[24]
+debug_ALU_input_1[25] <= datapath:datapath_0.debug_alu_input_1[25]
+debug_ALU_input_1[26] <= datapath:datapath_0.debug_alu_input_1[26]
+debug_ALU_input_1[27] <= datapath:datapath_0.debug_alu_input_1[27]
+debug_ALU_input_1[28] <= datapath:datapath_0.debug_alu_input_1[28]
+debug_ALU_input_1[29] <= datapath:datapath_0.debug_alu_input_1[29]
+debug_ALU_input_1[30] <= datapath:datapath_0.debug_alu_input_1[30]
+debug_ALU_input_1[31] <= datapath:datapath_0.debug_alu_input_1[31]
+debug_reg_file_read_address_0[0] <= controller:controller_0.r1_reg_idx[0]
+debug_reg_file_read_address_0[1] <= controller:controller_0.r1_reg_idx[1]
+debug_reg_file_read_address_0[2] <= controller:controller_0.r1_reg_idx[2]
+debug_reg_file_read_address_0[3] <= controller:controller_0.r1_reg_idx[3]
+debug_reg_file_read_address_0[4] <= controller:controller_0.r1_reg_idx[4]
+debug_reg_file_read_address_1[0] <= controller:controller_0.r2_reg_idx[0]
+debug_reg_file_read_address_1[1] <= controller:controller_0.r2_reg_idx[1]
+debug_reg_file_read_address_1[2] <= controller:controller_0.r2_reg_idx[2]
+debug_reg_file_read_address_1[3] <= controller:controller_0.r2_reg_idx[3]
+debug_reg_file_read_address_1[4] <= controller:controller_0.r2_reg_idx[4]
+debug_mux0_sel[0] <= controller:controller_0.mux0_sel[0]
+debug_mux0_sel[1] <= controller:controller_0.mux0_sel[1]
+debug_immediate[0] <= controller:controller_0.immediate[0]
+debug_immediate[1] <= controller:controller_0.immediate[1]
+debug_immediate[2] <= controller:controller_0.immediate[2]
+debug_immediate[3] <= controller:controller_0.immediate[3]
+debug_immediate[4] <= controller:controller_0.immediate[4]
+debug_immediate[5] <= controller:controller_0.immediate[5]
+debug_immediate[6] <= controller:controller_0.immediate[6]
+debug_immediate[7] <= controller:controller_0.immediate[7]
+debug_immediate[8] <= controller:controller_0.immediate[8]
+debug_immediate[9] <= controller:controller_0.immediate[9]
+debug_immediate[10] <= controller:controller_0.immediate[10]
+debug_immediate[11] <= controller:controller_0.immediate[11]
+debug_immediate[12] <= controller:controller_0.immediate[12]
+debug_immediate[13] <= controller:controller_0.immediate[13]
+debug_immediate[14] <= controller:controller_0.immediate[14]
+debug_immediate[15] <= controller:controller_0.immediate[15]
+debug_immediate[16] <= controller:controller_0.immediate[16]
+debug_immediate[17] <= controller:controller_0.immediate[17]
+debug_immediate[18] <= controller:controller_0.immediate[18]
+debug_immediate[19] <= controller:controller_0.immediate[19]
+debug_immediate[20] <= controller:controller_0.immediate[20]
+debug_immediate[21] <= controller:controller_0.immediate[21]
+debug_immediate[22] <= controller:controller_0.immediate[22]
+debug_immediate[23] <= controller:controller_0.immediate[23]
+debug_immediate[24] <= controller:controller_0.immediate[24]
+debug_immediate[25] <= controller:controller_0.immediate[25]
+debug_immediate[26] <= controller:controller_0.immediate[26]
+debug_immediate[27] <= controller:controller_0.immediate[27]
+debug_immediate[28] <= controller:controller_0.immediate[28]
+debug_immediate[29] <= controller:controller_0.immediate[29]
+debug_immediate[30] <= controller:controller_0.immediate[30]
+debug_immediate[31] <= controller:controller_0.immediate[31]
+debug_ALU_operation[0] <= controller:controller_0.ALU_operation[0]
+debug_ALU_operation[1] <= controller:controller_0.ALU_operation[1]
+debug_ALU_operation[2] <= controller:controller_0.ALU_operation[2]
+debug_ALU_operation[3] <= controller:controller_0.ALU_operation[3]
+debug_forward_mux_0[0] <= datapath:datapath_0.debug_forward_mux_0[0]
+debug_forward_mux_0[1] <= datapath:datapath_0.debug_forward_mux_0[1]
+debug_forward_mux_0[2] <= datapath:datapath_0.debug_forward_mux_0[2]
+debug_forward_mux_1[0] <= datapath:datapath_0.debug_forward_mux_1[0]
+debug_forward_mux_1[1] <= datapath:datapath_0.debug_forward_mux_1[1]
+debug_forward_mux_1[2] <= datapath:datapath_0.debug_forward_mux_1[2]
+debug_rs1_reg_idx_ID_EXE[0] <= datapath:datapath_0.debug_rs1_reg_idx_ID_EXE[0]
+debug_rs1_reg_idx_ID_EXE[1] <= datapath:datapath_0.debug_rs1_reg_idx_ID_EXE[1]
+debug_rs1_reg_idx_ID_EXE[2] <= datapath:datapath_0.debug_rs1_reg_idx_ID_EXE[2]
+debug_rs1_reg_idx_ID_EXE[3] <= datapath:datapath_0.debug_rs1_reg_idx_ID_EXE[3]
+debug_rs1_reg_idx_ID_EXE[4] <= datapath:datapath_0.debug_rs1_reg_idx_ID_EXE[4]
+debug_wr_reg_idx_EX_MEM[0] <= datapath:datapath_0.debug_wr_reg_idx_EX_MEM[0]
+debug_wr_reg_idx_EX_MEM[1] <= datapath:datapath_0.debug_wr_reg_idx_EX_MEM[1]
+debug_wr_reg_idx_EX_MEM[2] <= datapath:datapath_0.debug_wr_reg_idx_EX_MEM[2]
+debug_wr_reg_idx_EX_MEM[3] <= datapath:datapath_0.debug_wr_reg_idx_EX_MEM[3]
+debug_wr_reg_idx_EX_MEM[4] <= datapath:datapath_0.debug_wr_reg_idx_EX_MEM[4]
+debug_mux0_sel_MEM_WB[0] <= datapath:datapath_0.debug_mux0_sel_MEM_WB[0]
+debug_mux0_sel_MEM_WB[1] <= datapath:datapath_0.debug_mux0_sel_MEM_WB[1]
+debug_wr_data_MEM_WB <= datapath:datapath_0.debug_wr_data_MEM_WB
+debug_wr_reg_idx_MEM_WB[0] <= datapath:datapath_0.debug_wr_reg_idx_MEM_WB[0]
+debug_wr_reg_idx_MEM_WB[1] <= datapath:datapath_0.debug_wr_reg_idx_MEM_WB[1]
+debug_wr_reg_idx_MEM_WB[2] <= datapath:datapath_0.debug_wr_reg_idx_MEM_WB[2]
+debug_wr_reg_idx_MEM_WB[3] <= datapath:datapath_0.debug_wr_reg_idx_MEM_WB[3]
+debug_wr_reg_idx_MEM_WB[4] <= datapath:datapath_0.debug_wr_reg_idx_MEM_WB[4]
+debug_alu_output_MEM_WB[0] <= datapath:datapath_0.debug_alu_output_MEM_WB[0]
+debug_alu_output_MEM_WB[1] <= datapath:datapath_0.debug_alu_output_MEM_WB[1]
+debug_alu_output_MEM_WB[2] <= datapath:datapath_0.debug_alu_output_MEM_WB[2]
+debug_alu_output_MEM_WB[3] <= datapath:datapath_0.debug_alu_output_MEM_WB[3]
+debug_alu_output_MEM_WB[4] <= datapath:datapath_0.debug_alu_output_MEM_WB[4]
+debug_alu_output_MEM_WB[5] <= datapath:datapath_0.debug_alu_output_MEM_WB[5]
+debug_alu_output_MEM_WB[6] <= datapath:datapath_0.debug_alu_output_MEM_WB[6]
+debug_alu_output_MEM_WB[7] <= datapath:datapath_0.debug_alu_output_MEM_WB[7]
+debug_alu_output_MEM_WB[8] <= datapath:datapath_0.debug_alu_output_MEM_WB[8]
+debug_alu_output_MEM_WB[9] <= datapath:datapath_0.debug_alu_output_MEM_WB[9]
+debug_alu_output_MEM_WB[10] <= datapath:datapath_0.debug_alu_output_MEM_WB[10]
+debug_alu_output_MEM_WB[11] <= datapath:datapath_0.debug_alu_output_MEM_WB[11]
+debug_alu_output_MEM_WB[12] <= datapath:datapath_0.debug_alu_output_MEM_WB[12]
+debug_alu_output_MEM_WB[13] <= datapath:datapath_0.debug_alu_output_MEM_WB[13]
+debug_alu_output_MEM_WB[14] <= datapath:datapath_0.debug_alu_output_MEM_WB[14]
+debug_alu_output_MEM_WB[15] <= datapath:datapath_0.debug_alu_output_MEM_WB[15]
+debug_alu_output_MEM_WB[16] <= datapath:datapath_0.debug_alu_output_MEM_WB[16]
+debug_alu_output_MEM_WB[17] <= datapath:datapath_0.debug_alu_output_MEM_WB[17]
+debug_alu_output_MEM_WB[18] <= datapath:datapath_0.debug_alu_output_MEM_WB[18]
+debug_alu_output_MEM_WB[19] <= datapath:datapath_0.debug_alu_output_MEM_WB[19]
+debug_alu_output_MEM_WB[20] <= datapath:datapath_0.debug_alu_output_MEM_WB[20]
+debug_alu_output_MEM_WB[21] <= datapath:datapath_0.debug_alu_output_MEM_WB[21]
+debug_alu_output_MEM_WB[22] <= datapath:datapath_0.debug_alu_output_MEM_WB[22]
+debug_alu_output_MEM_WB[23] <= datapath:datapath_0.debug_alu_output_MEM_WB[23]
+debug_alu_output_MEM_WB[24] <= datapath:datapath_0.debug_alu_output_MEM_WB[24]
+debug_alu_output_MEM_WB[25] <= datapath:datapath_0.debug_alu_output_MEM_WB[25]
+debug_alu_output_MEM_WB[26] <= datapath:datapath_0.debug_alu_output_MEM_WB[26]
+debug_alu_output_MEM_WB[27] <= datapath:datapath_0.debug_alu_output_MEM_WB[27]
+debug_alu_output_MEM_WB[28] <= datapath:datapath_0.debug_alu_output_MEM_WB[28]
+debug_alu_output_MEM_WB[29] <= datapath:datapath_0.debug_alu_output_MEM_WB[29]
+debug_alu_output_MEM_WB[30] <= datapath:datapath_0.debug_alu_output_MEM_WB[30]
+debug_alu_output_MEM_WB[31] <= datapath:datapath_0.debug_alu_output_MEM_WB[31]
+debug_alu_output_EX_MEM[0] <= datapath:datapath_0.debug_alu_output_EX_MEM[0]
+debug_alu_output_EX_MEM[1] <= datapath:datapath_0.debug_alu_output_EX_MEM[1]
+debug_alu_output_EX_MEM[2] <= datapath:datapath_0.debug_alu_output_EX_MEM[2]
+debug_alu_output_EX_MEM[3] <= datapath:datapath_0.debug_alu_output_EX_MEM[3]
+debug_alu_output_EX_MEM[4] <= datapath:datapath_0.debug_alu_output_EX_MEM[4]
+debug_alu_output_EX_MEM[5] <= datapath:datapath_0.debug_alu_output_EX_MEM[5]
+debug_alu_output_EX_MEM[6] <= datapath:datapath_0.debug_alu_output_EX_MEM[6]
+debug_alu_output_EX_MEM[7] <= datapath:datapath_0.debug_alu_output_EX_MEM[7]
+debug_alu_output_EX_MEM[8] <= datapath:datapath_0.debug_alu_output_EX_MEM[8]
+debug_alu_output_EX_MEM[9] <= datapath:datapath_0.debug_alu_output_EX_MEM[9]
+debug_alu_output_EX_MEM[10] <= datapath:datapath_0.debug_alu_output_EX_MEM[10]
+debug_alu_output_EX_MEM[11] <= datapath:datapath_0.debug_alu_output_EX_MEM[11]
+debug_alu_output_EX_MEM[12] <= datapath:datapath_0.debug_alu_output_EX_MEM[12]
+debug_alu_output_EX_MEM[13] <= datapath:datapath_0.debug_alu_output_EX_MEM[13]
+debug_alu_output_EX_MEM[14] <= datapath:datapath_0.debug_alu_output_EX_MEM[14]
+debug_alu_output_EX_MEM[15] <= datapath:datapath_0.debug_alu_output_EX_MEM[15]
+debug_alu_output_EX_MEM[16] <= datapath:datapath_0.debug_alu_output_EX_MEM[16]
+debug_alu_output_EX_MEM[17] <= datapath:datapath_0.debug_alu_output_EX_MEM[17]
+debug_alu_output_EX_MEM[18] <= datapath:datapath_0.debug_alu_output_EX_MEM[18]
+debug_alu_output_EX_MEM[19] <= datapath:datapath_0.debug_alu_output_EX_MEM[19]
+debug_alu_output_EX_MEM[20] <= datapath:datapath_0.debug_alu_output_EX_MEM[20]
+debug_alu_output_EX_MEM[21] <= datapath:datapath_0.debug_alu_output_EX_MEM[21]
+debug_alu_output_EX_MEM[22] <= datapath:datapath_0.debug_alu_output_EX_MEM[22]
+debug_alu_output_EX_MEM[23] <= datapath:datapath_0.debug_alu_output_EX_MEM[23]
+debug_alu_output_EX_MEM[24] <= datapath:datapath_0.debug_alu_output_EX_MEM[24]
+debug_alu_output_EX_MEM[25] <= datapath:datapath_0.debug_alu_output_EX_MEM[25]
+debug_alu_output_EX_MEM[26] <= datapath:datapath_0.debug_alu_output_EX_MEM[26]
+debug_alu_output_EX_MEM[27] <= datapath:datapath_0.debug_alu_output_EX_MEM[27]
+debug_alu_output_EX_MEM[28] <= datapath:datapath_0.debug_alu_output_EX_MEM[28]
+debug_alu_output_EX_MEM[29] <= datapath:datapath_0.debug_alu_output_EX_MEM[29]
+debug_alu_output_EX_MEM[30] <= datapath:datapath_0.debug_alu_output_EX_MEM[30]
+debug_alu_output_EX_MEM[31] <= datapath:datapath_0.debug_alu_output_EX_MEM[31]
+debug_register_bank_output_0[0] <= datapath:datapath_0.debug_register_bank_output_0[0]
+debug_register_bank_output_0[1] <= datapath:datapath_0.debug_register_bank_output_0[1]
+debug_register_bank_output_0[2] <= datapath:datapath_0.debug_register_bank_output_0[2]
+debug_register_bank_output_0[3] <= datapath:datapath_0.debug_register_bank_output_0[3]
+debug_register_bank_output_0[4] <= datapath:datapath_0.debug_register_bank_output_0[4]
+debug_register_bank_output_0[5] <= datapath:datapath_0.debug_register_bank_output_0[5]
+debug_register_bank_output_0[6] <= datapath:datapath_0.debug_register_bank_output_0[6]
+debug_register_bank_output_0[7] <= datapath:datapath_0.debug_register_bank_output_0[7]
+debug_register_bank_output_0[8] <= datapath:datapath_0.debug_register_bank_output_0[8]
+debug_register_bank_output_0[9] <= datapath:datapath_0.debug_register_bank_output_0[9]
+debug_register_bank_output_0[10] <= datapath:datapath_0.debug_register_bank_output_0[10]
+debug_register_bank_output_0[11] <= datapath:datapath_0.debug_register_bank_output_0[11]
+debug_register_bank_output_0[12] <= datapath:datapath_0.debug_register_bank_output_0[12]
+debug_register_bank_output_0[13] <= datapath:datapath_0.debug_register_bank_output_0[13]
+debug_register_bank_output_0[14] <= datapath:datapath_0.debug_register_bank_output_0[14]
+debug_register_bank_output_0[15] <= datapath:datapath_0.debug_register_bank_output_0[15]
+debug_register_bank_output_0[16] <= datapath:datapath_0.debug_register_bank_output_0[16]
+debug_register_bank_output_0[17] <= datapath:datapath_0.debug_register_bank_output_0[17]
+debug_register_bank_output_0[18] <= datapath:datapath_0.debug_register_bank_output_0[18]
+debug_register_bank_output_0[19] <= datapath:datapath_0.debug_register_bank_output_0[19]
+debug_register_bank_output_0[20] <= datapath:datapath_0.debug_register_bank_output_0[20]
+debug_register_bank_output_0[21] <= datapath:datapath_0.debug_register_bank_output_0[21]
+debug_register_bank_output_0[22] <= datapath:datapath_0.debug_register_bank_output_0[22]
+debug_register_bank_output_0[23] <= datapath:datapath_0.debug_register_bank_output_0[23]
+debug_register_bank_output_0[24] <= datapath:datapath_0.debug_register_bank_output_0[24]
+debug_register_bank_output_0[25] <= datapath:datapath_0.debug_register_bank_output_0[25]
+debug_register_bank_output_0[26] <= datapath:datapath_0.debug_register_bank_output_0[26]
+debug_register_bank_output_0[27] <= datapath:datapath_0.debug_register_bank_output_0[27]
+debug_register_bank_output_0[28] <= datapath:datapath_0.debug_register_bank_output_0[28]
+debug_register_bank_output_0[29] <= datapath:datapath_0.debug_register_bank_output_0[29]
+debug_register_bank_output_0[30] <= datapath:datapath_0.debug_register_bank_output_0[30]
+debug_register_bank_output_0[31] <= datapath:datapath_0.debug_register_bank_output_0[31]
+debug_register_bank_output_1[0] <= datapath:datapath_0.debug_register_bank_output_1[0]
+debug_register_bank_output_1[1] <= datapath:datapath_0.debug_register_bank_output_1[1]
+debug_register_bank_output_1[2] <= datapath:datapath_0.debug_register_bank_output_1[2]
+debug_register_bank_output_1[3] <= datapath:datapath_0.debug_register_bank_output_1[3]
+debug_register_bank_output_1[4] <= datapath:datapath_0.debug_register_bank_output_1[4]
+debug_register_bank_output_1[5] <= datapath:datapath_0.debug_register_bank_output_1[5]
+debug_register_bank_output_1[6] <= datapath:datapath_0.debug_register_bank_output_1[6]
+debug_register_bank_output_1[7] <= datapath:datapath_0.debug_register_bank_output_1[7]
+debug_register_bank_output_1[8] <= datapath:datapath_0.debug_register_bank_output_1[8]
+debug_register_bank_output_1[9] <= datapath:datapath_0.debug_register_bank_output_1[9]
+debug_register_bank_output_1[10] <= datapath:datapath_0.debug_register_bank_output_1[10]
+debug_register_bank_output_1[11] <= datapath:datapath_0.debug_register_bank_output_1[11]
+debug_register_bank_output_1[12] <= datapath:datapath_0.debug_register_bank_output_1[12]
+debug_register_bank_output_1[13] <= datapath:datapath_0.debug_register_bank_output_1[13]
+debug_register_bank_output_1[14] <= datapath:datapath_0.debug_register_bank_output_1[14]
+debug_register_bank_output_1[15] <= datapath:datapath_0.debug_register_bank_output_1[15]
+debug_register_bank_output_1[16] <= datapath:datapath_0.debug_register_bank_output_1[16]
+debug_register_bank_output_1[17] <= datapath:datapath_0.debug_register_bank_output_1[17]
+debug_register_bank_output_1[18] <= datapath:datapath_0.debug_register_bank_output_1[18]
+debug_register_bank_output_1[19] <= datapath:datapath_0.debug_register_bank_output_1[19]
+debug_register_bank_output_1[20] <= datapath:datapath_0.debug_register_bank_output_1[20]
+debug_register_bank_output_1[21] <= datapath:datapath_0.debug_register_bank_output_1[21]
+debug_register_bank_output_1[22] <= datapath:datapath_0.debug_register_bank_output_1[22]
+debug_register_bank_output_1[23] <= datapath:datapath_0.debug_register_bank_output_1[23]
+debug_register_bank_output_1[24] <= datapath:datapath_0.debug_register_bank_output_1[24]
+debug_register_bank_output_1[25] <= datapath:datapath_0.debug_register_bank_output_1[25]
+debug_register_bank_output_1[26] <= datapath:datapath_0.debug_register_bank_output_1[26]
+debug_register_bank_output_1[27] <= datapath:datapath_0.debug_register_bank_output_1[27]
+debug_register_bank_output_1[28] <= datapath:datapath_0.debug_register_bank_output_1[28]
+debug_register_bank_output_1[29] <= datapath:datapath_0.debug_register_bank_output_1[29]
+debug_register_bank_output_1[30] <= datapath:datapath_0.debug_register_bank_output_1[30]
+debug_register_bank_output_1[31] <= datapath:datapath_0.debug_register_bank_output_1[31]
+debug_register_bank_output_0_ID_EX[0] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[0]
+debug_register_bank_output_0_ID_EX[1] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[1]
+debug_register_bank_output_0_ID_EX[2] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[2]
+debug_register_bank_output_0_ID_EX[3] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[3]
+debug_register_bank_output_0_ID_EX[4] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[4]
+debug_register_bank_output_0_ID_EX[5] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[5]
+debug_register_bank_output_0_ID_EX[6] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[6]
+debug_register_bank_output_0_ID_EX[7] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[7]
+debug_register_bank_output_0_ID_EX[8] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[8]
+debug_register_bank_output_0_ID_EX[9] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[9]
+debug_register_bank_output_0_ID_EX[10] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[10]
+debug_register_bank_output_0_ID_EX[11] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[11]
+debug_register_bank_output_0_ID_EX[12] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[12]
+debug_register_bank_output_0_ID_EX[13] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[13]
+debug_register_bank_output_0_ID_EX[14] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[14]
+debug_register_bank_output_0_ID_EX[15] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[15]
+debug_register_bank_output_0_ID_EX[16] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[16]
+debug_register_bank_output_0_ID_EX[17] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[17]
+debug_register_bank_output_0_ID_EX[18] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[18]
+debug_register_bank_output_0_ID_EX[19] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[19]
+debug_register_bank_output_0_ID_EX[20] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[20]
+debug_register_bank_output_0_ID_EX[21] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[21]
+debug_register_bank_output_0_ID_EX[22] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[22]
+debug_register_bank_output_0_ID_EX[23] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[23]
+debug_register_bank_output_0_ID_EX[24] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[24]
+debug_register_bank_output_0_ID_EX[25] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[25]
+debug_register_bank_output_0_ID_EX[26] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[26]
+debug_register_bank_output_0_ID_EX[27] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[27]
+debug_register_bank_output_0_ID_EX[28] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[28]
+debug_register_bank_output_0_ID_EX[29] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[29]
+debug_register_bank_output_0_ID_EX[30] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[30]
+debug_register_bank_output_0_ID_EX[31] <= datapath:datapath_0.debug_register_bank_output_0_ID_EX[31]
+debug_register_bank_output_1_ID_EX[0] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[0]
+debug_register_bank_output_1_ID_EX[1] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[1]
+debug_register_bank_output_1_ID_EX[2] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[2]
+debug_register_bank_output_1_ID_EX[3] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[3]
+debug_register_bank_output_1_ID_EX[4] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[4]
+debug_register_bank_output_1_ID_EX[5] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[5]
+debug_register_bank_output_1_ID_EX[6] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[6]
+debug_register_bank_output_1_ID_EX[7] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[7]
+debug_register_bank_output_1_ID_EX[8] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[8]
+debug_register_bank_output_1_ID_EX[9] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[9]
+debug_register_bank_output_1_ID_EX[10] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[10]
+debug_register_bank_output_1_ID_EX[11] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[11]
+debug_register_bank_output_1_ID_EX[12] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[12]
+debug_register_bank_output_1_ID_EX[13] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[13]
+debug_register_bank_output_1_ID_EX[14] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[14]
+debug_register_bank_output_1_ID_EX[15] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[15]
+debug_register_bank_output_1_ID_EX[16] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[16]
+debug_register_bank_output_1_ID_EX[17] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[17]
+debug_register_bank_output_1_ID_EX[18] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[18]
+debug_register_bank_output_1_ID_EX[19] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[19]
+debug_register_bank_output_1_ID_EX[20] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[20]
+debug_register_bank_output_1_ID_EX[21] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[21]
+debug_register_bank_output_1_ID_EX[22] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[22]
+debug_register_bank_output_1_ID_EX[23] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[23]
+debug_register_bank_output_1_ID_EX[24] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[24]
+debug_register_bank_output_1_ID_EX[25] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[25]
+debug_register_bank_output_1_ID_EX[26] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[26]
+debug_register_bank_output_1_ID_EX[27] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[27]
+debug_register_bank_output_1_ID_EX[28] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[28]
+debug_register_bank_output_1_ID_EX[29] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[29]
+debug_register_bank_output_1_ID_EX[30] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[30]
+debug_register_bank_output_1_ID_EX[31] <= datapath:datapath_0.debug_register_bank_output_1_ID_EX[31]
+debug_instruction_address[0] <= datapath:datapath_0.debug_instruction_address[0]
+debug_instruction_address[1] <= datapath:datapath_0.debug_instruction_address[1]
+debug_instruction_address[2] <= datapath:datapath_0.debug_instruction_address[2]
+debug_instruction_address[3] <= datapath:datapath_0.debug_instruction_address[3]
+debug_instruction_address[4] <= datapath:datapath_0.debug_instruction_address[4]
+debug_instruction_address[5] <= datapath:datapath_0.debug_instruction_address[5]
+debug_instruction_address[6] <= datapath:datapath_0.debug_instruction_address[6]
+debug_instruction_address[7] <= datapath:datapath_0.debug_instruction_address[7]
+debug_instruction_address[8] <= datapath:datapath_0.debug_instruction_address[8]
+debug_instruction_address[9] <= datapath:datapath_0.debug_instruction_address[9]
+debug_instruction_address[10] <= datapath:datapath_0.debug_instruction_address[10]
+debug_instruction_address[11] <= datapath:datapath_0.debug_instruction_address[11]
+debug_instruction_address[12] <= datapath:datapath_0.debug_instruction_address[12]
+debug_instruction_address[13] <= datapath:datapath_0.debug_instruction_address[13]
+debug_instruction_address[14] <= datapath:datapath_0.debug_instruction_address[14]
+debug_instruction_address[15] <= datapath:datapath_0.debug_instruction_address[15]
+debug_instruction_address[16] <= datapath:datapath_0.debug_instruction_address[16]
+debug_instruction_address[17] <= datapath:datapath_0.debug_instruction_address[17]
+debug_instruction_address[18] <= datapath:datapath_0.debug_instruction_address[18]
+debug_instruction_address[19] <= datapath:datapath_0.debug_instruction_address[19]
+debug_instruction_address[20] <= datapath:datapath_0.debug_instruction_address[20]
+debug_instruction_address[21] <= datapath:datapath_0.debug_instruction_address[21]
+debug_instruction_address[22] <= datapath:datapath_0.debug_instruction_address[22]
+debug_instruction_address[23] <= datapath:datapath_0.debug_instruction_address[23]
+debug_instruction_address[24] <= datapath:datapath_0.debug_instruction_address[24]
+debug_instruction_address[25] <= datapath:datapath_0.debug_instruction_address[25]
+debug_instruction_address[26] <= datapath:datapath_0.debug_instruction_address[26]
+debug_instruction_address[27] <= datapath:datapath_0.debug_instruction_address[27]
+debug_instruction_address[28] <= datapath:datapath_0.debug_instruction_address[28]
+debug_instruction_address[29] <= datapath:datapath_0.debug_instruction_address[29]
+debug_instruction_address[30] <= datapath:datapath_0.debug_instruction_address[30]
+debug_instruction_address[31] <= datapath:datapath_0.debug_instruction_address[31]
+debug_instruction[0] <= datapath:datapath_0.debug_instruction[0]
+debug_instruction[1] <= datapath:datapath_0.debug_instruction[1]
+debug_instruction[2] <= datapath:datapath_0.debug_instruction[2]
+debug_instruction[3] <= datapath:datapath_0.debug_instruction[3]
+debug_instruction[4] <= datapath:datapath_0.debug_instruction[4]
+debug_instruction[5] <= datapath:datapath_0.debug_instruction[5]
+debug_instruction[6] <= datapath:datapath_0.debug_instruction[6]
+debug_instruction[7] <= datapath:datapath_0.debug_instruction[7]
+debug_instruction[8] <= datapath:datapath_0.debug_instruction[8]
+debug_instruction[9] <= datapath:datapath_0.debug_instruction[9]
+debug_instruction[10] <= datapath:datapath_0.debug_instruction[10]
+debug_instruction[11] <= datapath:datapath_0.debug_instruction[11]
+debug_instruction[12] <= datapath:datapath_0.debug_instruction[12]
+debug_instruction[13] <= datapath:datapath_0.debug_instruction[13]
+debug_instruction[14] <= datapath:datapath_0.debug_instruction[14]
+debug_instruction[15] <= datapath:datapath_0.debug_instruction[15]
+debug_instruction[16] <= datapath:datapath_0.debug_instruction[16]
+debug_instruction[17] <= datapath:datapath_0.debug_instruction[17]
+debug_instruction[18] <= datapath:datapath_0.debug_instruction[18]
+debug_instruction[19] <= datapath:datapath_0.debug_instruction[19]
+debug_instruction[20] <= datapath:datapath_0.debug_instruction[20]
+debug_instruction[21] <= datapath:datapath_0.debug_instruction[21]
+debug_instruction[22] <= datapath:datapath_0.debug_instruction[22]
+debug_instruction[23] <= datapath:datapath_0.debug_instruction[23]
+debug_instruction[24] <= datapath:datapath_0.debug_instruction[24]
+debug_instruction[25] <= datapath:datapath_0.debug_instruction[25]
+debug_instruction[26] <= datapath:datapath_0.debug_instruction[26]
+debug_instruction[27] <= datapath:datapath_0.debug_instruction[27]
+debug_instruction[28] <= datapath:datapath_0.debug_instruction[28]
+debug_instruction[29] <= datapath:datapath_0.debug_instruction[29]
+debug_instruction[30] <= datapath:datapath_0.debug_instruction[30]
+debug_instruction[31] <= datapath:datapath_0.debug_instruction[31]
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath
+|fpga_riscv32_minimal|controller:controller_0
+clock => ~NO_FANOUT~
+reset => ~NO_FANOUT~
+instruction[0] => Equal0.IN1
+instruction[1] => Equal0.IN0
+instruction[2] => Mux58.IN10
+instruction[2] => Mux59.IN10
+instruction[2] => Mux60.IN10
+instruction[2] => Mux61.IN10
+instruction[2] => Mux62.IN10
+instruction[2] => Mux63.IN10
+instruction[2] => Mux64.IN10
+instruction[2] => Mux65.IN10
+instruction[2] => Mux66.IN10
+instruction[2] => Mux79.IN10
+instruction[2] => Mux80.IN10
+instruction[2] => Mux81.IN10
+instruction[2] => Mux82.IN10
+instruction[3] => Mux58.IN9
+instruction[3] => Mux59.IN9
+instruction[3] => Mux60.IN9
+instruction[3] => Mux61.IN9
+instruction[3] => Mux62.IN9
+instruction[3] => Mux63.IN9
+instruction[3] => Mux64.IN9
+instruction[3] => Mux65.IN9
+instruction[3] => Mux66.IN9
+instruction[3] => Mux79.IN9
+instruction[3] => Mux80.IN9
+instruction[3] => Mux81.IN9
+instruction[3] => Mux82.IN9
+instruction[4] => Mux58.IN8
+instruction[4] => Mux59.IN8
+instruction[4] => Mux60.IN8
+instruction[4] => Mux61.IN8
+instruction[4] => Mux62.IN8
+instruction[4] => Mux63.IN8
+instruction[4] => Mux64.IN8
+instruction[4] => Mux65.IN8
+instruction[4] => Mux66.IN8
+instruction[4] => Mux79.IN8
+instruction[4] => Mux80.IN8
+instruction[4] => Mux81.IN8
+instruction[4] => Mux82.IN8
+instruction[5] => Mux10.IN5
+instruction[5] => Mux11.IN5
+instruction[5] => Mux23.IN5
+instruction[5] => Mux24.IN5
+instruction[5] => Mux42.IN5
+instruction[5] => Mux43.IN5
+instruction[5] => Mux44.IN5
+instruction[5] => Mux45.IN5
+instruction[5] => Mux54.IN5
+instruction[5] => Mux55.IN5
+instruction[6] => Mux10.IN4
+instruction[6] => Mux11.IN4
+instruction[6] => Mux23.IN4
+instruction[6] => Mux24.IN4
+instruction[6] => Mux42.IN4
+instruction[6] => Mux43.IN4
+instruction[6] => Mux44.IN4
+instruction[6] => Mux45.IN4
+instruction[6] => Mux54.IN4
+instruction[6] => Mux55.IN4
+instruction[6] => Mux58.IN7
+instruction[6] => Selector29.IN11
+instruction[7] => Selector27.IN9
+instruction[7] => Selector30.IN11
+instruction[7] => Selector52.IN11
+instruction[7] => Selector78.IN3
+instruction[8] => Selector29.IN10
+instruction[8] => Selector31.IN11
+instruction[8] => Selector79.IN3
+instruction[9] => Selector30.IN10
+instruction[9] => Selector32.IN11
+instruction[9] => Selector80.IN3
+instruction[10] => Selector31.IN10
+instruction[10] => Selector35.IN9
+instruction[10] => Selector81.IN3
+instruction[11] => Selector32.IN10
+instruction[11] => Selector37.IN9
+instruction[11] => Selector82.IN3
+instruction[12] => Mux28.IN10
+instruction[12] => Mux29.IN10
+instruction[12] => Mux30.IN10
+instruction[12] => Mux31.IN10
+instruction[12] => Selector0.IN3
+instruction[12] => Selector14.IN3
+instruction[12] => Selector19.IN3
+instruction[12] => Selector51.IN11
+instruction[13] => Mux28.IN9
+instruction[13] => Mux29.IN9
+instruction[13] => Mux30.IN9
+instruction[13] => Mux31.IN9
+instruction[13] => Selector9.IN3
+instruction[13] => Selector15.IN3
+instruction[13] => Selector20.IN3
+instruction[13] => Selector52.IN10
+instruction[14] => Mux28.IN8
+instruction[14] => Mux29.IN8
+instruction[14] => Mux30.IN8
+instruction[14] => Mux31.IN8
+instruction[14] => Selector10.IN3
+instruction[14] => Selector16.IN3
+instruction[14] => Selector21.IN3
+instruction[14] => Selector54.IN9
+instruction[15] => Selector56.IN9
+instruction[15] => Selector92.IN3
+instruction[16] => Selector57.IN9
+instruction[16] => Selector93.IN3
+instruction[17] => Selector58.IN9
+instruction[17] => Selector94.IN3
+instruction[18] => Selector59.IN9
+instruction[18] => Selector95.IN3
+instruction[19] => Selector60.IN9
+instruction[19] => Selector96.IN3
+instruction[20] => Selector27.IN7
+instruction[20] => Selector27.IN8
+instruction[20] => Selector49.IN11
+instruction[20] => Selector62.IN9
+instruction[20] => Selector86.IN3
+instruction[21] => Selector29.IN8
+instruction[21] => Selector29.IN9
+instruction[21] => Selector63.IN9
+instruction[21] => Selector87.IN3
+instruction[22] => Selector30.IN8
+instruction[22] => Selector30.IN9
+instruction[22] => Selector64.IN9
+instruction[22] => Selector88.IN3
+instruction[23] => Selector31.IN8
+instruction[23] => Selector31.IN9
+instruction[23] => Selector65.IN9
+instruction[23] => Selector89.IN3
+instruction[24] => Selector32.IN8
+instruction[24] => Selector32.IN9
+instruction[24] => Selector66.IN9
+instruction[24] => Selector90.IN3
+instruction[25] => Selector35.IN8
+instruction[25] => Selector39.IN9
+instruction[25] => Selector67.IN9
+instruction[25] => Selector34.IN3
+instruction[26] => Selector37.IN8
+instruction[26] => Selector41.IN9
+instruction[26] => Selector68.IN9
+instruction[26] => Selector36.IN3
+instruction[27] => Selector39.IN8
+instruction[27] => Selector43.IN9
+instruction[27] => Selector69.IN9
+instruction[27] => Selector38.IN3
+instruction[28] => Selector41.IN8
+instruction[28] => Selector45.IN9
+instruction[28] => Selector70.IN9
+instruction[28] => Selector40.IN3
+instruction[29] => Selector43.IN8
+instruction[29] => Selector49.IN10
+instruction[29] => Selector71.IN9
+instruction[29] => Selector42.IN3
+instruction[30] => Selector23.IN3
+instruction[30] => Selector25.IN7
+instruction[30] => Selector45.IN8
+instruction[30] => Selector51.IN10
+instruction[30] => Selector72.IN9
+instruction[30] => Selector44.IN3
+instruction[31] => Selector49.IN9
+instruction[31] => Selector51.IN9
+instruction[31] => Selector52.IN9
+instruction[31] => Selector54.IN8
+instruction[31] => Selector56.IN8
+instruction[31] => Selector57.IN8
+instruction[31] => Selector58.IN8
+instruction[31] => Selector59.IN8
+instruction[31] => Selector60.IN8
+instruction[31] => Selector62.IN8
+instruction[31] => Selector63.IN8
+instruction[31] => Selector64.IN8
+instruction[31] => Selector65.IN8
+instruction[31] => Selector66.IN8
+instruction[31] => Selector67.IN8
+instruction[31] => Selector68.IN8
+instruction[31] => Selector69.IN8
+instruction[31] => Selector70.IN8
+instruction[31] => Selector71.IN8
+instruction[31] => Selector72.IN8
+instruction[31] => Selector76.IN7
+instruction[31] => Selector47.IN3
+instruction[31] => Selector74.IN3
+r1_reg_idx[0] <= internal_r1_reg_idx[0].DB_MAX_OUTPUT_PORT_TYPE
+r1_reg_idx[1] <= internal_r1_reg_idx[1].DB_MAX_OUTPUT_PORT_TYPE
+r1_reg_idx[2] <= internal_r1_reg_idx[2].DB_MAX_OUTPUT_PORT_TYPE
+r1_reg_idx[3] <= internal_r1_reg_idx[3].DB_MAX_OUTPUT_PORT_TYPE
+r1_reg_idx[4] <= internal_r1_reg_idx[4].DB_MAX_OUTPUT_PORT_TYPE
+r2_reg_idx[0] <= internal_r2_reg_idx[0].DB_MAX_OUTPUT_PORT_TYPE
+r2_reg_idx[1] <= internal_r2_reg_idx[1].DB_MAX_OUTPUT_PORT_TYPE
+r2_reg_idx[2] <= internal_r2_reg_idx[2].DB_MAX_OUTPUT_PORT_TYPE
+r2_reg_idx[3] <= internal_r2_reg_idx[3].DB_MAX_OUTPUT_PORT_TYPE
+r2_reg_idx[4] <= internal_r2_reg_idx[4].DB_MAX_OUTPUT_PORT_TYPE
+reg_file_write <= internal_reg_file_write.DB_MAX_OUTPUT_PORT_TYPE
+wr_reg_idx[0] <= internal_wr_reg_idx[0].DB_MAX_OUTPUT_PORT_TYPE
+wr_reg_idx[1] <= internal_wr_reg_idx[1].DB_MAX_OUTPUT_PORT_TYPE
+wr_reg_idx[2] <= internal_wr_reg_idx[2].DB_MAX_OUTPUT_PORT_TYPE
+wr_reg_idx[3] <= internal_wr_reg_idx[3].DB_MAX_OUTPUT_PORT_TYPE
+wr_reg_idx[4] <= internal_wr_reg_idx[4].DB_MAX_OUTPUT_PORT_TYPE
+immediate[0] <= internal_immediate[0].DB_MAX_OUTPUT_PORT_TYPE
+immediate[1] <= internal_immediate[1].DB_MAX_OUTPUT_PORT_TYPE
+immediate[2] <= internal_immediate[2].DB_MAX_OUTPUT_PORT_TYPE
+immediate[3] <= internal_immediate[3].DB_MAX_OUTPUT_PORT_TYPE
+immediate[4] <= internal_immediate[4].DB_MAX_OUTPUT_PORT_TYPE
+immediate[5] <= internal_immediate[5].DB_MAX_OUTPUT_PORT_TYPE
+immediate[6] <= internal_immediate[6].DB_MAX_OUTPUT_PORT_TYPE
+immediate[7] <= internal_immediate[7].DB_MAX_OUTPUT_PORT_TYPE
+immediate[8] <= internal_immediate[8].DB_MAX_OUTPUT_PORT_TYPE
+immediate[9] <= internal_immediate[9].DB_MAX_OUTPUT_PORT_TYPE
+immediate[10] <= internal_immediate[10].DB_MAX_OUTPUT_PORT_TYPE
+immediate[11] <= internal_immediate[11].DB_MAX_OUTPUT_PORT_TYPE
+immediate[12] <= internal_immediate[12].DB_MAX_OUTPUT_PORT_TYPE
+immediate[13] <= internal_immediate[13].DB_MAX_OUTPUT_PORT_TYPE
+immediate[14] <= internal_immediate[14].DB_MAX_OUTPUT_PORT_TYPE
+immediate[15] <= internal_immediate[15].DB_MAX_OUTPUT_PORT_TYPE
+immediate[16] <= internal_immediate[16].DB_MAX_OUTPUT_PORT_TYPE
+immediate[17] <= internal_immediate[17].DB_MAX_OUTPUT_PORT_TYPE
+immediate[18] <= internal_immediate[18].DB_MAX_OUTPUT_PORT_TYPE
+immediate[19] <= internal_immediate[19].DB_MAX_OUTPUT_PORT_TYPE
+immediate[20] <= internal_immediate[20].DB_MAX_OUTPUT_PORT_TYPE
+immediate[21] <= internal_immediate[21].DB_MAX_OUTPUT_PORT_TYPE
+immediate[22] <= internal_immediate[22].DB_MAX_OUTPUT_PORT_TYPE
+immediate[23] <= internal_immediate[23].DB_MAX_OUTPUT_PORT_TYPE
+immediate[24] <= internal_immediate[24].DB_MAX_OUTPUT_PORT_TYPE
+immediate[25] <= internal_immediate[25].DB_MAX_OUTPUT_PORT_TYPE
+immediate[26] <= internal_immediate[26].DB_MAX_OUTPUT_PORT_TYPE
+immediate[27] <= internal_immediate[27].DB_MAX_OUTPUT_PORT_TYPE
+immediate[28] <= internal_immediate[28].DB_MAX_OUTPUT_PORT_TYPE
+immediate[29] <= internal_immediate[29].DB_MAX_OUTPUT_PORT_TYPE
+immediate[30] <= internal_immediate[30].DB_MAX_OUTPUT_PORT_TYPE
+immediate[31] <= internal_immediate[31].DB_MAX_OUTPUT_PORT_TYPE
+ALU_operation[0] <= internal_ALU_operation[0].DB_MAX_OUTPUT_PORT_TYPE
+ALU_operation[1] <= internal_ALU_operation[1].DB_MAX_OUTPUT_PORT_TYPE
+ALU_operation[2] <= internal_ALU_operation[2].DB_MAX_OUTPUT_PORT_TYPE
+ALU_operation[3] <= internal_ALU_operation[3].DB_MAX_OUTPUT_PORT_TYPE
+ALU_branch <= internal_ALU_branch.DB_MAX_OUTPUT_PORT_TYPE
+ALU_branch_control[0] <= internal_ALU_branch_control[0].DB_MAX_OUTPUT_PORT_TYPE
+ALU_branch_control[1] <= internal_ALU_branch_control[1].DB_MAX_OUTPUT_PORT_TYPE
+ALU_branch_control[2] <= internal_ALU_branch_control[2].DB_MAX_OUTPUT_PORT_TYPE
+JTU_mux_sel <= internal_JTU_mux_sel.DB_MAX_OUTPUT_PORT_TYPE
+data_format[0] <= internal_data_format[0].DB_MAX_OUTPUT_PORT_TYPE
+data_format[1] <= internal_data_format[1].DB_MAX_OUTPUT_PORT_TYPE
+data_format[2] <= internal_data_format[2].DB_MAX_OUTPUT_PORT_TYPE
+datamem_write <= internal_datamem_write.DB_MAX_OUTPUT_PORT_TYPE
+jump_flag <= internal_jump_flag.DB_MAX_OUTPUT_PORT_TYPE
+mux0_sel[0] <= internal_mux0_sel[0].DB_MAX_OUTPUT_PORT_TYPE
+mux0_sel[1] <= internal_mux0_sel[1].DB_MAX_OUTPUT_PORT_TYPE
+mux1_sel <= internal_mux1_sel.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fpga_riscv32_minimal|datapath:datapath_0
 clock => pc:program_counter.clock
 clock => instmem:instruction_memory.clock
 clock => ifid_register:IF_ID_PLR.clock
@@ -1074,43 +1280,75 @@ debug_register_bank_output_1_ID_EX[28] <= idex_register:ID_EX_PLR.register_file_
 debug_register_bank_output_1_ID_EX[29] <= idex_register:ID_EX_PLR.register_file_output_1_out[29]
 debug_register_bank_output_1_ID_EX[30] <= idex_register:ID_EX_PLR.register_file_output_1_out[30]
 debug_register_bank_output_1_ID_EX[31] <= idex_register:ID_EX_PLR.register_file_output_1_out[31]
+debug_instruction[0] <= instmem:instruction_memory.instruction[0]
+debug_instruction[1] <= instmem:instruction_memory.instruction[1]
+debug_instruction[2] <= instmem:instruction_memory.instruction[2]
+debug_instruction[3] <= instmem:instruction_memory.instruction[3]
+debug_instruction[4] <= instmem:instruction_memory.instruction[4]
+debug_instruction[5] <= instmem:instruction_memory.instruction[5]
+debug_instruction[6] <= instmem:instruction_memory.instruction[6]
+debug_instruction[7] <= instmem:instruction_memory.instruction[7]
+debug_instruction[8] <= instmem:instruction_memory.instruction[8]
+debug_instruction[9] <= instmem:instruction_memory.instruction[9]
+debug_instruction[10] <= instmem:instruction_memory.instruction[10]
+debug_instruction[11] <= instmem:instruction_memory.instruction[11]
+debug_instruction[12] <= instmem:instruction_memory.instruction[12]
+debug_instruction[13] <= instmem:instruction_memory.instruction[13]
+debug_instruction[14] <= instmem:instruction_memory.instruction[14]
+debug_instruction[15] <= instmem:instruction_memory.instruction[15]
+debug_instruction[16] <= instmem:instruction_memory.instruction[16]
+debug_instruction[17] <= instmem:instruction_memory.instruction[17]
+debug_instruction[18] <= instmem:instruction_memory.instruction[18]
+debug_instruction[19] <= instmem:instruction_memory.instruction[19]
+debug_instruction[20] <= instmem:instruction_memory.instruction[20]
+debug_instruction[21] <= instmem:instruction_memory.instruction[21]
+debug_instruction[22] <= instmem:instruction_memory.instruction[22]
+debug_instruction[23] <= instmem:instruction_memory.instruction[23]
+debug_instruction[24] <= instmem:instruction_memory.instruction[24]
+debug_instruction[25] <= instmem:instruction_memory.instruction[25]
+debug_instruction[26] <= instmem:instruction_memory.instruction[26]
+debug_instruction[27] <= instmem:instruction_memory.instruction[27]
+debug_instruction[28] <= instmem:instruction_memory.instruction[28]
+debug_instruction[29] <= instmem:instruction_memory.instruction[29]
+debug_instruction[30] <= instmem:instruction_memory.instruction[30]
+debug_instruction[31] <= instmem:instruction_memory.instruction[31]
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|pc:program_counter
+|fpga_riscv32_minimal|datapath:datapath_0|pc:program_counter
 clock => register32b:count_register.clock
 clear => register32b:count_register.clear
-pc_in[0] => ~NO_FANOUT~
-pc_in[1] => ~NO_FANOUT~
-pc_in[2] => ~NO_FANOUT~
-pc_in[3] => ~NO_FANOUT~
-pc_in[4] => ~NO_FANOUT~
-pc_in[5] => ~NO_FANOUT~
-pc_in[6] => ~NO_FANOUT~
-pc_in[7] => ~NO_FANOUT~
-pc_in[8] => ~NO_FANOUT~
-pc_in[9] => ~NO_FANOUT~
-pc_in[10] => ~NO_FANOUT~
-pc_in[11] => ~NO_FANOUT~
-pc_in[12] => ~NO_FANOUT~
-pc_in[13] => ~NO_FANOUT~
-pc_in[14] => ~NO_FANOUT~
-pc_in[15] => ~NO_FANOUT~
-pc_in[16] => ~NO_FANOUT~
-pc_in[17] => ~NO_FANOUT~
-pc_in[18] => ~NO_FANOUT~
-pc_in[19] => ~NO_FANOUT~
-pc_in[20] => ~NO_FANOUT~
-pc_in[21] => ~NO_FANOUT~
-pc_in[22] => ~NO_FANOUT~
-pc_in[23] => ~NO_FANOUT~
-pc_in[24] => ~NO_FANOUT~
-pc_in[25] => ~NO_FANOUT~
-pc_in[26] => ~NO_FANOUT~
-pc_in[27] => ~NO_FANOUT~
-pc_in[28] => ~NO_FANOUT~
-pc_in[29] => ~NO_FANOUT~
-pc_in[30] => ~NO_FANOUT~
-pc_in[31] => ~NO_FANOUT~
+pc_in[0] => register32b:count_register.reg_in[0]
+pc_in[1] => register32b:count_register.reg_in[1]
+pc_in[2] => register32b:count_register.reg_in[2]
+pc_in[3] => register32b:count_register.reg_in[3]
+pc_in[4] => register32b:count_register.reg_in[4]
+pc_in[5] => register32b:count_register.reg_in[5]
+pc_in[6] => register32b:count_register.reg_in[6]
+pc_in[7] => register32b:count_register.reg_in[7]
+pc_in[8] => register32b:count_register.reg_in[8]
+pc_in[9] => register32b:count_register.reg_in[9]
+pc_in[10] => register32b:count_register.reg_in[10]
+pc_in[11] => register32b:count_register.reg_in[11]
+pc_in[12] => register32b:count_register.reg_in[12]
+pc_in[13] => register32b:count_register.reg_in[13]
+pc_in[14] => register32b:count_register.reg_in[14]
+pc_in[15] => register32b:count_register.reg_in[15]
+pc_in[16] => register32b:count_register.reg_in[16]
+pc_in[17] => register32b:count_register.reg_in[17]
+pc_in[18] => register32b:count_register.reg_in[18]
+pc_in[19] => register32b:count_register.reg_in[19]
+pc_in[20] => register32b:count_register.reg_in[20]
+pc_in[21] => register32b:count_register.reg_in[21]
+pc_in[22] => register32b:count_register.reg_in[22]
+pc_in[23] => register32b:count_register.reg_in[23]
+pc_in[24] => register32b:count_register.reg_in[24]
+pc_in[25] => register32b:count_register.reg_in[25]
+pc_in[26] => register32b:count_register.reg_in[26]
+pc_in[27] => register32b:count_register.reg_in[27]
+pc_in[28] => register32b:count_register.reg_in[28]
+pc_in[29] => register32b:count_register.reg_in[29]
+pc_in[30] => register32b:count_register.reg_in[30]
+pc_in[31] => register32b:count_register.reg_in[31]
 pc_enable => ~NO_FANOUT~
 pc_count[0] <= register32b:count_register.reg_out[0]
 pc_count[1] <= register32b:count_register.reg_out[1]
@@ -1146,7 +1384,7 @@ pc_count[30] <= register32b:count_register.reg_out[30]
 pc_count[31] <= register32b:count_register.reg_out[31]
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|pc:program_counter|register32b:count_register
+|fpga_riscv32_minimal|datapath:datapath_0|pc:program_counter|register32b:count_register
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -1309,71 +1547,167 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|instmem:instruction_memory
-count_in[0] => Equal0.IN30
+|fpga_riscv32_minimal|datapath:datapath_0|instmem:instruction_memory
+count_in[0] => Equal0.IN31
 count_in[0] => Equal1.IN30
-count_in[1] => Equal0.IN29
+count_in[0] => Equal2.IN30
+count_in[0] => Equal3.IN29
+count_in[0] => Equal4.IN30
+count_in[1] => Equal0.IN30
 count_in[1] => Equal1.IN29
-count_in[2] => Equal0.IN31
-count_in[2] => Equal1.IN28
+count_in[1] => Equal2.IN29
+count_in[1] => Equal3.IN28
+count_in[1] => Equal4.IN29
+count_in[2] => Equal0.IN29
+count_in[2] => Equal1.IN31
+count_in[2] => Equal2.IN28
+count_in[2] => Equal3.IN31
+count_in[2] => Equal4.IN28
 count_in[3] => Equal0.IN28
-count_in[3] => Equal1.IN31
+count_in[3] => Equal1.IN28
+count_in[3] => Equal2.IN31
+count_in[3] => Equal3.IN30
+count_in[3] => Equal4.IN27
 count_in[4] => Equal0.IN27
 count_in[4] => Equal1.IN27
+count_in[4] => Equal2.IN27
+count_in[4] => Equal3.IN27
+count_in[4] => Equal4.IN31
 count_in[5] => Equal0.IN26
 count_in[5] => Equal1.IN26
+count_in[5] => Equal2.IN26
+count_in[5] => Equal3.IN26
+count_in[5] => Equal4.IN26
 count_in[6] => Equal0.IN25
 count_in[6] => Equal1.IN25
+count_in[6] => Equal2.IN25
+count_in[6] => Equal3.IN25
+count_in[6] => Equal4.IN25
 count_in[7] => Equal0.IN24
 count_in[7] => Equal1.IN24
+count_in[7] => Equal2.IN24
+count_in[7] => Equal3.IN24
+count_in[7] => Equal4.IN24
 count_in[8] => Equal0.IN23
 count_in[8] => Equal1.IN23
+count_in[8] => Equal2.IN23
+count_in[8] => Equal3.IN23
+count_in[8] => Equal4.IN23
 count_in[9] => Equal0.IN22
 count_in[9] => Equal1.IN22
+count_in[9] => Equal2.IN22
+count_in[9] => Equal3.IN22
+count_in[9] => Equal4.IN22
 count_in[10] => Equal0.IN21
 count_in[10] => Equal1.IN21
+count_in[10] => Equal2.IN21
+count_in[10] => Equal3.IN21
+count_in[10] => Equal4.IN21
 count_in[11] => Equal0.IN20
 count_in[11] => Equal1.IN20
+count_in[11] => Equal2.IN20
+count_in[11] => Equal3.IN20
+count_in[11] => Equal4.IN20
 count_in[12] => Equal0.IN19
 count_in[12] => Equal1.IN19
+count_in[12] => Equal2.IN19
+count_in[12] => Equal3.IN19
+count_in[12] => Equal4.IN19
 count_in[13] => Equal0.IN18
 count_in[13] => Equal1.IN18
+count_in[13] => Equal2.IN18
+count_in[13] => Equal3.IN18
+count_in[13] => Equal4.IN18
 count_in[14] => Equal0.IN17
 count_in[14] => Equal1.IN17
+count_in[14] => Equal2.IN17
+count_in[14] => Equal3.IN17
+count_in[14] => Equal4.IN17
 count_in[15] => Equal0.IN16
 count_in[15] => Equal1.IN16
+count_in[15] => Equal2.IN16
+count_in[15] => Equal3.IN16
+count_in[15] => Equal4.IN16
 count_in[16] => Equal0.IN15
 count_in[16] => Equal1.IN15
+count_in[16] => Equal2.IN15
+count_in[16] => Equal3.IN15
+count_in[16] => Equal4.IN15
 count_in[17] => Equal0.IN14
 count_in[17] => Equal1.IN14
+count_in[17] => Equal2.IN14
+count_in[17] => Equal3.IN14
+count_in[17] => Equal4.IN14
 count_in[18] => Equal0.IN13
 count_in[18] => Equal1.IN13
+count_in[18] => Equal2.IN13
+count_in[18] => Equal3.IN13
+count_in[18] => Equal4.IN13
 count_in[19] => Equal0.IN12
 count_in[19] => Equal1.IN12
+count_in[19] => Equal2.IN12
+count_in[19] => Equal3.IN12
+count_in[19] => Equal4.IN12
 count_in[20] => Equal0.IN11
 count_in[20] => Equal1.IN11
+count_in[20] => Equal2.IN11
+count_in[20] => Equal3.IN11
+count_in[20] => Equal4.IN11
 count_in[21] => Equal0.IN10
 count_in[21] => Equal1.IN10
+count_in[21] => Equal2.IN10
+count_in[21] => Equal3.IN10
+count_in[21] => Equal4.IN10
 count_in[22] => Equal0.IN9
 count_in[22] => Equal1.IN9
+count_in[22] => Equal2.IN9
+count_in[22] => Equal3.IN9
+count_in[22] => Equal4.IN9
 count_in[23] => Equal0.IN8
 count_in[23] => Equal1.IN8
+count_in[23] => Equal2.IN8
+count_in[23] => Equal3.IN8
+count_in[23] => Equal4.IN8
 count_in[24] => Equal0.IN7
 count_in[24] => Equal1.IN7
+count_in[24] => Equal2.IN7
+count_in[24] => Equal3.IN7
+count_in[24] => Equal4.IN7
 count_in[25] => Equal0.IN6
 count_in[25] => Equal1.IN6
+count_in[25] => Equal2.IN6
+count_in[25] => Equal3.IN6
+count_in[25] => Equal4.IN6
 count_in[26] => Equal0.IN5
 count_in[26] => Equal1.IN5
+count_in[26] => Equal2.IN5
+count_in[26] => Equal3.IN5
+count_in[26] => Equal4.IN5
 count_in[27] => Equal0.IN4
 count_in[27] => Equal1.IN4
+count_in[27] => Equal2.IN4
+count_in[27] => Equal3.IN4
+count_in[27] => Equal4.IN4
 count_in[28] => Equal0.IN3
 count_in[28] => Equal1.IN3
+count_in[28] => Equal2.IN3
+count_in[28] => Equal3.IN3
+count_in[28] => Equal4.IN3
 count_in[29] => Equal0.IN2
 count_in[29] => Equal1.IN2
+count_in[29] => Equal2.IN2
+count_in[29] => Equal3.IN2
+count_in[29] => Equal4.IN2
 count_in[30] => Equal0.IN1
 count_in[30] => Equal1.IN1
+count_in[30] => Equal2.IN1
+count_in[30] => Equal3.IN1
+count_in[30] => Equal4.IN1
 count_in[31] => Equal0.IN0
 count_in[31] => Equal1.IN0
+count_in[31] => Equal2.IN0
+count_in[31] => Equal3.IN0
+count_in[31] => Equal4.IN0
 instruction[0] <= memblock_read[0].DB_MAX_OUTPUT_PORT_TYPE
 instruction[1] <= memblock_read[1].DB_MAX_OUTPUT_PORT_TYPE
 instruction[2] <= memblock_read[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -1440,7 +1774,7 @@ clock => memblock_read[30].CLK
 clock => memblock_read[31].CLK
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|adder:alu_pc
+|fpga_riscv32_minimal|datapath:datapath_0|adder:alu_pc
 dataa[0] => Add0.IN32
 dataa[1] => Add0.IN31
 dataa[2] => Add0.IN30
@@ -1539,7 +1873,7 @@ sum[30] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 sum[31] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|mux2:pc_mux
+|fpga_riscv32_minimal|datapath:datapath_0|mux2:pc_mux
 value1[0] => result.DATAB
 value1[1] => result.DATAB
 value1[2] => result.DATAB
@@ -1670,7 +2004,7 @@ mux_result[30] <= result.DB_MAX_OUTPUT_PORT_TYPE
 mux_result[31] <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|ifid_register:IF_ID_PLR
+|fpga_riscv32_minimal|datapath:datapath_0|ifid_register:IF_ID_PLR
 clock => register32b:ifid_instruction_register.clock
 clock => register32b:ifid_pc_count_register.clock
 clock => register32b:ifid_pc_added_register.clock
@@ -1872,7 +2206,7 @@ instruction_data_out[30] <= register32b:ifid_instruction_register.reg_out[30]
 instruction_data_out[31] <= register32b:ifid_instruction_register.reg_out[31]
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|ifid_register:IF_ID_PLR|register32b:ifid_instruction_register
+|fpga_riscv32_minimal|datapath:datapath_0|ifid_register:IF_ID_PLR|register32b:ifid_instruction_register
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -2035,7 +2369,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|ifid_register:IF_ID_PLR|register32b:ifid_pc_count_register
+|fpga_riscv32_minimal|datapath:datapath_0|ifid_register:IF_ID_PLR|register32b:ifid_pc_count_register
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -2198,7 +2532,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|ifid_register:IF_ID_PLR|register32b:ifid_pc_added_register
+|fpga_riscv32_minimal|datapath:datapath_0|ifid_register:IF_ID_PLR|register32b:ifid_pc_added_register
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -2361,7 +2695,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|mux3_1:mux_0
+|fpga_riscv32_minimal|datapath:datapath_0|mux3_1:mux_0
 selection[0] => Mux0.IN2
 selection[0] => Mux1.IN2
 selection[0] => Mux2.IN2
@@ -2556,7 +2890,7 @@ output_0[30] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 output_0[31] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0
 clock => register32b_falling:reg_x0.clock
 clock => register32b_falling:reg_x1.clock
 clock => register32b_falling:reg_x2.clock
@@ -3725,7 +4059,7 @@ r2_data_out[30] <= mux32_1:output_2_mux.output_0[30]
 r2_data_out[31] <= mux32_1:output_2_mux.output_0[31]
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x0
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x0
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -3888,7 +4222,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x1
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x1
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -4051,7 +4385,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x2
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x2
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -4214,7 +4548,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x3
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x3
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -4377,7 +4711,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x4
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x4
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -4540,7 +4874,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x5
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x5
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -4703,7 +5037,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x6
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x6
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -4866,7 +5200,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x7
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x7
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -5029,7 +5363,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x8
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x8
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -5192,7 +5526,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x9
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x9
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -5355,7 +5689,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x10
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x10
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -5518,7 +5852,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x11
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x11
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -5681,7 +6015,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x12
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x12
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -5844,7 +6178,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x13
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x13
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -6007,7 +6341,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x14
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x14
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -6170,7 +6504,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x15
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x15
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -6333,7 +6667,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x16
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x16
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -6496,7 +6830,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x17
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x17
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -6659,7 +6993,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x18
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x18
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -6822,7 +7156,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x19
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x19
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -6985,7 +7319,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x20
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x20
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -7148,7 +7482,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x21
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x21
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -7311,7 +7645,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x22
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x22
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -7474,7 +7808,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x23
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x23
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -7637,7 +7971,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x24
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x24
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -7800,7 +8134,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x25
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x25
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -7963,7 +8297,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x26
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x26
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -8126,7 +8460,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x27
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x27
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -8289,7 +8623,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x28
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x28
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -8452,7 +8786,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x29
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x29
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -8615,7 +8949,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x30
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x30
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -8778,7 +9112,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|register32b_falling:reg_x31
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|register32b_falling:reg_x31
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -8941,7 +9275,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|mux32_1:output_1_mux
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|mux32_1:output_1_mux
 selection[0] => Mux0.IN4
 selection[0] => Mux1.IN4
 selection[0] => Mux2.IN4
@@ -10160,7 +10494,7 @@ output_0[30] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 output_0[31] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|register_bank:register_bank_0|mux32_1:output_2_mux
+|fpga_riscv32_minimal|datapath:datapath_0|register_bank:register_bank_0|mux32_1:output_2_mux
 selection[0] => Mux0.IN4
 selection[0] => Mux1.IN4
 selection[0] => Mux2.IN4
@@ -11379,7 +11713,7 @@ output_0[30] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 output_0[31] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|idex_register:ID_EX_PLR
+|fpga_riscv32_minimal|datapath:datapath_0|idex_register:ID_EX_PLR
 clock => register4b:ALU_operation_reg.clock
 clock => register1b:ALU_branch_reg.clock
 clock => register3b:ALU_branch_control_reg.clock
@@ -11738,7 +12072,7 @@ instruction_address_out[30] <= register32b:instruction_address_reg.reg_out[30]
 instruction_address_out[31] <= register32b:instruction_address_reg.reg_out[31]
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|idex_register:ID_EX_PLR|register4b:ALU_operation_reg
+|fpga_riscv32_minimal|datapath:datapath_0|idex_register:ID_EX_PLR|register4b:ALU_operation_reg
 reg_in[0] => internal_value[0].DATAIN
 reg_in[1] => internal_value[1].DATAIN
 reg_in[2] => internal_value[2].DATAIN
@@ -11761,7 +12095,7 @@ reg_out[2] <= internal_value[2].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[3] <= internal_value[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|idex_register:ID_EX_PLR|register1b:ALU_branch_reg
+|fpga_riscv32_minimal|datapath:datapath_0|idex_register:ID_EX_PLR|register1b:ALU_branch_reg
 reg_in => internal_value.DATAIN
 load => internal_value.ENA
 clock => internal_value.CLK
@@ -11769,7 +12103,7 @@ clear => internal_value.ACLR
 reg_out <= internal_value.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|idex_register:ID_EX_PLR|register3b:ALU_branch_control_reg
+|fpga_riscv32_minimal|datapath:datapath_0|idex_register:ID_EX_PLR|register3b:ALU_branch_control_reg
 reg_in[0] => internal_value[0].DATAIN
 reg_in[1] => internal_value[1].DATAIN
 reg_in[2] => internal_value[2].DATAIN
@@ -11787,7 +12121,7 @@ reg_out[1] <= internal_value[1].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[2] <= internal_value[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|idex_register:ID_EX_PLR|register1b:mux1_sel_reg
+|fpga_riscv32_minimal|datapath:datapath_0|idex_register:ID_EX_PLR|register1b:mux1_sel_reg
 reg_in => internal_value.DATAIN
 load => internal_value.ENA
 clock => internal_value.CLK
@@ -11795,7 +12129,7 @@ clear => internal_value.ACLR
 reg_out <= internal_value.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|idex_register:ID_EX_PLR|register1b:JTU_mux_sel_reg
+|fpga_riscv32_minimal|datapath:datapath_0|idex_register:ID_EX_PLR|register1b:JTU_mux_sel_reg
 reg_in => internal_value.DATAIN
 load => internal_value.ENA
 clock => internal_value.CLK
@@ -11803,7 +12137,7 @@ clear => internal_value.ACLR
 reg_out <= internal_value.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|idex_register:ID_EX_PLR|register3b:data_format_reg
+|fpga_riscv32_minimal|datapath:datapath_0|idex_register:ID_EX_PLR|register3b:data_format_reg
 reg_in[0] => internal_value[0].DATAIN
 reg_in[1] => internal_value[1].DATAIN
 reg_in[2] => internal_value[2].DATAIN
@@ -11821,7 +12155,7 @@ reg_out[1] <= internal_value[1].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[2] <= internal_value[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|idex_register:ID_EX_PLR|register1b:datamem_write_reg
+|fpga_riscv32_minimal|datapath:datapath_0|idex_register:ID_EX_PLR|register1b:datamem_write_reg
 reg_in => internal_value.DATAIN
 load => internal_value.ENA
 clock => internal_value.CLK
@@ -11829,7 +12163,7 @@ clear => internal_value.ACLR
 reg_out <= internal_value.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|idex_register:ID_EX_PLR|register1b:jump_flag_reg
+|fpga_riscv32_minimal|datapath:datapath_0|idex_register:ID_EX_PLR|register1b:jump_flag_reg
 reg_in => internal_value.DATAIN
 load => internal_value.ENA
 clock => internal_value.CLK
@@ -11837,7 +12171,7 @@ clear => internal_value.ACLR
 reg_out <= internal_value.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|idex_register:ID_EX_PLR|register2b:mux0_sel_reg
+|fpga_riscv32_minimal|datapath:datapath_0|idex_register:ID_EX_PLR|register2b:mux0_sel_reg
 reg_in[0] => internal_value[0].DATAIN
 reg_in[1] => internal_value[1].DATAIN
 load => internal_value[1].ENA
@@ -11850,7 +12184,7 @@ reg_out[0] <= internal_value[0].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[1] <= internal_value[1].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|idex_register:ID_EX_PLR|register1b:reg_file_write_reg
+|fpga_riscv32_minimal|datapath:datapath_0|idex_register:ID_EX_PLR|register1b:reg_file_write_reg
 reg_in => internal_value.DATAIN
 load => internal_value.ENA
 clock => internal_value.CLK
@@ -11858,687 +12192,7 @@ clear => internal_value.ACLR
 reg_out <= internal_value.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|idex_register:ID_EX_PLR|register5b:reg_file_write_address_reg
-reg_in[0] => internal_value[0].DATAIN
-reg_in[1] => internal_value[1].DATAIN
-reg_in[2] => internal_value[2].DATAIN
-reg_in[3] => internal_value[3].DATAIN
-reg_in[4] => internal_value[4].DATAIN
-load => internal_value[4].ENA
-load => internal_value[3].ENA
-load => internal_value[2].ENA
-load => internal_value[1].ENA
-load => internal_value[0].ENA
-clock => internal_value[0].CLK
-clock => internal_value[1].CLK
-clock => internal_value[2].CLK
-clock => internal_value[3].CLK
-clock => internal_value[4].CLK
-clear => internal_value[0].ACLR
-clear => internal_value[1].ACLR
-clear => internal_value[2].ACLR
-clear => internal_value[3].ACLR
-clear => internal_value[4].ACLR
-reg_out[0] <= internal_value[0].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[1] <= internal_value[1].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[2] <= internal_value[2].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[3] <= internal_value[3].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[4] <= internal_value[4].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fpga_riscv32_minimal|datapath:debug_datapath|idex_register:ID_EX_PLR|register32b:register_file_output_0_reg
-clock => register_value[0].CLK
-clock => register_value[1].CLK
-clock => register_value[2].CLK
-clock => register_value[3].CLK
-clock => register_value[4].CLK
-clock => register_value[5].CLK
-clock => register_value[6].CLK
-clock => register_value[7].CLK
-clock => register_value[8].CLK
-clock => register_value[9].CLK
-clock => register_value[10].CLK
-clock => register_value[11].CLK
-clock => register_value[12].CLK
-clock => register_value[13].CLK
-clock => register_value[14].CLK
-clock => register_value[15].CLK
-clock => register_value[16].CLK
-clock => register_value[17].CLK
-clock => register_value[18].CLK
-clock => register_value[19].CLK
-clock => register_value[20].CLK
-clock => register_value[21].CLK
-clock => register_value[22].CLK
-clock => register_value[23].CLK
-clock => register_value[24].CLK
-clock => register_value[25].CLK
-clock => register_value[26].CLK
-clock => register_value[27].CLK
-clock => register_value[28].CLK
-clock => register_value[29].CLK
-clock => register_value[30].CLK
-clock => register_value[31].CLK
-clear => register_value[0].ACLR
-clear => register_value[1].ACLR
-clear => register_value[2].ACLR
-clear => register_value[3].ACLR
-clear => register_value[4].ACLR
-clear => register_value[5].ACLR
-clear => register_value[6].ACLR
-clear => register_value[7].ACLR
-clear => register_value[8].ACLR
-clear => register_value[9].ACLR
-clear => register_value[10].ACLR
-clear => register_value[11].ACLR
-clear => register_value[12].ACLR
-clear => register_value[13].ACLR
-clear => register_value[14].ACLR
-clear => register_value[15].ACLR
-clear => register_value[16].ACLR
-clear => register_value[17].ACLR
-clear => register_value[18].ACLR
-clear => register_value[19].ACLR
-clear => register_value[20].ACLR
-clear => register_value[21].ACLR
-clear => register_value[22].ACLR
-clear => register_value[23].ACLR
-clear => register_value[24].ACLR
-clear => register_value[25].ACLR
-clear => register_value[26].ACLR
-clear => register_value[27].ACLR
-clear => register_value[28].ACLR
-clear => register_value[29].ACLR
-clear => register_value[30].ACLR
-clear => register_value[31].ACLR
-load => register_value[31].ENA
-load => register_value[30].ENA
-load => register_value[29].ENA
-load => register_value[28].ENA
-load => register_value[27].ENA
-load => register_value[26].ENA
-load => register_value[25].ENA
-load => register_value[24].ENA
-load => register_value[23].ENA
-load => register_value[22].ENA
-load => register_value[21].ENA
-load => register_value[20].ENA
-load => register_value[19].ENA
-load => register_value[18].ENA
-load => register_value[17].ENA
-load => register_value[16].ENA
-load => register_value[15].ENA
-load => register_value[14].ENA
-load => register_value[13].ENA
-load => register_value[12].ENA
-load => register_value[11].ENA
-load => register_value[10].ENA
-load => register_value[9].ENA
-load => register_value[8].ENA
-load => register_value[7].ENA
-load => register_value[6].ENA
-load => register_value[5].ENA
-load => register_value[4].ENA
-load => register_value[3].ENA
-load => register_value[2].ENA
-load => register_value[1].ENA
-load => register_value[0].ENA
-reg_in[0] => register_value[0].DATAIN
-reg_in[1] => register_value[1].DATAIN
-reg_in[2] => register_value[2].DATAIN
-reg_in[3] => register_value[3].DATAIN
-reg_in[4] => register_value[4].DATAIN
-reg_in[5] => register_value[5].DATAIN
-reg_in[6] => register_value[6].DATAIN
-reg_in[7] => register_value[7].DATAIN
-reg_in[8] => register_value[8].DATAIN
-reg_in[9] => register_value[9].DATAIN
-reg_in[10] => register_value[10].DATAIN
-reg_in[11] => register_value[11].DATAIN
-reg_in[12] => register_value[12].DATAIN
-reg_in[13] => register_value[13].DATAIN
-reg_in[14] => register_value[14].DATAIN
-reg_in[15] => register_value[15].DATAIN
-reg_in[16] => register_value[16].DATAIN
-reg_in[17] => register_value[17].DATAIN
-reg_in[18] => register_value[18].DATAIN
-reg_in[19] => register_value[19].DATAIN
-reg_in[20] => register_value[20].DATAIN
-reg_in[21] => register_value[21].DATAIN
-reg_in[22] => register_value[22].DATAIN
-reg_in[23] => register_value[23].DATAIN
-reg_in[24] => register_value[24].DATAIN
-reg_in[25] => register_value[25].DATAIN
-reg_in[26] => register_value[26].DATAIN
-reg_in[27] => register_value[27].DATAIN
-reg_in[28] => register_value[28].DATAIN
-reg_in[29] => register_value[29].DATAIN
-reg_in[30] => register_value[30].DATAIN
-reg_in[31] => register_value[31].DATAIN
-reg_out[0] <= register_value[0].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[1] <= register_value[1].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[2] <= register_value[2].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[3] <= register_value[3].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[4] <= register_value[4].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[5] <= register_value[5].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[6] <= register_value[6].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[7] <= register_value[7].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[8] <= register_value[8].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[9] <= register_value[9].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[10] <= register_value[10].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[11] <= register_value[11].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[12] <= register_value[12].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[13] <= register_value[13].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[14] <= register_value[14].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[15] <= register_value[15].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[16] <= register_value[16].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[17] <= register_value[17].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[18] <= register_value[18].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[19] <= register_value[19].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[20] <= register_value[20].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[21] <= register_value[21].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[22] <= register_value[22].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[23] <= register_value[23].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[24] <= register_value[24].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[25] <= register_value[25].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[26] <= register_value[26].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[27] <= register_value[27].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[28] <= register_value[28].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[29] <= register_value[29].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fpga_riscv32_minimal|datapath:debug_datapath|idex_register:ID_EX_PLR|register32b:register_file_output_1_reg
-clock => register_value[0].CLK
-clock => register_value[1].CLK
-clock => register_value[2].CLK
-clock => register_value[3].CLK
-clock => register_value[4].CLK
-clock => register_value[5].CLK
-clock => register_value[6].CLK
-clock => register_value[7].CLK
-clock => register_value[8].CLK
-clock => register_value[9].CLK
-clock => register_value[10].CLK
-clock => register_value[11].CLK
-clock => register_value[12].CLK
-clock => register_value[13].CLK
-clock => register_value[14].CLK
-clock => register_value[15].CLK
-clock => register_value[16].CLK
-clock => register_value[17].CLK
-clock => register_value[18].CLK
-clock => register_value[19].CLK
-clock => register_value[20].CLK
-clock => register_value[21].CLK
-clock => register_value[22].CLK
-clock => register_value[23].CLK
-clock => register_value[24].CLK
-clock => register_value[25].CLK
-clock => register_value[26].CLK
-clock => register_value[27].CLK
-clock => register_value[28].CLK
-clock => register_value[29].CLK
-clock => register_value[30].CLK
-clock => register_value[31].CLK
-clear => register_value[0].ACLR
-clear => register_value[1].ACLR
-clear => register_value[2].ACLR
-clear => register_value[3].ACLR
-clear => register_value[4].ACLR
-clear => register_value[5].ACLR
-clear => register_value[6].ACLR
-clear => register_value[7].ACLR
-clear => register_value[8].ACLR
-clear => register_value[9].ACLR
-clear => register_value[10].ACLR
-clear => register_value[11].ACLR
-clear => register_value[12].ACLR
-clear => register_value[13].ACLR
-clear => register_value[14].ACLR
-clear => register_value[15].ACLR
-clear => register_value[16].ACLR
-clear => register_value[17].ACLR
-clear => register_value[18].ACLR
-clear => register_value[19].ACLR
-clear => register_value[20].ACLR
-clear => register_value[21].ACLR
-clear => register_value[22].ACLR
-clear => register_value[23].ACLR
-clear => register_value[24].ACLR
-clear => register_value[25].ACLR
-clear => register_value[26].ACLR
-clear => register_value[27].ACLR
-clear => register_value[28].ACLR
-clear => register_value[29].ACLR
-clear => register_value[30].ACLR
-clear => register_value[31].ACLR
-load => register_value[31].ENA
-load => register_value[30].ENA
-load => register_value[29].ENA
-load => register_value[28].ENA
-load => register_value[27].ENA
-load => register_value[26].ENA
-load => register_value[25].ENA
-load => register_value[24].ENA
-load => register_value[23].ENA
-load => register_value[22].ENA
-load => register_value[21].ENA
-load => register_value[20].ENA
-load => register_value[19].ENA
-load => register_value[18].ENA
-load => register_value[17].ENA
-load => register_value[16].ENA
-load => register_value[15].ENA
-load => register_value[14].ENA
-load => register_value[13].ENA
-load => register_value[12].ENA
-load => register_value[11].ENA
-load => register_value[10].ENA
-load => register_value[9].ENA
-load => register_value[8].ENA
-load => register_value[7].ENA
-load => register_value[6].ENA
-load => register_value[5].ENA
-load => register_value[4].ENA
-load => register_value[3].ENA
-load => register_value[2].ENA
-load => register_value[1].ENA
-load => register_value[0].ENA
-reg_in[0] => register_value[0].DATAIN
-reg_in[1] => register_value[1].DATAIN
-reg_in[2] => register_value[2].DATAIN
-reg_in[3] => register_value[3].DATAIN
-reg_in[4] => register_value[4].DATAIN
-reg_in[5] => register_value[5].DATAIN
-reg_in[6] => register_value[6].DATAIN
-reg_in[7] => register_value[7].DATAIN
-reg_in[8] => register_value[8].DATAIN
-reg_in[9] => register_value[9].DATAIN
-reg_in[10] => register_value[10].DATAIN
-reg_in[11] => register_value[11].DATAIN
-reg_in[12] => register_value[12].DATAIN
-reg_in[13] => register_value[13].DATAIN
-reg_in[14] => register_value[14].DATAIN
-reg_in[15] => register_value[15].DATAIN
-reg_in[16] => register_value[16].DATAIN
-reg_in[17] => register_value[17].DATAIN
-reg_in[18] => register_value[18].DATAIN
-reg_in[19] => register_value[19].DATAIN
-reg_in[20] => register_value[20].DATAIN
-reg_in[21] => register_value[21].DATAIN
-reg_in[22] => register_value[22].DATAIN
-reg_in[23] => register_value[23].DATAIN
-reg_in[24] => register_value[24].DATAIN
-reg_in[25] => register_value[25].DATAIN
-reg_in[26] => register_value[26].DATAIN
-reg_in[27] => register_value[27].DATAIN
-reg_in[28] => register_value[28].DATAIN
-reg_in[29] => register_value[29].DATAIN
-reg_in[30] => register_value[30].DATAIN
-reg_in[31] => register_value[31].DATAIN
-reg_out[0] <= register_value[0].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[1] <= register_value[1].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[2] <= register_value[2].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[3] <= register_value[3].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[4] <= register_value[4].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[5] <= register_value[5].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[6] <= register_value[6].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[7] <= register_value[7].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[8] <= register_value[8].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[9] <= register_value[9].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[10] <= register_value[10].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[11] <= register_value[11].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[12] <= register_value[12].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[13] <= register_value[13].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[14] <= register_value[14].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[15] <= register_value[15].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[16] <= register_value[16].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[17] <= register_value[17].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[18] <= register_value[18].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[19] <= register_value[19].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[20] <= register_value[20].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[21] <= register_value[21].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[22] <= register_value[22].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[23] <= register_value[23].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[24] <= register_value[24].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[25] <= register_value[25].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[26] <= register_value[26].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[27] <= register_value[27].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[28] <= register_value[28].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[29] <= register_value[29].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fpga_riscv32_minimal|datapath:debug_datapath|idex_register:ID_EX_PLR|register32b:immediate_reg
-clock => register_value[0].CLK
-clock => register_value[1].CLK
-clock => register_value[2].CLK
-clock => register_value[3].CLK
-clock => register_value[4].CLK
-clock => register_value[5].CLK
-clock => register_value[6].CLK
-clock => register_value[7].CLK
-clock => register_value[8].CLK
-clock => register_value[9].CLK
-clock => register_value[10].CLK
-clock => register_value[11].CLK
-clock => register_value[12].CLK
-clock => register_value[13].CLK
-clock => register_value[14].CLK
-clock => register_value[15].CLK
-clock => register_value[16].CLK
-clock => register_value[17].CLK
-clock => register_value[18].CLK
-clock => register_value[19].CLK
-clock => register_value[20].CLK
-clock => register_value[21].CLK
-clock => register_value[22].CLK
-clock => register_value[23].CLK
-clock => register_value[24].CLK
-clock => register_value[25].CLK
-clock => register_value[26].CLK
-clock => register_value[27].CLK
-clock => register_value[28].CLK
-clock => register_value[29].CLK
-clock => register_value[30].CLK
-clock => register_value[31].CLK
-clear => register_value[0].ACLR
-clear => register_value[1].ACLR
-clear => register_value[2].ACLR
-clear => register_value[3].ACLR
-clear => register_value[4].ACLR
-clear => register_value[5].ACLR
-clear => register_value[6].ACLR
-clear => register_value[7].ACLR
-clear => register_value[8].ACLR
-clear => register_value[9].ACLR
-clear => register_value[10].ACLR
-clear => register_value[11].ACLR
-clear => register_value[12].ACLR
-clear => register_value[13].ACLR
-clear => register_value[14].ACLR
-clear => register_value[15].ACLR
-clear => register_value[16].ACLR
-clear => register_value[17].ACLR
-clear => register_value[18].ACLR
-clear => register_value[19].ACLR
-clear => register_value[20].ACLR
-clear => register_value[21].ACLR
-clear => register_value[22].ACLR
-clear => register_value[23].ACLR
-clear => register_value[24].ACLR
-clear => register_value[25].ACLR
-clear => register_value[26].ACLR
-clear => register_value[27].ACLR
-clear => register_value[28].ACLR
-clear => register_value[29].ACLR
-clear => register_value[30].ACLR
-clear => register_value[31].ACLR
-load => register_value[31].ENA
-load => register_value[30].ENA
-load => register_value[29].ENA
-load => register_value[28].ENA
-load => register_value[27].ENA
-load => register_value[26].ENA
-load => register_value[25].ENA
-load => register_value[24].ENA
-load => register_value[23].ENA
-load => register_value[22].ENA
-load => register_value[21].ENA
-load => register_value[20].ENA
-load => register_value[19].ENA
-load => register_value[18].ENA
-load => register_value[17].ENA
-load => register_value[16].ENA
-load => register_value[15].ENA
-load => register_value[14].ENA
-load => register_value[13].ENA
-load => register_value[12].ENA
-load => register_value[11].ENA
-load => register_value[10].ENA
-load => register_value[9].ENA
-load => register_value[8].ENA
-load => register_value[7].ENA
-load => register_value[6].ENA
-load => register_value[5].ENA
-load => register_value[4].ENA
-load => register_value[3].ENA
-load => register_value[2].ENA
-load => register_value[1].ENA
-load => register_value[0].ENA
-reg_in[0] => register_value[0].DATAIN
-reg_in[1] => register_value[1].DATAIN
-reg_in[2] => register_value[2].DATAIN
-reg_in[3] => register_value[3].DATAIN
-reg_in[4] => register_value[4].DATAIN
-reg_in[5] => register_value[5].DATAIN
-reg_in[6] => register_value[6].DATAIN
-reg_in[7] => register_value[7].DATAIN
-reg_in[8] => register_value[8].DATAIN
-reg_in[9] => register_value[9].DATAIN
-reg_in[10] => register_value[10].DATAIN
-reg_in[11] => register_value[11].DATAIN
-reg_in[12] => register_value[12].DATAIN
-reg_in[13] => register_value[13].DATAIN
-reg_in[14] => register_value[14].DATAIN
-reg_in[15] => register_value[15].DATAIN
-reg_in[16] => register_value[16].DATAIN
-reg_in[17] => register_value[17].DATAIN
-reg_in[18] => register_value[18].DATAIN
-reg_in[19] => register_value[19].DATAIN
-reg_in[20] => register_value[20].DATAIN
-reg_in[21] => register_value[21].DATAIN
-reg_in[22] => register_value[22].DATAIN
-reg_in[23] => register_value[23].DATAIN
-reg_in[24] => register_value[24].DATAIN
-reg_in[25] => register_value[25].DATAIN
-reg_in[26] => register_value[26].DATAIN
-reg_in[27] => register_value[27].DATAIN
-reg_in[28] => register_value[28].DATAIN
-reg_in[29] => register_value[29].DATAIN
-reg_in[30] => register_value[30].DATAIN
-reg_in[31] => register_value[31].DATAIN
-reg_out[0] <= register_value[0].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[1] <= register_value[1].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[2] <= register_value[2].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[3] <= register_value[3].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[4] <= register_value[4].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[5] <= register_value[5].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[6] <= register_value[6].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[7] <= register_value[7].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[8] <= register_value[8].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[9] <= register_value[9].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[10] <= register_value[10].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[11] <= register_value[11].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[12] <= register_value[12].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[13] <= register_value[13].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[14] <= register_value[14].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[15] <= register_value[15].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[16] <= register_value[16].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[17] <= register_value[17].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[18] <= register_value[18].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[19] <= register_value[19].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[20] <= register_value[20].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[21] <= register_value[21].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[22] <= register_value[22].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[23] <= register_value[23].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[24] <= register_value[24].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[25] <= register_value[25].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[26] <= register_value[26].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[27] <= register_value[27].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[28] <= register_value[28].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[29] <= register_value[29].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fpga_riscv32_minimal|datapath:debug_datapath|idex_register:ID_EX_PLR|register32b:instruction_address_reg
-clock => register_value[0].CLK
-clock => register_value[1].CLK
-clock => register_value[2].CLK
-clock => register_value[3].CLK
-clock => register_value[4].CLK
-clock => register_value[5].CLK
-clock => register_value[6].CLK
-clock => register_value[7].CLK
-clock => register_value[8].CLK
-clock => register_value[9].CLK
-clock => register_value[10].CLK
-clock => register_value[11].CLK
-clock => register_value[12].CLK
-clock => register_value[13].CLK
-clock => register_value[14].CLK
-clock => register_value[15].CLK
-clock => register_value[16].CLK
-clock => register_value[17].CLK
-clock => register_value[18].CLK
-clock => register_value[19].CLK
-clock => register_value[20].CLK
-clock => register_value[21].CLK
-clock => register_value[22].CLK
-clock => register_value[23].CLK
-clock => register_value[24].CLK
-clock => register_value[25].CLK
-clock => register_value[26].CLK
-clock => register_value[27].CLK
-clock => register_value[28].CLK
-clock => register_value[29].CLK
-clock => register_value[30].CLK
-clock => register_value[31].CLK
-clear => register_value[0].ACLR
-clear => register_value[1].ACLR
-clear => register_value[2].ACLR
-clear => register_value[3].ACLR
-clear => register_value[4].ACLR
-clear => register_value[5].ACLR
-clear => register_value[6].ACLR
-clear => register_value[7].ACLR
-clear => register_value[8].ACLR
-clear => register_value[9].ACLR
-clear => register_value[10].ACLR
-clear => register_value[11].ACLR
-clear => register_value[12].ACLR
-clear => register_value[13].ACLR
-clear => register_value[14].ACLR
-clear => register_value[15].ACLR
-clear => register_value[16].ACLR
-clear => register_value[17].ACLR
-clear => register_value[18].ACLR
-clear => register_value[19].ACLR
-clear => register_value[20].ACLR
-clear => register_value[21].ACLR
-clear => register_value[22].ACLR
-clear => register_value[23].ACLR
-clear => register_value[24].ACLR
-clear => register_value[25].ACLR
-clear => register_value[26].ACLR
-clear => register_value[27].ACLR
-clear => register_value[28].ACLR
-clear => register_value[29].ACLR
-clear => register_value[30].ACLR
-clear => register_value[31].ACLR
-load => register_value[31].ENA
-load => register_value[30].ENA
-load => register_value[29].ENA
-load => register_value[28].ENA
-load => register_value[27].ENA
-load => register_value[26].ENA
-load => register_value[25].ENA
-load => register_value[24].ENA
-load => register_value[23].ENA
-load => register_value[22].ENA
-load => register_value[21].ENA
-load => register_value[20].ENA
-load => register_value[19].ENA
-load => register_value[18].ENA
-load => register_value[17].ENA
-load => register_value[16].ENA
-load => register_value[15].ENA
-load => register_value[14].ENA
-load => register_value[13].ENA
-load => register_value[12].ENA
-load => register_value[11].ENA
-load => register_value[10].ENA
-load => register_value[9].ENA
-load => register_value[8].ENA
-load => register_value[7].ENA
-load => register_value[6].ENA
-load => register_value[5].ENA
-load => register_value[4].ENA
-load => register_value[3].ENA
-load => register_value[2].ENA
-load => register_value[1].ENA
-load => register_value[0].ENA
-reg_in[0] => register_value[0].DATAIN
-reg_in[1] => register_value[1].DATAIN
-reg_in[2] => register_value[2].DATAIN
-reg_in[3] => register_value[3].DATAIN
-reg_in[4] => register_value[4].DATAIN
-reg_in[5] => register_value[5].DATAIN
-reg_in[6] => register_value[6].DATAIN
-reg_in[7] => register_value[7].DATAIN
-reg_in[8] => register_value[8].DATAIN
-reg_in[9] => register_value[9].DATAIN
-reg_in[10] => register_value[10].DATAIN
-reg_in[11] => register_value[11].DATAIN
-reg_in[12] => register_value[12].DATAIN
-reg_in[13] => register_value[13].DATAIN
-reg_in[14] => register_value[14].DATAIN
-reg_in[15] => register_value[15].DATAIN
-reg_in[16] => register_value[16].DATAIN
-reg_in[17] => register_value[17].DATAIN
-reg_in[18] => register_value[18].DATAIN
-reg_in[19] => register_value[19].DATAIN
-reg_in[20] => register_value[20].DATAIN
-reg_in[21] => register_value[21].DATAIN
-reg_in[22] => register_value[22].DATAIN
-reg_in[23] => register_value[23].DATAIN
-reg_in[24] => register_value[24].DATAIN
-reg_in[25] => register_value[25].DATAIN
-reg_in[26] => register_value[26].DATAIN
-reg_in[27] => register_value[27].DATAIN
-reg_in[28] => register_value[28].DATAIN
-reg_in[29] => register_value[29].DATAIN
-reg_in[30] => register_value[30].DATAIN
-reg_in[31] => register_value[31].DATAIN
-reg_out[0] <= register_value[0].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[1] <= register_value[1].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[2] <= register_value[2].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[3] <= register_value[3].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[4] <= register_value[4].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[5] <= register_value[5].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[6] <= register_value[6].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[7] <= register_value[7].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[8] <= register_value[8].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[9] <= register_value[9].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[10] <= register_value[10].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[11] <= register_value[11].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[12] <= register_value[12].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[13] <= register_value[13].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[14] <= register_value[14].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[15] <= register_value[15].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[16] <= register_value[16].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[17] <= register_value[17].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[18] <= register_value[18].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[19] <= register_value[19].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[20] <= register_value[20].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[21] <= register_value[21].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[22] <= register_value[22].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[23] <= register_value[23].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[24] <= register_value[24].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[25] <= register_value[25].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[26] <= register_value[26].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[27] <= register_value[27].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[28] <= register_value[28].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[29] <= register_value[29].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
-reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fpga_riscv32_minimal|datapath:debug_datapath|idex_register:ID_EX_PLR|register5b:register_file_read_address_0_reg
+|fpga_riscv32_minimal|datapath:datapath_0|idex_register:ID_EX_PLR|register5b:reg_file_write_address_reg
 reg_in[0] => internal_value[0].DATAIN
 reg_in[1] => internal_value[1].DATAIN
 reg_in[2] => internal_value[2].DATAIN
@@ -12566,7 +12220,659 @@ reg_out[3] <= internal_value[3].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[4] <= internal_value[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|idex_register:ID_EX_PLR|register5b:register_file_read_address_1_reg
+|fpga_riscv32_minimal|datapath:datapath_0|idex_register:ID_EX_PLR|register32b:register_file_output_0_reg
+clock => register_value[0].CLK
+clock => register_value[1].CLK
+clock => register_value[2].CLK
+clock => register_value[3].CLK
+clock => register_value[4].CLK
+clock => register_value[5].CLK
+clock => register_value[6].CLK
+clock => register_value[7].CLK
+clock => register_value[8].CLK
+clock => register_value[9].CLK
+clock => register_value[10].CLK
+clock => register_value[11].CLK
+clock => register_value[12].CLK
+clock => register_value[13].CLK
+clock => register_value[14].CLK
+clock => register_value[15].CLK
+clock => register_value[16].CLK
+clock => register_value[17].CLK
+clock => register_value[18].CLK
+clock => register_value[19].CLK
+clock => register_value[20].CLK
+clock => register_value[21].CLK
+clock => register_value[22].CLK
+clock => register_value[23].CLK
+clock => register_value[24].CLK
+clock => register_value[25].CLK
+clock => register_value[26].CLK
+clock => register_value[27].CLK
+clock => register_value[28].CLK
+clock => register_value[29].CLK
+clock => register_value[30].CLK
+clock => register_value[31].CLK
+clear => register_value[0].ACLR
+clear => register_value[1].ACLR
+clear => register_value[2].ACLR
+clear => register_value[3].ACLR
+clear => register_value[4].ACLR
+clear => register_value[5].ACLR
+clear => register_value[6].ACLR
+clear => register_value[7].ACLR
+clear => register_value[8].ACLR
+clear => register_value[9].ACLR
+clear => register_value[10].ACLR
+clear => register_value[11].ACLR
+clear => register_value[12].ACLR
+clear => register_value[13].ACLR
+clear => register_value[14].ACLR
+clear => register_value[15].ACLR
+clear => register_value[16].ACLR
+clear => register_value[17].ACLR
+clear => register_value[18].ACLR
+clear => register_value[19].ACLR
+clear => register_value[20].ACLR
+clear => register_value[21].ACLR
+clear => register_value[22].ACLR
+clear => register_value[23].ACLR
+clear => register_value[24].ACLR
+clear => register_value[25].ACLR
+clear => register_value[26].ACLR
+clear => register_value[27].ACLR
+clear => register_value[28].ACLR
+clear => register_value[29].ACLR
+clear => register_value[30].ACLR
+clear => register_value[31].ACLR
+load => register_value[31].ENA
+load => register_value[30].ENA
+load => register_value[29].ENA
+load => register_value[28].ENA
+load => register_value[27].ENA
+load => register_value[26].ENA
+load => register_value[25].ENA
+load => register_value[24].ENA
+load => register_value[23].ENA
+load => register_value[22].ENA
+load => register_value[21].ENA
+load => register_value[20].ENA
+load => register_value[19].ENA
+load => register_value[18].ENA
+load => register_value[17].ENA
+load => register_value[16].ENA
+load => register_value[15].ENA
+load => register_value[14].ENA
+load => register_value[13].ENA
+load => register_value[12].ENA
+load => register_value[11].ENA
+load => register_value[10].ENA
+load => register_value[9].ENA
+load => register_value[8].ENA
+load => register_value[7].ENA
+load => register_value[6].ENA
+load => register_value[5].ENA
+load => register_value[4].ENA
+load => register_value[3].ENA
+load => register_value[2].ENA
+load => register_value[1].ENA
+load => register_value[0].ENA
+reg_in[0] => register_value[0].DATAIN
+reg_in[1] => register_value[1].DATAIN
+reg_in[2] => register_value[2].DATAIN
+reg_in[3] => register_value[3].DATAIN
+reg_in[4] => register_value[4].DATAIN
+reg_in[5] => register_value[5].DATAIN
+reg_in[6] => register_value[6].DATAIN
+reg_in[7] => register_value[7].DATAIN
+reg_in[8] => register_value[8].DATAIN
+reg_in[9] => register_value[9].DATAIN
+reg_in[10] => register_value[10].DATAIN
+reg_in[11] => register_value[11].DATAIN
+reg_in[12] => register_value[12].DATAIN
+reg_in[13] => register_value[13].DATAIN
+reg_in[14] => register_value[14].DATAIN
+reg_in[15] => register_value[15].DATAIN
+reg_in[16] => register_value[16].DATAIN
+reg_in[17] => register_value[17].DATAIN
+reg_in[18] => register_value[18].DATAIN
+reg_in[19] => register_value[19].DATAIN
+reg_in[20] => register_value[20].DATAIN
+reg_in[21] => register_value[21].DATAIN
+reg_in[22] => register_value[22].DATAIN
+reg_in[23] => register_value[23].DATAIN
+reg_in[24] => register_value[24].DATAIN
+reg_in[25] => register_value[25].DATAIN
+reg_in[26] => register_value[26].DATAIN
+reg_in[27] => register_value[27].DATAIN
+reg_in[28] => register_value[28].DATAIN
+reg_in[29] => register_value[29].DATAIN
+reg_in[30] => register_value[30].DATAIN
+reg_in[31] => register_value[31].DATAIN
+reg_out[0] <= register_value[0].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[1] <= register_value[1].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[2] <= register_value[2].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[3] <= register_value[3].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[4] <= register_value[4].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[5] <= register_value[5].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[6] <= register_value[6].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[7] <= register_value[7].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[8] <= register_value[8].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[9] <= register_value[9].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[10] <= register_value[10].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[11] <= register_value[11].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[12] <= register_value[12].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[13] <= register_value[13].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[14] <= register_value[14].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[15] <= register_value[15].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[16] <= register_value[16].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[17] <= register_value[17].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[18] <= register_value[18].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[19] <= register_value[19].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[20] <= register_value[20].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[21] <= register_value[21].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[22] <= register_value[22].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[23] <= register_value[23].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[24] <= register_value[24].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[25] <= register_value[25].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[26] <= register_value[26].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[27] <= register_value[27].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[28] <= register_value[28].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[29] <= register_value[29].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fpga_riscv32_minimal|datapath:datapath_0|idex_register:ID_EX_PLR|register32b:register_file_output_1_reg
+clock => register_value[0].CLK
+clock => register_value[1].CLK
+clock => register_value[2].CLK
+clock => register_value[3].CLK
+clock => register_value[4].CLK
+clock => register_value[5].CLK
+clock => register_value[6].CLK
+clock => register_value[7].CLK
+clock => register_value[8].CLK
+clock => register_value[9].CLK
+clock => register_value[10].CLK
+clock => register_value[11].CLK
+clock => register_value[12].CLK
+clock => register_value[13].CLK
+clock => register_value[14].CLK
+clock => register_value[15].CLK
+clock => register_value[16].CLK
+clock => register_value[17].CLK
+clock => register_value[18].CLK
+clock => register_value[19].CLK
+clock => register_value[20].CLK
+clock => register_value[21].CLK
+clock => register_value[22].CLK
+clock => register_value[23].CLK
+clock => register_value[24].CLK
+clock => register_value[25].CLK
+clock => register_value[26].CLK
+clock => register_value[27].CLK
+clock => register_value[28].CLK
+clock => register_value[29].CLK
+clock => register_value[30].CLK
+clock => register_value[31].CLK
+clear => register_value[0].ACLR
+clear => register_value[1].ACLR
+clear => register_value[2].ACLR
+clear => register_value[3].ACLR
+clear => register_value[4].ACLR
+clear => register_value[5].ACLR
+clear => register_value[6].ACLR
+clear => register_value[7].ACLR
+clear => register_value[8].ACLR
+clear => register_value[9].ACLR
+clear => register_value[10].ACLR
+clear => register_value[11].ACLR
+clear => register_value[12].ACLR
+clear => register_value[13].ACLR
+clear => register_value[14].ACLR
+clear => register_value[15].ACLR
+clear => register_value[16].ACLR
+clear => register_value[17].ACLR
+clear => register_value[18].ACLR
+clear => register_value[19].ACLR
+clear => register_value[20].ACLR
+clear => register_value[21].ACLR
+clear => register_value[22].ACLR
+clear => register_value[23].ACLR
+clear => register_value[24].ACLR
+clear => register_value[25].ACLR
+clear => register_value[26].ACLR
+clear => register_value[27].ACLR
+clear => register_value[28].ACLR
+clear => register_value[29].ACLR
+clear => register_value[30].ACLR
+clear => register_value[31].ACLR
+load => register_value[31].ENA
+load => register_value[30].ENA
+load => register_value[29].ENA
+load => register_value[28].ENA
+load => register_value[27].ENA
+load => register_value[26].ENA
+load => register_value[25].ENA
+load => register_value[24].ENA
+load => register_value[23].ENA
+load => register_value[22].ENA
+load => register_value[21].ENA
+load => register_value[20].ENA
+load => register_value[19].ENA
+load => register_value[18].ENA
+load => register_value[17].ENA
+load => register_value[16].ENA
+load => register_value[15].ENA
+load => register_value[14].ENA
+load => register_value[13].ENA
+load => register_value[12].ENA
+load => register_value[11].ENA
+load => register_value[10].ENA
+load => register_value[9].ENA
+load => register_value[8].ENA
+load => register_value[7].ENA
+load => register_value[6].ENA
+load => register_value[5].ENA
+load => register_value[4].ENA
+load => register_value[3].ENA
+load => register_value[2].ENA
+load => register_value[1].ENA
+load => register_value[0].ENA
+reg_in[0] => register_value[0].DATAIN
+reg_in[1] => register_value[1].DATAIN
+reg_in[2] => register_value[2].DATAIN
+reg_in[3] => register_value[3].DATAIN
+reg_in[4] => register_value[4].DATAIN
+reg_in[5] => register_value[5].DATAIN
+reg_in[6] => register_value[6].DATAIN
+reg_in[7] => register_value[7].DATAIN
+reg_in[8] => register_value[8].DATAIN
+reg_in[9] => register_value[9].DATAIN
+reg_in[10] => register_value[10].DATAIN
+reg_in[11] => register_value[11].DATAIN
+reg_in[12] => register_value[12].DATAIN
+reg_in[13] => register_value[13].DATAIN
+reg_in[14] => register_value[14].DATAIN
+reg_in[15] => register_value[15].DATAIN
+reg_in[16] => register_value[16].DATAIN
+reg_in[17] => register_value[17].DATAIN
+reg_in[18] => register_value[18].DATAIN
+reg_in[19] => register_value[19].DATAIN
+reg_in[20] => register_value[20].DATAIN
+reg_in[21] => register_value[21].DATAIN
+reg_in[22] => register_value[22].DATAIN
+reg_in[23] => register_value[23].DATAIN
+reg_in[24] => register_value[24].DATAIN
+reg_in[25] => register_value[25].DATAIN
+reg_in[26] => register_value[26].DATAIN
+reg_in[27] => register_value[27].DATAIN
+reg_in[28] => register_value[28].DATAIN
+reg_in[29] => register_value[29].DATAIN
+reg_in[30] => register_value[30].DATAIN
+reg_in[31] => register_value[31].DATAIN
+reg_out[0] <= register_value[0].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[1] <= register_value[1].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[2] <= register_value[2].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[3] <= register_value[3].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[4] <= register_value[4].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[5] <= register_value[5].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[6] <= register_value[6].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[7] <= register_value[7].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[8] <= register_value[8].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[9] <= register_value[9].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[10] <= register_value[10].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[11] <= register_value[11].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[12] <= register_value[12].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[13] <= register_value[13].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[14] <= register_value[14].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[15] <= register_value[15].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[16] <= register_value[16].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[17] <= register_value[17].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[18] <= register_value[18].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[19] <= register_value[19].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[20] <= register_value[20].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[21] <= register_value[21].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[22] <= register_value[22].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[23] <= register_value[23].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[24] <= register_value[24].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[25] <= register_value[25].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[26] <= register_value[26].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[27] <= register_value[27].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[28] <= register_value[28].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[29] <= register_value[29].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fpga_riscv32_minimal|datapath:datapath_0|idex_register:ID_EX_PLR|register32b:immediate_reg
+clock => register_value[0].CLK
+clock => register_value[1].CLK
+clock => register_value[2].CLK
+clock => register_value[3].CLK
+clock => register_value[4].CLK
+clock => register_value[5].CLK
+clock => register_value[6].CLK
+clock => register_value[7].CLK
+clock => register_value[8].CLK
+clock => register_value[9].CLK
+clock => register_value[10].CLK
+clock => register_value[11].CLK
+clock => register_value[12].CLK
+clock => register_value[13].CLK
+clock => register_value[14].CLK
+clock => register_value[15].CLK
+clock => register_value[16].CLK
+clock => register_value[17].CLK
+clock => register_value[18].CLK
+clock => register_value[19].CLK
+clock => register_value[20].CLK
+clock => register_value[21].CLK
+clock => register_value[22].CLK
+clock => register_value[23].CLK
+clock => register_value[24].CLK
+clock => register_value[25].CLK
+clock => register_value[26].CLK
+clock => register_value[27].CLK
+clock => register_value[28].CLK
+clock => register_value[29].CLK
+clock => register_value[30].CLK
+clock => register_value[31].CLK
+clear => register_value[0].ACLR
+clear => register_value[1].ACLR
+clear => register_value[2].ACLR
+clear => register_value[3].ACLR
+clear => register_value[4].ACLR
+clear => register_value[5].ACLR
+clear => register_value[6].ACLR
+clear => register_value[7].ACLR
+clear => register_value[8].ACLR
+clear => register_value[9].ACLR
+clear => register_value[10].ACLR
+clear => register_value[11].ACLR
+clear => register_value[12].ACLR
+clear => register_value[13].ACLR
+clear => register_value[14].ACLR
+clear => register_value[15].ACLR
+clear => register_value[16].ACLR
+clear => register_value[17].ACLR
+clear => register_value[18].ACLR
+clear => register_value[19].ACLR
+clear => register_value[20].ACLR
+clear => register_value[21].ACLR
+clear => register_value[22].ACLR
+clear => register_value[23].ACLR
+clear => register_value[24].ACLR
+clear => register_value[25].ACLR
+clear => register_value[26].ACLR
+clear => register_value[27].ACLR
+clear => register_value[28].ACLR
+clear => register_value[29].ACLR
+clear => register_value[30].ACLR
+clear => register_value[31].ACLR
+load => register_value[31].ENA
+load => register_value[30].ENA
+load => register_value[29].ENA
+load => register_value[28].ENA
+load => register_value[27].ENA
+load => register_value[26].ENA
+load => register_value[25].ENA
+load => register_value[24].ENA
+load => register_value[23].ENA
+load => register_value[22].ENA
+load => register_value[21].ENA
+load => register_value[20].ENA
+load => register_value[19].ENA
+load => register_value[18].ENA
+load => register_value[17].ENA
+load => register_value[16].ENA
+load => register_value[15].ENA
+load => register_value[14].ENA
+load => register_value[13].ENA
+load => register_value[12].ENA
+load => register_value[11].ENA
+load => register_value[10].ENA
+load => register_value[9].ENA
+load => register_value[8].ENA
+load => register_value[7].ENA
+load => register_value[6].ENA
+load => register_value[5].ENA
+load => register_value[4].ENA
+load => register_value[3].ENA
+load => register_value[2].ENA
+load => register_value[1].ENA
+load => register_value[0].ENA
+reg_in[0] => register_value[0].DATAIN
+reg_in[1] => register_value[1].DATAIN
+reg_in[2] => register_value[2].DATAIN
+reg_in[3] => register_value[3].DATAIN
+reg_in[4] => register_value[4].DATAIN
+reg_in[5] => register_value[5].DATAIN
+reg_in[6] => register_value[6].DATAIN
+reg_in[7] => register_value[7].DATAIN
+reg_in[8] => register_value[8].DATAIN
+reg_in[9] => register_value[9].DATAIN
+reg_in[10] => register_value[10].DATAIN
+reg_in[11] => register_value[11].DATAIN
+reg_in[12] => register_value[12].DATAIN
+reg_in[13] => register_value[13].DATAIN
+reg_in[14] => register_value[14].DATAIN
+reg_in[15] => register_value[15].DATAIN
+reg_in[16] => register_value[16].DATAIN
+reg_in[17] => register_value[17].DATAIN
+reg_in[18] => register_value[18].DATAIN
+reg_in[19] => register_value[19].DATAIN
+reg_in[20] => register_value[20].DATAIN
+reg_in[21] => register_value[21].DATAIN
+reg_in[22] => register_value[22].DATAIN
+reg_in[23] => register_value[23].DATAIN
+reg_in[24] => register_value[24].DATAIN
+reg_in[25] => register_value[25].DATAIN
+reg_in[26] => register_value[26].DATAIN
+reg_in[27] => register_value[27].DATAIN
+reg_in[28] => register_value[28].DATAIN
+reg_in[29] => register_value[29].DATAIN
+reg_in[30] => register_value[30].DATAIN
+reg_in[31] => register_value[31].DATAIN
+reg_out[0] <= register_value[0].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[1] <= register_value[1].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[2] <= register_value[2].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[3] <= register_value[3].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[4] <= register_value[4].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[5] <= register_value[5].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[6] <= register_value[6].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[7] <= register_value[7].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[8] <= register_value[8].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[9] <= register_value[9].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[10] <= register_value[10].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[11] <= register_value[11].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[12] <= register_value[12].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[13] <= register_value[13].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[14] <= register_value[14].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[15] <= register_value[15].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[16] <= register_value[16].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[17] <= register_value[17].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[18] <= register_value[18].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[19] <= register_value[19].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[20] <= register_value[20].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[21] <= register_value[21].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[22] <= register_value[22].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[23] <= register_value[23].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[24] <= register_value[24].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[25] <= register_value[25].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[26] <= register_value[26].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[27] <= register_value[27].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[28] <= register_value[28].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[29] <= register_value[29].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fpga_riscv32_minimal|datapath:datapath_0|idex_register:ID_EX_PLR|register32b:instruction_address_reg
+clock => register_value[0].CLK
+clock => register_value[1].CLK
+clock => register_value[2].CLK
+clock => register_value[3].CLK
+clock => register_value[4].CLK
+clock => register_value[5].CLK
+clock => register_value[6].CLK
+clock => register_value[7].CLK
+clock => register_value[8].CLK
+clock => register_value[9].CLK
+clock => register_value[10].CLK
+clock => register_value[11].CLK
+clock => register_value[12].CLK
+clock => register_value[13].CLK
+clock => register_value[14].CLK
+clock => register_value[15].CLK
+clock => register_value[16].CLK
+clock => register_value[17].CLK
+clock => register_value[18].CLK
+clock => register_value[19].CLK
+clock => register_value[20].CLK
+clock => register_value[21].CLK
+clock => register_value[22].CLK
+clock => register_value[23].CLK
+clock => register_value[24].CLK
+clock => register_value[25].CLK
+clock => register_value[26].CLK
+clock => register_value[27].CLK
+clock => register_value[28].CLK
+clock => register_value[29].CLK
+clock => register_value[30].CLK
+clock => register_value[31].CLK
+clear => register_value[0].ACLR
+clear => register_value[1].ACLR
+clear => register_value[2].ACLR
+clear => register_value[3].ACLR
+clear => register_value[4].ACLR
+clear => register_value[5].ACLR
+clear => register_value[6].ACLR
+clear => register_value[7].ACLR
+clear => register_value[8].ACLR
+clear => register_value[9].ACLR
+clear => register_value[10].ACLR
+clear => register_value[11].ACLR
+clear => register_value[12].ACLR
+clear => register_value[13].ACLR
+clear => register_value[14].ACLR
+clear => register_value[15].ACLR
+clear => register_value[16].ACLR
+clear => register_value[17].ACLR
+clear => register_value[18].ACLR
+clear => register_value[19].ACLR
+clear => register_value[20].ACLR
+clear => register_value[21].ACLR
+clear => register_value[22].ACLR
+clear => register_value[23].ACLR
+clear => register_value[24].ACLR
+clear => register_value[25].ACLR
+clear => register_value[26].ACLR
+clear => register_value[27].ACLR
+clear => register_value[28].ACLR
+clear => register_value[29].ACLR
+clear => register_value[30].ACLR
+clear => register_value[31].ACLR
+load => register_value[31].ENA
+load => register_value[30].ENA
+load => register_value[29].ENA
+load => register_value[28].ENA
+load => register_value[27].ENA
+load => register_value[26].ENA
+load => register_value[25].ENA
+load => register_value[24].ENA
+load => register_value[23].ENA
+load => register_value[22].ENA
+load => register_value[21].ENA
+load => register_value[20].ENA
+load => register_value[19].ENA
+load => register_value[18].ENA
+load => register_value[17].ENA
+load => register_value[16].ENA
+load => register_value[15].ENA
+load => register_value[14].ENA
+load => register_value[13].ENA
+load => register_value[12].ENA
+load => register_value[11].ENA
+load => register_value[10].ENA
+load => register_value[9].ENA
+load => register_value[8].ENA
+load => register_value[7].ENA
+load => register_value[6].ENA
+load => register_value[5].ENA
+load => register_value[4].ENA
+load => register_value[3].ENA
+load => register_value[2].ENA
+load => register_value[1].ENA
+load => register_value[0].ENA
+reg_in[0] => register_value[0].DATAIN
+reg_in[1] => register_value[1].DATAIN
+reg_in[2] => register_value[2].DATAIN
+reg_in[3] => register_value[3].DATAIN
+reg_in[4] => register_value[4].DATAIN
+reg_in[5] => register_value[5].DATAIN
+reg_in[6] => register_value[6].DATAIN
+reg_in[7] => register_value[7].DATAIN
+reg_in[8] => register_value[8].DATAIN
+reg_in[9] => register_value[9].DATAIN
+reg_in[10] => register_value[10].DATAIN
+reg_in[11] => register_value[11].DATAIN
+reg_in[12] => register_value[12].DATAIN
+reg_in[13] => register_value[13].DATAIN
+reg_in[14] => register_value[14].DATAIN
+reg_in[15] => register_value[15].DATAIN
+reg_in[16] => register_value[16].DATAIN
+reg_in[17] => register_value[17].DATAIN
+reg_in[18] => register_value[18].DATAIN
+reg_in[19] => register_value[19].DATAIN
+reg_in[20] => register_value[20].DATAIN
+reg_in[21] => register_value[21].DATAIN
+reg_in[22] => register_value[22].DATAIN
+reg_in[23] => register_value[23].DATAIN
+reg_in[24] => register_value[24].DATAIN
+reg_in[25] => register_value[25].DATAIN
+reg_in[26] => register_value[26].DATAIN
+reg_in[27] => register_value[27].DATAIN
+reg_in[28] => register_value[28].DATAIN
+reg_in[29] => register_value[29].DATAIN
+reg_in[30] => register_value[30].DATAIN
+reg_in[31] => register_value[31].DATAIN
+reg_out[0] <= register_value[0].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[1] <= register_value[1].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[2] <= register_value[2].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[3] <= register_value[3].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[4] <= register_value[4].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[5] <= register_value[5].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[6] <= register_value[6].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[7] <= register_value[7].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[8] <= register_value[8].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[9] <= register_value[9].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[10] <= register_value[10].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[11] <= register_value[11].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[12] <= register_value[12].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[13] <= register_value[13].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[14] <= register_value[14].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[15] <= register_value[15].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[16] <= register_value[16].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[17] <= register_value[17].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[18] <= register_value[18].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[19] <= register_value[19].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[20] <= register_value[20].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[21] <= register_value[21].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[22] <= register_value[22].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[23] <= register_value[23].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[24] <= register_value[24].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[25] <= register_value[25].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[26] <= register_value[26].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[27] <= register_value[27].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[28] <= register_value[28].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[29] <= register_value[29].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fpga_riscv32_minimal|datapath:datapath_0|idex_register:ID_EX_PLR|register5b:register_file_read_address_0_reg
 reg_in[0] => internal_value[0].DATAIN
 reg_in[1] => internal_value[1].DATAIN
 reg_in[2] => internal_value[2].DATAIN
@@ -12594,7 +12900,35 @@ reg_out[3] <= internal_value[3].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[4] <= internal_value[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|forwarding_unit:FU_0
+|fpga_riscv32_minimal|datapath:datapath_0|idex_register:ID_EX_PLR|register5b:register_file_read_address_1_reg
+reg_in[0] => internal_value[0].DATAIN
+reg_in[1] => internal_value[1].DATAIN
+reg_in[2] => internal_value[2].DATAIN
+reg_in[3] => internal_value[3].DATAIN
+reg_in[4] => internal_value[4].DATAIN
+load => internal_value[4].ENA
+load => internal_value[3].ENA
+load => internal_value[2].ENA
+load => internal_value[1].ENA
+load => internal_value[0].ENA
+clock => internal_value[0].CLK
+clock => internal_value[1].CLK
+clock => internal_value[2].CLK
+clock => internal_value[3].CLK
+clock => internal_value[4].CLK
+clear => internal_value[0].ACLR
+clear => internal_value[1].ACLR
+clear => internal_value[2].ACLR
+clear => internal_value[3].ACLR
+clear => internal_value[4].ACLR
+reg_out[0] <= internal_value[0].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[1] <= internal_value[1].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[2] <= internal_value[2].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[3] <= internal_value[3].DB_MAX_OUTPUT_PORT_TYPE
+reg_out[4] <= internal_value[4].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fpga_riscv32_minimal|datapath:datapath_0|forwarding_unit:FU_0
 reg_file_read_address_0_ID_EXE[0] => Equal2.IN4
 reg_file_read_address_0_ID_EXE[0] => Equal5.IN4
 reg_file_read_address_0_ID_EXE[0] => Equal6.IN4
@@ -12665,7 +12999,7 @@ forward_mux_1_control[1] <= internal_mux_1_control.DB_MAX_OUTPUT_PORT_TYPE
 forward_mux_1_control[2] <= internal_mux_1_control.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|mux5_1:forward_mux_0
+|fpga_riscv32_minimal|datapath:datapath_0|mux5_1:forward_mux_0
 selection[0] => Mux0.IN5
 selection[0] => Mux1.IN5
 selection[0] => Mux2.IN5
@@ -12956,7 +13290,7 @@ output_0[30] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 output_0[31] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|mux5_1:forward_mux_1
+|fpga_riscv32_minimal|datapath:datapath_0|mux5_1:forward_mux_1
 selection[0] => Mux0.IN5
 selection[0] => Mux1.IN5
 selection[0] => Mux2.IN5
@@ -13247,7 +13581,7 @@ output_0[30] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 output_0[31] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|mux2:mux_1
+|fpga_riscv32_minimal|datapath:datapath_0|mux2:mux_1
 value1[0] => result.DATAB
 value1[1] => result.DATAB
 value1[2] => result.DATAB
@@ -13378,7 +13712,7 @@ mux_result[30] <= result.DB_MAX_OUTPUT_PORT_TYPE
 mux_result[31] <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|ALU:alu_0
+|fpga_riscv32_minimal|datapath:datapath_0|ALU:alu_0
 input_0[0] => Add0.IN33
 input_0[0] => Add1.IN66
 input_0[0] => ShiftLeft0.IN32
@@ -14420,7 +14754,7 @@ ALU_output[30] <= ALU_output[30]$latch.DB_MAX_OUTPUT_PORT_TYPE
 ALU_output[31] <= ALU_output[31]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|jump_target_unit:JTU_0
+|fpga_riscv32_minimal|datapath:datapath_0|jump_target_unit:JTU_0
 mux_sel => mux2:internal_mux.selection
 current_instruction_address[0] => mux2:internal_mux.value1[0]
 current_instruction_address[1] => mux2:internal_mux.value1[1]
@@ -14552,7 +14886,7 @@ target_address[30] <= adder:internal_adder.sum[30]
 target_address[31] <= adder:internal_adder.sum[31]
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|jump_target_unit:JTU_0|mux2:internal_mux
+|fpga_riscv32_minimal|datapath:datapath_0|jump_target_unit:JTU_0|mux2:internal_mux
 value1[0] => result.DATAB
 value1[1] => result.DATAB
 value1[2] => result.DATAB
@@ -14683,7 +15017,7 @@ mux_result[30] <= result.DB_MAX_OUTPUT_PORT_TYPE
 mux_result[31] <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|jump_target_unit:JTU_0|adder:internal_adder
+|fpga_riscv32_minimal|datapath:datapath_0|jump_target_unit:JTU_0|adder:internal_adder
 dataa[0] => Add0.IN32
 dataa[1] => Add0.IN31
 dataa[2] => Add0.IN30
@@ -14782,7 +15116,7 @@ sum[30] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 sum[31] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|exmem_pipeline:EX_MEM_PLR
+|fpga_riscv32_minimal|datapath:datapath_0|exmem_pipeline:EX_MEM_PLR
 clock => register3b:data_format_reg.clock
 clock => register1b:datamem_write_reg.clock
 clock => register1b:jump_flag_reg.clock
@@ -15025,7 +15359,7 @@ instruction_address_out[30] <= register32b:instruction_address_reg.reg_out[30]
 instruction_address_out[31] <= register32b:instruction_address_reg.reg_out[31]
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|exmem_pipeline:EX_MEM_PLR|register3b:data_format_reg
+|fpga_riscv32_minimal|datapath:datapath_0|exmem_pipeline:EX_MEM_PLR|register3b:data_format_reg
 reg_in[0] => internal_value[0].DATAIN
 reg_in[1] => internal_value[1].DATAIN
 reg_in[2] => internal_value[2].DATAIN
@@ -15043,7 +15377,7 @@ reg_out[1] <= internal_value[1].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[2] <= internal_value[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|exmem_pipeline:EX_MEM_PLR|register1b:datamem_write_reg
+|fpga_riscv32_minimal|datapath:datapath_0|exmem_pipeline:EX_MEM_PLR|register1b:datamem_write_reg
 reg_in => internal_value.DATAIN
 load => internal_value.ENA
 clock => internal_value.CLK
@@ -15051,7 +15385,7 @@ clear => internal_value.ACLR
 reg_out <= internal_value.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|exmem_pipeline:EX_MEM_PLR|register1b:jump_flag_reg
+|fpga_riscv32_minimal|datapath:datapath_0|exmem_pipeline:EX_MEM_PLR|register1b:jump_flag_reg
 reg_in => internal_value.DATAIN
 load => internal_value.ENA
 clock => internal_value.CLK
@@ -15059,7 +15393,7 @@ clear => internal_value.ACLR
 reg_out <= internal_value.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|exmem_pipeline:EX_MEM_PLR|register2b:mux0_sel_reg
+|fpga_riscv32_minimal|datapath:datapath_0|exmem_pipeline:EX_MEM_PLR|register2b:mux0_sel_reg
 reg_in[0] => internal_value[0].DATAIN
 reg_in[1] => internal_value[1].DATAIN
 load => internal_value[1].ENA
@@ -15072,7 +15406,7 @@ reg_out[0] <= internal_value[0].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[1] <= internal_value[1].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|exmem_pipeline:EX_MEM_PLR|register1b:reg_file_write_reg
+|fpga_riscv32_minimal|datapath:datapath_0|exmem_pipeline:EX_MEM_PLR|register1b:reg_file_write_reg
 reg_in => internal_value.DATAIN
 load => internal_value.ENA
 clock => internal_value.CLK
@@ -15080,7 +15414,7 @@ clear => internal_value.ACLR
 reg_out <= internal_value.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|exmem_pipeline:EX_MEM_PLR|register5b:reg_file_write_address_reg
+|fpga_riscv32_minimal|datapath:datapath_0|exmem_pipeline:EX_MEM_PLR|register5b:reg_file_write_address_reg
 reg_in[0] => internal_value[0].DATAIN
 reg_in[1] => internal_value[1].DATAIN
 reg_in[2] => internal_value[2].DATAIN
@@ -15108,7 +15442,7 @@ reg_out[3] <= internal_value[3].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[4] <= internal_value[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|exmem_pipeline:EX_MEM_PLR|register32b:ALU_output_reg
+|fpga_riscv32_minimal|datapath:datapath_0|exmem_pipeline:EX_MEM_PLR|register32b:ALU_output_reg
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -15271,7 +15605,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|exmem_pipeline:EX_MEM_PLR|register32b:register_file_output_1_reg
+|fpga_riscv32_minimal|datapath:datapath_0|exmem_pipeline:EX_MEM_PLR|register32b:register_file_output_1_reg
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -15434,7 +15768,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|exmem_pipeline:EX_MEM_PLR|register1b:ALU_branch_respose_reg
+|fpga_riscv32_minimal|datapath:datapath_0|exmem_pipeline:EX_MEM_PLR|register1b:ALU_branch_respose_reg
 reg_in => internal_value.DATAIN
 load => internal_value.ENA
 clock => internal_value.CLK
@@ -15442,7 +15776,7 @@ clear => internal_value.ACLR
 reg_out <= internal_value.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|exmem_pipeline:EX_MEM_PLR|register32b:instruction_address_reg
+|fpga_riscv32_minimal|datapath:datapath_0|exmem_pipeline:EX_MEM_PLR|register32b:instruction_address_reg
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -15605,7 +15939,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|hazard_control_unit:FLUSH
+|fpga_riscv32_minimal|datapath:datapath_0|hazard_control_unit:FLUSH
 clear => internal_flushing_output.IN1
 clear => internal_flushing_output.OUTPUTSELECT
 clock => process_0.IN0
@@ -15619,7 +15953,7 @@ flushing_control => process_0.IN1
 flushing_output <= internal_flushing_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|datamem_interface:datamem_module_0
+|fpga_riscv32_minimal|datapath:datapath_0|datamem_interface:datamem_module_0
 input_data[0] => memory_input_0[0].DATAB
 input_data[0] => memory_input_1[0].DATAB
 input_data[0] => memory_input_2[0].DATAB
@@ -16025,7 +16359,7 @@ output_data[30] <= output_data[30]$latch.DB_MAX_OUTPUT_PORT_TYPE
 output_data[31] <= output_data[31]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|datamem_interface:datamem_module_0|datamem:datamem_3
+|fpga_riscv32_minimal|datapath:datapath_0|datamem_interface:datamem_module_0|datamem:datamem_3
 clock => RAM~22.CLK
 clock => RAM~0.CLK
 clock => RAM~1.CLK
@@ -16122,7 +16456,7 @@ output_data[6] <= RAM.DATAOUT6
 output_data[7] <= RAM.DATAOUT7
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|datamem_interface:datamem_module_0|datamem:datamem_2
+|fpga_riscv32_minimal|datapath:datapath_0|datamem_interface:datamem_module_0|datamem:datamem_2
 clock => RAM~22.CLK
 clock => RAM~0.CLK
 clock => RAM~1.CLK
@@ -16219,7 +16553,7 @@ output_data[6] <= RAM.DATAOUT6
 output_data[7] <= RAM.DATAOUT7
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|datamem_interface:datamem_module_0|datamem:datamem_1
+|fpga_riscv32_minimal|datapath:datapath_0|datamem_interface:datamem_module_0|datamem:datamem_1
 clock => RAM~22.CLK
 clock => RAM~0.CLK
 clock => RAM~1.CLK
@@ -16316,7 +16650,7 @@ output_data[6] <= RAM.DATAOUT6
 output_data[7] <= RAM.DATAOUT7
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|datamem_interface:datamem_module_0|datamem:datamem_0
+|fpga_riscv32_minimal|datapath:datapath_0|datamem_interface:datamem_module_0|datamem:datamem_0
 clock => RAM~22.CLK
 clock => RAM~0.CLK
 clock => RAM~1.CLK
@@ -16413,7 +16747,7 @@ output_data[6] <= RAM.DATAOUT6
 output_data[7] <= RAM.DATAOUT7
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|memwb_pipeline:MEM_WB_PLR
+|fpga_riscv32_minimal|datapath:datapath_0|memwb_pipeline:MEM_WB_PLR
 clock => register2b:mux0_sel_reg.clock
 clock => register1b:reg_file_write_reg.clock
 clock => register5b:reg_file_write_address_reg.clock
@@ -16636,7 +16970,7 @@ instruction_address_out[30] <= register32b:instruction_address_reg.reg_out[30]
 instruction_address_out[31] <= register32b:instruction_address_reg.reg_out[31]
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|memwb_pipeline:MEM_WB_PLR|register2b:mux0_sel_reg
+|fpga_riscv32_minimal|datapath:datapath_0|memwb_pipeline:MEM_WB_PLR|register2b:mux0_sel_reg
 reg_in[0] => internal_value[0].DATAIN
 reg_in[1] => internal_value[1].DATAIN
 load => internal_value[1].ENA
@@ -16649,7 +16983,7 @@ reg_out[0] <= internal_value[0].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[1] <= internal_value[1].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|memwb_pipeline:MEM_WB_PLR|register1b:reg_file_write_reg
+|fpga_riscv32_minimal|datapath:datapath_0|memwb_pipeline:MEM_WB_PLR|register1b:reg_file_write_reg
 reg_in => internal_value.DATAIN
 load => internal_value.ENA
 clock => internal_value.CLK
@@ -16657,7 +16991,7 @@ clear => internal_value.ACLR
 reg_out <= internal_value.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|memwb_pipeline:MEM_WB_PLR|register5b:reg_file_write_address_reg
+|fpga_riscv32_minimal|datapath:datapath_0|memwb_pipeline:MEM_WB_PLR|register5b:reg_file_write_address_reg
 reg_in[0] => internal_value[0].DATAIN
 reg_in[1] => internal_value[1].DATAIN
 reg_in[2] => internal_value[2].DATAIN
@@ -16685,7 +17019,7 @@ reg_out[3] <= internal_value[3].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[4] <= internal_value[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|memwb_pipeline:MEM_WB_PLR|register32b:ALU_output_reg
+|fpga_riscv32_minimal|datapath:datapath_0|memwb_pipeline:MEM_WB_PLR|register32b:ALU_output_reg
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -16848,7 +17182,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|memwb_pipeline:MEM_WB_PLR|register32b:datamem_output_reg
+|fpga_riscv32_minimal|datapath:datapath_0|memwb_pipeline:MEM_WB_PLR|register32b:datamem_output_reg
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK
@@ -17011,7 +17345,7 @@ reg_out[30] <= register_value[30].DB_MAX_OUTPUT_PORT_TYPE
 reg_out[31] <= register_value[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fpga_riscv32_minimal|datapath:debug_datapath|memwb_pipeline:MEM_WB_PLR|register32b:instruction_address_reg
+|fpga_riscv32_minimal|datapath:datapath_0|memwb_pipeline:MEM_WB_PLR|register32b:instruction_address_reg
 clock => register_value[0].CLK
 clock => register_value[1].CLK
 clock => register_value[2].CLK

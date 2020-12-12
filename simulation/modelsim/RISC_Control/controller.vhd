@@ -101,13 +101,13 @@ begin
 										when "000" => --Load Byte
 											decoded_opcode <= LB;
 										when "001" => --Load Half-Word
-											decoded_opcode <= LH;
+											decoded_opcode <= INVALID;
 										when "010" => --Load Word
 											decoded_opcode <= LW;
 										when "100" => --Load Byte Unsigned
-											decoded_opcode <= LBU;
+											decoded_opcode <= INVALID;
 										when "101" => --Load Hald-Word Unsigned
-											decoded_opcode <= LHU;
+											decoded_opcode <= INVALID;
 										when others =>
 											decoded_opcode <= INVALID;
 									end case;
@@ -117,7 +117,7 @@ begin
 										when "000" => --Store Byte
 											decoded_opcode <= SB;
 										when "001" => --Store Half-Word
-											decoded_opcode <= SH;
+											decoded_opcode <= INVALID;
 										when "010" => --Store Word
 											decoded_opcode <= SW;
 										when others =>
@@ -138,9 +138,9 @@ begin
 										when "101" => --Branch if greater or equal
 											decoded_opcode <= BGE;
 										when "110" => --Branch if lower than unsigned
-											decoded_opcode <= BLTU;
+											decoded_opcode <= INVALID;
 										when "111" => --Branch if greater or equal unsigned
-											decoded_opcode <= BGEU;
+											decoded_opcode <= INVALID;
 										when others =>
 											decoded_opcode <= INVALID;
 									end case;
@@ -209,9 +209,9 @@ begin
 										when "000" => --Add immediate
 											decoded_opcode <= ADDI;
 										when "010" => --Set less than immediate
-											decoded_opcode <= SLTI;
+											decoded_opcode <= INVALID;
 										when "011" => --Set less than immediate unsigned
-											decoded_opcode <= SLTIU;
+											decoded_opcode <= INVALID;
 										when "100" => --XOR immediate
 											decoded_opcode <= XORI;
 										when "110" => --OR immediate
@@ -219,20 +219,18 @@ begin
 										when "111" => --AND immediate
 											decoded_opcode <= ANDI;
 										when "001" => --Shift left logical immediate
-											decoded_opcode <= SLLI;
+											decoded_opcode <= INVALID;
 										when "101" => --Shift right immediate
 											case (fetched_instruction(30)) is
 												when '0' => --Shift right logical immediate
-													decoded_opcode <= SRLI;
+													decoded_opcode <= INVALID;
 												when '1' => --Shift right arithmetic immediate
-													decoded_opcode <= SRAI;
+													decoded_opcode <= INVALID;
 												when others =>
 													decoded_opcode <= INVALID;
-													decoded_cluster <= INVALID;
 											end case;
 										when others =>
 											decoded_opcode <= INVALID;
-											decoded_cluster <= INVALID;
 									end case;
 								when "01" => --OP
 									decoded_cluster <= OP;
@@ -245,14 +243,13 @@ begin
 													decoded_opcode <= SUB;
 												when others =>
 													decoded_opcode <= INVALID;
-													decoded_cluster <= INVALID;
 											end case;
 										when "001" => --Shift left logical
 											decoded_opcode <= inst_SLL;
 										when "010" => --Set less than
 											decoded_opcode <= SLT;
 										when "011" => --Set less than unsigned
-											decoded_opcode <= SLTU;
+											decoded_opcode <= INVALID;
 										when "100" => --XOR
 											decoded_opcode <= inst_XOR;
 										when "101" => --Shift right
@@ -260,10 +257,9 @@ begin
 												when '0' => --Shift right logical
 													decoded_opcode <= inst_SRL;
 												when '1' => --Shift right arithmetic
-													decoded_opcode <= inst_SRA;
+													decoded_opcode <= INVALID;
 												when others =>
 													decoded_opcode <= INVALID;
-													decoded_cluster <= INVALID;
 											end case;
 										when "110" => --OR
 											decoded_opcode <= inst_OR;
@@ -271,7 +267,6 @@ begin
 											decoded_opcode <= inst_AND;
 										when others =>
 											decoded_opcode <= INVALID;
-											decoded_cluster <= INVALID;
 									end case;
 								when "10" => --OP-FP
 									decoded_cluster <= INVALID;
@@ -286,8 +281,8 @@ begin
 						when "101" =>
 							case (fetched_instruction(6 downto 5)) is
 								when "00" => --AUIPC
-									decoded_cluster <= AUIPC;
-									decoded_opcode <= AUIPC;
+									decoded_cluster <= INVALID;
+									decoded_opcode <= INVALID;
 								when "01" => --LUI
 									decoded_cluster <= LUI;
 									decoded_opcode <= LUI;

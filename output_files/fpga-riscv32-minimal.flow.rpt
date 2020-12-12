@@ -1,5 +1,5 @@
 Flow report for fpga-riscv32-minimal
-Mon Nov 23 23:21:24 2020
+Sun Dec 06 15:09:28 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Mon Nov 23 23:21:19 2020       ;
+; Flow Status                     ; Successful - Sun Dec 06 15:09:28 2020       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; fpga-riscv32-minimal                        ;
 ; Top-level Entity Name           ; fpga_riscv32_minimal                        ;
@@ -49,8 +49,8 @@ https://fpgasoftware.intel.com/eula.
 ; Device                          ; 5CGXFC9E7F35C8                              ;
 ; Timing Models                   ; Final                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 263446                                      ;
-; Total pins                      ; 604                                         ;
+; Total registers                 ; 454                                         ;
+; Total pins                      ; 555                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -68,40 +68,53 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+----------------------+
 ; Option            ; Setting              ;
 +-------------------+----------------------+
-; Start date & time ; 11/23/2020 23:14:49  ;
+; Start date & time ; 12/06/2020 15:09:06  ;
 ; Main task         ; Compilation          ;
 ; Revision Name     ; fpga-riscv32-minimal ;
 +-------------------+----------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                               ;
-+-------------------------------------+----------------------------------------+----------------------+----------------------+-----------------------------------+
-; Assignment Name                     ; Value                                  ; Default Value        ; Entity Name          ; Section Id                        ;
-+-------------------------------------+----------------------------------------+----------------------+----------------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 18431781167686.160618408814988         ; --                   ; --                   ; --                                ;
-; EDA_BOARD_DESIGN_TIMING_TOOL        ; Stamp (Timing)                         ; <None>               ; --                   ; --                                ;
-; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL     ; Precision Synthesis                    ; <None>               ; --                   ; --                                ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --                   ; --                   ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --                   ; --                   ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --                   ; --                   ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --                   ; --                   ; eda_board_design_symbol           ;
-; EDA_INPUT_DATA_FORMAT               ; Vqm                                    ; --                   ; --                   ; eda_design_synthesis              ;
-; EDA_LMF_FILE                        ; mentor.lmf                             ; --                   ; --                   ; eda_design_synthesis              ;
-; EDA_OUTPUT_DATA_FORMAT              ; Stamp                                  ; --                   ; --                   ; eda_board_design_timing           ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --                   ; --                   ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>               ; --                   ; --                                ;
-; EDA_TIME_SCALE                      ; 1 ps                                   ; --                   ; --                   ; eda_simulation                    ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --                   ; --                   ; --                                ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --                   ; --                   ; --                                ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --                   ; fpga_riscv32_minimal ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --                   ; fpga_riscv32_minimal ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --                   ; fpga_riscv32_minimal ; Top                               ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --                   ; --                   ; --                                ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --                   ; --                   ; --                                ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --                   ; --                   ; --                                ;
-; TOP_LEVEL_ENTITY                    ; fpga_riscv32_minimal                   ; fpga-riscv32-minimal ; --                   ; --                                ;
-+-------------------------------------+----------------------------------------+----------------------+----------------------+-----------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                      ;
++--------------------------------------+----------------------------------------------+----------------------+----------------------+-----------------------------------+
+; Assignment Name                      ; Value                                        ; Default Value        ; Entity Name          ; Section Id                        ;
++--------------------------------------+----------------------------------------------+----------------------+----------------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID                ; 18431781167686.160727814618336               ; --                   ; --                   ; --                                ;
+; EDA_BOARD_DESIGN_TIMING_TOOL         ; Stamp (Timing)                               ; <None>               ; --                   ; --                                ;
+; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL      ; Precision Synthesis                          ; <None>               ; --                   ; --                                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                           ; --                   ; --                   ; tb                                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                           ; --                   ; --                   ; tb1                               ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                          ; --                   ; --                   ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                          ; --                   ; --                   ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                          ; --                   ; --                   ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                          ; --                   ; --                   ; eda_board_design_symbol           ;
+; EDA_INPUT_DATA_FORMAT                ; Vqm                                          ; --                   ; --                   ; eda_design_synthesis              ;
+; EDA_LMF_FILE                         ; mentor.lmf                                   ; --                   ; --                   ; eda_design_synthesis              ;
+; EDA_MAINTAIN_DESIGN_HIERARCHY        ; On                                           ; --                   ; --                   ; eda_simulation                    ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb                                           ; --                   ; --                   ; eda_simulation                    ;
+; EDA_OUTPUT_DATA_FORMAT               ; Stamp                                        ; --                   ; --                   ; eda_board_design_timing           ;
+; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                         ; --                   ; --                   ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                       ; <None>               ; --                   ; --                                ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                              ; --                   ; --                   ; eda_simulation                    ;
+; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/tb.vhd                   ; --                   ; --                   ; tb                                ;
+; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/fpga_riscv32_minimal.vht ; --                   ; --                   ; tb1                               ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb                                           ; --                   ; --                   ; tb                                ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb1                                          ; --                   ; --                   ; tb1                               ;
+; EDA_TEST_BENCH_NAME                  ; tb                                           ; --                   ; --                   ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; tb1                                          ; --                   ; --                   ; eda_simulation                    ;
+; EDA_TIME_SCALE                       ; 1 ps                                         ; --                   ; --                   ; eda_simulation                    ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                           ; --                   ; --                   ; --                                ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                            ; --                   ; --                   ; --                                ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family)       ; --                   ; fpga_riscv32_minimal ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family)       ; --                   ; fpga_riscv32_minimal ; Top                               ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family)       ; --                   ; fpga_riscv32_minimal ; Top                               ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                          ; --                   ; --                   ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW        ; --                   ; --                   ; --                                ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                                 ; --                   ; --                   ; --                                ;
+; TOP_LEVEL_ENTITY                     ; fpga_riscv32_minimal                         ; fpga-riscv32-minimal ; --                   ; --                                ;
+; VHDL_INPUT_VERSION                   ; VHDL_2008                                    ; VHDL_1993            ; --                   ; --                                ;
+; VHDL_SHOW_LMF_MAPPING_MESSAGES       ; Off                                          ; --                   ; --                   ; --                                ;
++--------------------------------------+----------------------------------------------+----------------------+----------------------+-----------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -109,8 +122,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:06:03     ; 1.0                     ; 6743 MB             ; 00:06:12                           ;
-; Total                ; 00:06:03     ; --                      ; --                  ; 00:06:12                           ;
+; Analysis & Synthesis ; 00:00:20     ; 1.0                     ; 4896 MB             ; 00:00:20                           ;
+; Total                ; 00:00:20     ; --                      ; --                  ; 00:00:20                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
