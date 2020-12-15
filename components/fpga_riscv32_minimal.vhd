@@ -38,7 +38,7 @@ entity fpga_riscv32_minimal is
 end fpga_riscv32_minimal;
 
 architecture arch_minimal_riscv32 of fpga_riscv32_minimal is
-	signal IF_ID_flush : std_logic;
+	--signal IF_ID_flush : std_logic;
 	signal rs1_reg_idx : std_logic_vector(4 downto 0);
 	signal rs2_reg_idx : std_logic_vector(4 downto 0);
 	signal wr_data : std_logic;

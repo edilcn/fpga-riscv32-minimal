@@ -1,0 +1,1273 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/datahazard
+Eadder
+Z0 w1606078193
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 124
+Z5 dF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard
+Z6 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/adder.vhd
+Z7 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/adder.vhd
+l0
+L5 1
+VQh2:HJ`:GN_fMP[[FC11A2
+!s100 7YT:af3:Q=iQPOiHC4Ia51
+Z8 OV;C;2020.1;71
+33
+Z9 !s110 1608049216
+!i10b 1
+Z10 !s108 1608049216.000000
+Z11 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/adder.vhd|
+Z12 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/adder.vhd|
+!i113 1
+Z13 o-work work -2008 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Aadder32
+R1
+R2
+R3
+R4
+Z15 DEx4 work 5 adder 0 22 Qh2:HJ`:GN_fMP[[FC11A2
+!i122 124
+l14
+L13 4
+ViP>T<8P?PkMaDa1Z4eie12
+!s100 X]hbMibkSdcjRN@iUgLDI0
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ealu
+Z16 w1606165981
+Z17 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R3
+R4
+!i122 125
+R5
+Z18 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/alu.vhd
+Z19 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/alu.vhd
+l0
+L5 1
+VhEa3?iz3h4>z`2Uj3n4kh2
+!s100 jo7M?j4M@][`M4z;6IQAl2
+R8
+33
+Z20 !s110 1608049217
+!i10b 1
+R10
+Z21 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/alu.vhd|
+Z22 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/alu.vhd|
+!i113 1
+R13
+R14
+Aarch_alu
+R17
+R3
+R4
+Z23 DEx4 work 3 alu 0 22 hEa3?iz3h4>z`2Uj3n4kh2
+!i122 125
+l20
+L16 114
+V255fCC@3^NkC]2GDB7Q^`3
+!s100 hI;HH0W5UId<5aj;VF;4[0
+R8
+33
+R20
+!i10b 1
+R10
+R21
+R22
+!i113 1
+R13
+R14
+Econtroller
+Z24 w1608049213
+R17
+R3
+R4
+!i122 126
+R5
+Z25 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/controller.vhd
+Z26 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/controller.vhd
+l0
+L9 1
+V>mLIdjL:jYH5:DK`Pkb]G2
+!s100 dLchVIKY<bl42]SBWkl3L2
+R8
+33
+R20
+!i10b 1
+Z27 !s108 1608049217.000000
+Z28 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/controller.vhd|
+Z29 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/controller.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R17
+R3
+R4
+Z30 DEx4 work 10 controller 0 22 >mLIdjL:jYH5:DK`Pkb]G2
+!i122 126
+l60
+L31 498
+VQ`RBKd<Ho`>4a?FeC^::J1
+!s100 4V?WZaCOh4FN[I48fAjkJ1
+R8
+33
+R20
+!i10b 1
+R27
+R28
+R29
+!i113 1
+R13
+R14
+Edatamem
+Z31 w1607956130
+R1
+R2
+R3
+R4
+!i122 127
+R5
+Z32 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/datamem.vhd
+Z33 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/datamem.vhd
+l0
+L5 1
+VKD2VfazEoE[2:d2H4?8kH2
+!s100 gOn@ZXk=idN[8<CVAmTZM0
+R8
+33
+R20
+!i10b 1
+R27
+Z34 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/datamem.vhd|
+Z35 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/datamem.vhd|
+!i113 1
+R13
+R14
+Abehavioural
+R1
+R2
+R3
+R4
+Z36 DEx4 work 7 datamem 0 22 KD2VfazEoE[2:d2H4?8kH2
+!i122 127
+l17
+L14 12
+V`R6l8hg3@g50FMkQX98n@0
+!s100 1eclea2@5bh29ngLB;P8c0
+R8
+33
+R20
+!i10b 1
+R27
+R34
+R35
+!i113 1
+R13
+R14
+Edatamem_interface
+Z37 w1606576350
+R17
+R3
+R4
+!i122 128
+R5
+Z38 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/datamem_interface.vhd
+Z39 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/datamem_interface.vhd
+l0
+L6 1
+VlG8i72=LzJ[`zj4Oe8Sh60
+!s100 9c3QWBMia?>6SKXL6PMbW2
+R8
+33
+Z40 !s110 1608049218
+!i10b 1
+R27
+Z41 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/datamem_interface.vhd|
+Z42 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/datamem_interface.vhd|
+!i113 1
+R13
+R14
+Abehavioural
+R1
+R2
+R36
+R17
+R3
+R4
+Z43 DEx4 work 17 datamem_interface 0 22 lG8i72=LzJ[`zj4Oe8Sh60
+!i122 128
+l33
+L16 210
+Vkz^Ka1SaR^d[An55Wn4GE3
+!s100 ?PANC>_h>[Fo?_c_m@]`o1
+R8
+33
+R40
+!i10b 1
+R27
+R41
+R42
+!i113 1
+R13
+R14
+Edatapath
+Z44 w1607911189
+R17
+R3
+R4
+!i122 145
+R5
+Z45 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/datapath.vhd
+Z46 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/datapath.vhd
+l0
+L6 1
+V;d6CBZTLT0:7O2K;WFXV=0
+!s100 Q<593X2<AO8zl808GBbk62
+R8
+33
+Z47 !s110 1608049223
+!i10b 1
+Z48 !s108 1608049223.000000
+Z49 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/datapath.vhd|
+Z50 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/datapath.vhd|
+!i113 1
+R13
+R14
+Aarch_datapath
+Z51 DEx4 work 14 memwb_pipeline 0 22 Vk@Eg_6B:V3kA7AXoh0QG1
+R43
+Z52 DEx4 work 19 hazard_control_unit 0 22 nO5c0llXZL@5Fnln<OR_J0
+Z53 DEx4 work 14 exmem_pipeline 0 22 ?D7<0MmG[a[;6DW6ZF^d10
+Z54 DEx4 work 16 jump_target_unit 0 22 8F2n[MOmn`d1mM^?zbaIF3
+R23
+Z55 DEx4 work 6 mux5_1 0 22 ^;lSL7Ra?SoklGBN;3TlG2
+Z56 DEx4 work 15 forwarding_unit 0 22 nGCLRmTGFD5RljK9C;PIa2
+Z57 DEx4 work 13 idex_register 0 22 GfQZ4=[T?P:gMI]DjZ78d3
+Z58 DEx4 work 13 register_bank 0 22 Pod]VU6zjS43MV5?b9bl90
+Z59 DEx4 work 6 mux3_1 0 22 O9FMLSIY2Kj1f[1;4FRPR0
+Z60 DEx4 work 13 ifid_register 0 22 7zfhzk<g0R[^MjgK7b03>3
+Z61 DEx4 work 4 mux2 0 22 E]P6[hV6JC8gj>m2`oWWg1
+R1
+R2
+R15
+Z62 DEx4 work 7 instmem 0 22 B7T@CGeTJ6HV1J_]]OnUh0
+Z63 DEx4 work 2 pc 0 22 TVlVXQC8:?MBQ;_XWiQkD0
+R17
+R3
+R4
+Z64 DEx4 work 8 datapath 0 22 ;d6CBZTLT0:7O2K;WFXV=0
+!i122 145
+l135
+L51 145
+V_hlD4a^QOCIU[oFhVZiZk2
+!s100 3FliX;NMiNCDX285:NlPb3
+R8
+33
+R47
+!i10b 1
+R48
+R49
+R50
+!i113 1
+R13
+R14
+Eexmem_pipeline
+Z65 w1607902100
+R3
+R4
+!i122 146
+R5
+Z66 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/exmem_pipeline.vhd
+Z67 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/exmem_pipeline.vhd
+l0
+L5 1
+V?D7<0MmG[a[;6DW6ZF^d10
+!s100 PYz9cRgCjY<^cQK[4@>PH2
+R8
+33
+R47
+!i10b 1
+R48
+Z68 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/exmem_pipeline.vhd|
+Z69 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/exmem_pipeline.vhd|
+!i113 1
+R13
+R14
+Aarch_exmem
+Z70 DEx4 work 10 register5b 0 22 QUhgKm8MHMg3@<9UhnlDC0
+Z71 DEx4 work 10 register2b 0 22 7noj<1BaGeDGDmeFYKCT72
+Z72 DEx4 work 10 register1b 0 22 gz?kZ579LDOIehJ__JTeA0
+Z73 DEx4 work 10 register3b 0 22 @jUWeR@eS6dCFMOda56;e0
+Z74 DEx4 work 11 register32b 0 22 ACE[e386mS?6@fEB9JTfX2
+R3
+R4
+R53
+!i122 146
+l98
+L55 109
+VOPmn`m7KR7daemO<PRfzb2
+!s100 4IWkcTb;dI<GH6;]Cg;CE0
+R8
+33
+R47
+!i10b 1
+R48
+R68
+R69
+!i113 1
+R13
+R14
+Eforwarding_unit
+R16
+R3
+R4
+!i122 129
+R5
+Z75 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/forwarding_unit.vhd
+Z76 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/forwarding_unit.vhd
+l0
+L5 1
+VnGCLRmTGFD5RljK9C;PIa2
+!s100 OKidCWWE1dK]X1M5SWTQM3
+R8
+33
+R40
+!i10b 1
+Z77 !s108 1608049218.000000
+Z78 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/forwarding_unit.vhd|
+Z79 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/forwarding_unit.vhd|
+!i113 1
+R13
+R14
+Aarch_forwarding
+R3
+R4
+R56
+!i122 129
+l28
+L23 51
+V`Y_5QNo6N6YJfKoMVTH;L1
+!s100 C]HM3lYgzVQ8PS947k>Cf3
+R8
+33
+R40
+!i10b 1
+R77
+R78
+R79
+!i113 1
+R13
+R14
+Efpga_riscv32_minimal
+Z80 w1607871156
+R3
+R4
+!i122 130
+R5
+Z81 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/fpga_riscv32_minimal.vhd
+Z82 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/fpga_riscv32_minimal.vhd
+l0
+L6 1
+VRz6`3gJeAYTgaLVdC_MWg1
+!s100 U:ENodHWcdzEkLC3WHmeX3
+R8
+33
+R40
+!i10b 1
+R77
+Z83 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/fpga_riscv32_minimal.vhd|
+Z84 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/fpga_riscv32_minimal.vhd|
+!i113 1
+R13
+R14
+Aarch_minimal_riscv32
+R64
+R17
+R30
+R3
+R4
+DEx4 work 20 fpga_riscv32_minimal 0 22 Rz6`3gJeAYTgaLVdC_MWg1
+!i122 130
+l84
+L65 33
+V1KG=Pdbdn6FLKV>`^Uad@0
+!s100 PcWMg_an:657P;Jgmf^1l3
+R8
+33
+R40
+!i10b 1
+R77
+R83
+R84
+!i113 1
+R13
+R14
+Ehazard_control_unit
+Z85 w1607960641
+R3
+R4
+!i122 131
+R5
+Z86 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/hazard_control_unit.vhd
+Z87 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/hazard_control_unit.vhd
+l0
+L5 1
+VnO5c0llXZL@5Fnln<OR_J0
+!s100 e?EF=hKQ036^aaFg3B9dD3
+R8
+33
+Z88 !s110 1608049219
+!i10b 1
+R77
+Z89 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/hazard_control_unit.vhd|
+Z90 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/hazard_control_unit.vhd|
+!i113 1
+R13
+R14
+Aarch_hazard_unit
+R3
+R4
+R52
+!i122 131
+l17
+L13 26
+V<dbhmO`jKNPec]TJ=I@^40
+!s100 :_;TM>F_jb2T5>z7h@N9O1
+R8
+33
+R88
+!i10b 1
+R77
+R89
+R90
+!i113 1
+R13
+R14
+Eidex_register
+Z91 w1607893340
+R3
+R4
+!i122 147
+R5
+Z92 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/idex_register.vhd
+Z93 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/idex_register.vhd
+l0
+L8 1
+VGfQZ4=[T?P:gMI]DjZ78d3
+!s100 linP<@=`L@Tg]6k_ihM1E0
+R8
+33
+R47
+!i10b 1
+R48
+Z94 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/idex_register.vhd|
+Z95 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/idex_register.vhd|
+!i113 1
+R13
+R14
+Aarch_idex_register
+R70
+R71
+R73
+R72
+Z96 DEx4 work 10 register4b 0 22 NQDCG?:;[oiBPOIRYDhgl1
+R74
+R3
+R4
+R57
+!i122 147
+l141
+L79 160
+Vk2NDZ@0`i2V@f95JiBdeX3
+!s100 e7nYRZNL?8:nn@VLR>Z@I0
+R8
+33
+R47
+!i10b 1
+R48
+R94
+R95
+!i113 1
+R13
+R14
+Eifid_register
+Z97 w1606576260
+R3
+R4
+!i122 148
+R5
+Z98 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/ifid_register.vhd
+Z99 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/ifid_register.vhd
+l0
+L6 1
+V7zfhzk<g0R[^MjgK7b03>3
+!s100 Wc]SZ2]8;7>fUciaZ6RZF0
+R8
+33
+Z100 !s110 1608049224
+!i10b 1
+Z101 !s108 1608049224.000000
+Z102 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/ifid_register.vhd|
+Z103 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/ifid_register.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R74
+R3
+R4
+R60
+!i122 148
+l20
+L16 18
+VXW:Zd2hkhn@JGIzdEU1SK3
+!s100 j4N0W:W[nhig:QUzJ0Yai0
+R8
+33
+R100
+!i10b 1
+R101
+R102
+R103
+!i113 1
+R13
+R14
+Einstmem
+Z104 w1607976039
+R3
+R4
+!i122 132
+R5
+Z105 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/instmem.vhd
+Z106 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/instmem.vhd
+l0
+L5 1
+VB7T@CGeTJ6HV1J_]]OnUh0
+!s100 >HQLGE76?B8IgbLSOWa052
+R8
+33
+R88
+!i10b 1
+Z107 !s108 1608049219.000000
+Z108 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/instmem.vhd|
+Z109 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/instmem.vhd|
+!i113 1
+R13
+R14
+Adescription
+R3
+R4
+R62
+!i122 132
+l16
+L14 57
+VN^2<JfO`^nKm:TTTkXK7G3
+!s100 JVTbHeKAJMUiX5UG52cYk2
+R8
+33
+R88
+!i10b 1
+R107
+R108
+R109
+!i113 1
+R13
+R14
+Ejump_target_unit
+Z110 w1606597814
+R17
+R3
+R4
+!i122 149
+R5
+Z111 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/jump_target_unit.vhd
+Z112 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/jump_target_unit.vhd
+l0
+L6 1
+V8F2n[MOmn`d1mM^?zbaIF3
+!s100 gIU^V`V^2LVQ^LnCK:mW@2
+R8
+33
+R100
+!i10b 1
+R101
+Z113 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/jump_target_unit.vhd|
+Z114 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/jump_target_unit.vhd|
+!i113 1
+R13
+R14
+Aarch_jump_unit
+R1
+R2
+R15
+R61
+R17
+R3
+R4
+R54
+!i122 149
+l18
+L16 6
+VAT92[6[8k4IZX=2:kVH6<3
+!s100 R1Ne9>YJzA12kJDlQ]=nn3
+R8
+33
+R100
+!i10b 1
+R101
+R113
+R114
+!i113 1
+R13
+R14
+Ememwb_pipeline
+Z115 w1606576148
+R3
+R4
+!i122 150
+R5
+Z116 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/memwb_pipeline.vhd
+Z117 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/memwb_pipeline.vhd
+l0
+L5 1
+VVk@Eg_6B:V3kA7AXoh0QG1
+!s100 EXLVzoW<WOz=a_0PXTJ@C3
+R8
+33
+R100
+!i10b 1
+R101
+Z118 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/memwb_pipeline.vhd|
+Z119 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/memwb_pipeline.vhd|
+!i113 1
+R13
+R14
+Aarch_memwb_register
+R74
+R70
+R72
+R71
+R3
+R4
+R51
+!i122 150
+l60
+L36 63
+VcmO=LMm??ABU0i`^S3Dja0
+!s100 O2:7V_^B_FO;G5:^QlUQD3
+R8
+33
+R100
+!i10b 1
+R101
+R118
+R119
+!i113 1
+R13
+R14
+Emux2
+Z120 w1606090434
+R3
+R4
+!i122 133
+R5
+Z121 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/mux2.vhd
+Z122 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/mux2.vhd
+l0
+L5 1
+VE]P6[hV6JC8gj>m2`oWWg1
+!s100 1zCX@b`ib^^ROF<S9jY;13
+R8
+33
+R88
+!i10b 1
+R107
+Z123 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/mux2.vhd|
+Z124 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/mux2.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R3
+R4
+R61
+!i122 133
+l15
+L13 13
+VQhm9NBnL;e<MeNf8gj[Gf0
+!s100 5Lj]495Y6A;JWQWYN_CFA1
+R8
+33
+R88
+!i10b 1
+R107
+R123
+R124
+!i113 1
+R13
+R14
+Emux32_1
+Z125 w1606570805
+R3
+R4
+!i122 136
+R5
+Z126 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/mux32_1.vhd
+Z127 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/mux32_1.vhd
+l0
+L4 1
+V:?SOn;T>gM6I]TdS8W]kl3
+!s100 `9kQ4BknWlCkT5kJic>aP0
+R8
+33
+Z128 !s110 1608049220
+!i10b 1
+Z129 !s108 1608049220.000000
+Z130 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/mux32_1.vhd|
+Z131 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/mux32_1.vhd|
+!i113 1
+R13
+R14
+Aarch_mux32_1
+R3
+R4
+Z132 DEx4 work 7 mux32_1 0 22 :?SOn;T>gM6I]TdS8W]kl3
+!i122 136
+l14
+L13 39
+V>VXFnn<ha:zl8^U5:cfNz3
+!s100 kIeMfHE7G^o6B=]4X_oi73
+R8
+33
+R128
+!i10b 1
+R129
+R130
+R131
+!i113 1
+R13
+R14
+Emux3_1
+R16
+R3
+R4
+!i122 134
+R5
+Z133 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/mux3_1.vhd
+Z134 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/mux3_1.vhd
+l0
+L4 1
+VO9FMLSIY2Kj1f[1;4FRPR0
+!s100 <2EGj0^40lhN?lHK4f3R>2
+R8
+33
+R88
+!i10b 1
+R107
+Z135 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/mux3_1.vhd|
+Z136 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/mux3_1.vhd|
+!i113 1
+R13
+R14
+Aarch_mux3_1
+R3
+R4
+R59
+!i122 134
+l13
+L12 9
+VdCkYKSfh>P=L^l]bkThPO1
+!s100 _KdjO3b<hSiB80Hm1:zaA2
+R8
+33
+R88
+!i10b 1
+R107
+R135
+R136
+!i113 1
+R13
+R14
+Emux5_1
+R16
+R3
+R4
+!i122 135
+R5
+Z137 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/mux5_1.vhd
+Z138 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/mux5_1.vhd
+l0
+L4 1
+V^;lSL7Ra?SoklGBN;3TlG2
+!s100 6X>AUidin69K``W3_d4M^1
+R8
+33
+R128
+!i10b 1
+R129
+Z139 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/mux5_1.vhd|
+Z140 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/mux5_1.vhd|
+!i113 1
+R13
+R14
+Aarch_mux5_1
+R3
+R4
+R55
+!i122 135
+l13
+L12 11
+V=8Q^9nfkQ=fY`[P@`<:c92
+!s100 ?LhhI;RDZjUCLmToTb`U?3
+R8
+33
+R128
+!i10b 1
+R129
+R139
+R140
+!i113 1
+R13
+R14
+Epc
+Z141 w1607958410
+R17
+R3
+R4
+!i122 151
+R5
+Z142 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/pc.vhd
+Z143 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/pc.vhd
+l0
+L6 1
+VTVlVXQC8:?MBQ;_XWiQkD0
+!s100 XLX<iJ[mlETImfO`GH=mR0
+R8
+33
+Z144 !s110 1608049225
+!i10b 1
+Z145 !s108 1608049225.000000
+Z146 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/pc.vhd|
+Z147 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/pc.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R74
+R17
+R3
+R4
+R63
+!i122 151
+l19
+L15 10
+VC745XeNK^_[fY5TOh]^FU1
+!s100 Q^jDRm[Xz_Ga7>L1IV;bd3
+R8
+33
+R144
+!i10b 1
+R145
+R146
+R147
+!i113 1
+R13
+R14
+Eregister1b
+Z148 w1606103326
+R3
+R4
+!i122 137
+R5
+Z149 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register1b.vhd
+Z150 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register1b.vhd
+l0
+L7 1
+Vgz?kZ579LDOIehJ__JTeA0
+!s100 :[=f65zzIiWB>`P1Z?_9E0
+R8
+33
+R128
+!i10b 1
+R129
+Z151 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register1b.vhd|
+Z152 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register1b.vhd|
+!i113 1
+R13
+R14
+Aarch_register1b
+R3
+R4
+R72
+!i122 137
+l17
+Z153 L15 17
+VTRmek4En0^X6Sk7>An^fo1
+!s100 >:5H;^EVGdZ7F`_>LGPWY3
+R8
+33
+R128
+!i10b 1
+R129
+R151
+R152
+!i113 1
+R13
+R14
+Eregister2b
+Z154 w1606103316
+R3
+R4
+!i122 138
+R5
+Z155 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register2b.vhd
+Z156 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register2b.vhd
+l0
+L7 1
+V7noj<1BaGeDGDmeFYKCT72
+!s100 7H@a7A>]K:OmE3<b9kbD_3
+R8
+33
+Z157 !s110 1608049221
+!i10b 1
+Z158 !s108 1608049221.000000
+Z159 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register2b.vhd|
+Z160 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register2b.vhd|
+!i113 1
+R13
+R14
+Aarch_register2b
+R3
+R4
+R71
+!i122 138
+l17
+R153
+V[gZPMad4Oik:lHQ:mjH8H2
+!s100 c>AmeOh3Z74fSnPVcQIo13
+R8
+33
+R157
+!i10b 1
+R158
+R159
+R160
+!i113 1
+R13
+R14
+Eregister32b
+Z161 w1606575619
+R3
+R4
+!i122 142
+R5
+Z162 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register32b.vhd
+Z163 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register32b.vhd
+l0
+L5 1
+VACE[e386mS?6@fEB9JTfX2
+!s100 7:Uj[@IlIFSS2ibA[elRK2
+R8
+33
+Z164 !s110 1608049222
+!i10b 1
+Z165 !s108 1608049222.000000
+Z166 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register32b.vhd|
+Z167 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register32b.vhd|
+!i113 1
+R13
+R14
+Aarch_register32b
+R3
+R4
+R74
+!i122 142
+l15
+Z168 L13 17
+Vf=`X3_ek8SoB=b=M`e2hV3
+!s100 H?Y08V_[cJ3?846RJg9J70
+R8
+33
+R164
+!i10b 1
+R165
+R166
+R167
+!i113 1
+R13
+R14
+Eregister32b_falling
+Z169 w1606101565
+R3
+R4
+!i122 143
+R5
+Z170 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register32b_falling.vhd
+Z171 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register32b_falling.vhd
+l0
+L5 1
+VVj?2zQV@IEGl4cb5obW<P2
+!s100 gNjTdgWXH0;Vi^Ec>2[W62
+R8
+33
+R164
+!i10b 1
+R165
+Z172 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register32b_falling.vhd|
+Z173 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register32b_falling.vhd|
+!i113 1
+R13
+R14
+Aarch_register32b_falling
+R3
+R4
+Z174 DEx4 work 19 register32b_falling 0 22 Vj?2zQV@IEGl4cb5obW<P2
+!i122 143
+l15
+R168
+V4Y]S?288oZLdGI5:D[Ja70
+!s100 UAz[oVz7_`9a0^da>TLG>0
+R8
+33
+R164
+!i10b 1
+R165
+R172
+R173
+!i113 1
+R13
+R14
+Eregister3b
+Z175 w1606103318
+R3
+R4
+!i122 139
+R5
+Z176 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register3b.vhd
+Z177 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register3b.vhd
+l0
+L7 1
+V@jUWeR@eS6dCFMOda56;e0
+!s100 >l9kYO99Mb]blG6W5C6JV0
+R8
+33
+R157
+!i10b 1
+R158
+Z178 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register3b.vhd|
+Z179 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register3b.vhd|
+!i113 1
+R13
+R14
+Aarch_register3b
+R3
+R4
+R73
+!i122 139
+l17
+R153
+VkMh4R=zlBJYjXcTbXZA;]2
+!s100 d9;SFfPYb]@iKeeP?]XbN1
+R8
+33
+R157
+!i10b 1
+R158
+R178
+R179
+!i113 1
+R13
+R14
+Eregister4b
+Z180 w1606103395
+R3
+R4
+!i122 140
+R5
+Z181 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register4b.vhd
+Z182 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register4b.vhd
+l0
+L4 1
+VNQDCG?:;[oiBPOIRYDhgl1
+!s100 GgBn:E8?W446Jb4Sz>:PR0
+R8
+33
+R157
+!i10b 1
+R158
+Z183 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register4b.vhd|
+Z184 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register4b.vhd|
+!i113 1
+R13
+R14
+Aarch_register4b
+R3
+R4
+R96
+!i122 140
+l14
+Z185 L12 17
+V@VNcQMO9k]:EOeRQfna`S3
+!s100 gf9SVm=5_bcRL08ezV0953
+R8
+33
+R157
+!i10b 1
+R158
+R183
+R184
+!i113 1
+R13
+R14
+Eregister5b
+Z186 w1606103472
+R3
+R4
+!i122 141
+R5
+Z187 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register5b.vhd
+Z188 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register5b.vhd
+l0
+L4 1
+VQUhgKm8MHMg3@<9UhnlDC0
+!s100 oQPTKcE8d_6bJ>3[gDJoi1
+R8
+33
+R164
+!i10b 1
+R158
+Z189 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register5b.vhd|
+Z190 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register5b.vhd|
+!i113 1
+R13
+R14
+Aarch_register5b
+R3
+R4
+R70
+!i122 141
+l14
+R185
+VIQ^ll6C683gzY^76:L]UD3
+!s100 ^ZdJ8LCFAL[AIRR:Z>m_F1
+R8
+33
+R164
+!i10b 1
+R158
+R189
+R190
+!i113 1
+R13
+R14
+Eregister_bank
+Z191 w1607822721
+R3
+R4
+!i122 152
+R5
+Z192 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register_bank.vhd
+Z193 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register_bank.vhd
+l0
+L9 1
+VPod]VU6zjS43MV5?b9bl90
+!s100 aIJniH?kW<igz3WEE=PjU1
+R8
+33
+R144
+!i10b 1
+R145
+Z194 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register_bank.vhd|
+Z195 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/register_bank.vhd|
+!i113 1
+R13
+R14
+Aarch_register_bank
+R132
+R174
+R3
+R4
+R58
+!i122 152
+l54
+Z196 L18 159
+Z197 VHGMa>`:Hn`z;ga>cd`m?40
+Z198 !s100 fk5@<1MP^@Aj>CHR;7P=N0
+R8
+33
+R144
+!i10b 1
+R145
+R194
+R195
+!i113 1
+R13
+R14
+Etballinst
+Z199 w1607957220
+R1
+R2
+Z200 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+R3
+R4
+!i122 144
+R5
+Z201 8F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/tballinst.vhd
+Z202 FF:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/tballinst.vhd
+l0
+L9 1
+VCmJS>^a=fcJ?LmLMKg^g`3
+!s100 Eg0ZB`PIK8eGMQL[JMAmd3
+R8
+33
+R164
+!i10b 1
+R165
+Z203 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/tballinst.vhd|
+Z204 !s107 F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/tballinst.vhd|
+!i113 1
+R13
+R14
+Atballinst_arch
+R1
+R2
+R200
+R3
+R4
+DEx4 work 9 tballinst 0 22 CmJS>^a=fcJ?LmLMKg^g`3
+!i122 144
+l68
+L12 122
+V:j0gFgR=BNhnAM8Pmn@9F1
+!s100 3d]bdeO4VKOLH1mBInTH>1
+R8
+33
+R164
+!i10b 1
+R165
+R203
+R204
+!i113 1
+R13
+R14

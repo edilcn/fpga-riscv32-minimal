@@ -136,7 +136,7 @@ begin
 	program_counter : entity work.pc port map (clock, reset, next_pc_count, '1', PC_count);
 	instruction_memory : entity work.instmem port map (PC_count, instruction_address_IF_ID, clock);
 	alu_pc: entity work.adder port map (PC_next_address, X"00000004", pc_added);
-	pc_mux: entity work.mux2(behavioral) port map (pc_added, JTU_output, alu_branch_response or jump_flag_ID_EX, next_pc_count);
+	pc_mux: entity work.mux2 port map (pc_added, JTU_output, alu_branch_response or jump_flag_ID_EX, next_pc_count);
 	
 --	pc_0 : pc port map(reset, clock, alu_branch_response or jump_flag_ID_EX, std_logic_vector(unsigned(PC_output) + 4), JTU_output, PC_next_address, PC_output);
 --	progmem_module_0 : instmem port map(clock, PC_next_address, progmem_output);

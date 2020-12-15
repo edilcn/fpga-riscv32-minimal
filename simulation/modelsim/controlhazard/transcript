@@ -1,0 +1,505 @@
+vsim work.tballinst
+# vsim work.tballinst 
+# Start time: 13:01:37 on Dec 15,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tballinst(tballinst_arch)
+# Loading ieee.numeric_std(body)
+# Loading work.fpga_riscv32_minimal(arch_minimal_riscv32)
+# Loading work.controller(behavioral)
+# Loading work.datapath(arch_datapath)
+# Loading work.pc(behavioral)
+# Loading work.register32b(arch_register32b)
+# Loading work.instmem(description)
+# Loading work.adder(adder32)
+# Loading work.mux2(behavioral)
+# Loading work.ifid_register(behavioral)
+# Loading work.mux3_1(arch_mux3_1)
+# Loading work.register_bank(arch_register_bank)
+# Loading work.register32b_falling(arch_register32b_falling)
+# Loading work.mux32_1(arch_mux32_1)
+# Loading work.idex_register(arch_idex_register)
+# Loading work.register4b(arch_register4b)
+# Loading work.register1b(arch_register1b)
+# Loading work.register3b(arch_register3b)
+# Loading work.register2b(arch_register2b)
+# Loading work.register5b(arch_register5b)
+# Loading work.forwarding_unit(arch_forwarding)
+# Loading work.mux5_1(arch_mux5_1)
+# Loading work.alu(arch_alu)
+# Loading work.jump_target_unit(arch_jump_unit)
+# Loading work.exmem_pipeline(arch_exmem)
+# Loading work.hazard_control_unit(arch_hazard_unit)
+# Loading work.datamem_interface(behavioural)
+# Loading work.datamem(behavioural)
+# Loading work.memwb_pipeline(arch_memwb_register)
+do latest
+# Error: Required dataset not found: "allinst"
+# Error: Required dataset not found: "model"
+# Use the dataset commands to open or alias the required datasets.
+# Compile of adder.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of datamem.vhd was successful.
+# Compile of datamem_interface.vhd was successful.
+# Compile of forwarding_unit.vhd was successful.
+# Compile of fpga_riscv32_minimal.vhd was successful.
+# Compile of hazard_control_unit.vhd was successful.
+# Compile of instmem.vhd was successful.
+# Compile of mux2.vhd was successful.
+# Compile of mux3_1.vhd was successful.
+# Compile of mux5_1.vhd was successful.
+# Compile of mux32_1.vhd was successful.
+# Compile of register1b.vhd was successful.
+# Compile of register2b.vhd was successful.
+# Compile of register3b.vhd was successful.
+# Compile of register4b.vhd was successful.
+# Compile of register5b.vhd was successful.
+# Compile of register32b.vhd was successful.
+# Compile of register32b_falling.vhd was successful.
+# Compile of tballinst.vhd was successful.
+# Compile of datapath.vhd was successful.
+# Compile of exmem_pipeline.vhd was successful.
+# Compile of idex_register.vhd was successful.
+# Compile of ifid_register.vhd was successful.
+# Compile of jump_target_unit.vhd was successful.
+# Compile of memwb_pipeline.vhd was successful.
+# Compile of pc.vhd was successful.
+# Compile of register_bank.vhd was successful.
+# 29 compiles, 0 failed with no errors.
+vsim work.tballinst
+# End time: 13:13:54 on Dec 15,2020, Elapsed time: 0:12:17
+# Errors: 0, Warnings: 2
+# vsim work.tballinst 
+# Start time: 13:13:54 on Dec 15,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tballinst(tballinst_arch)
+# Loading ieee.numeric_std(body)
+# Loading work.fpga_riscv32_minimal(arch_minimal_riscv32)
+# Loading work.controller(behavioral)
+# Loading work.datapath(arch_datapath)
+# Loading work.pc(behavioral)
+# Loading work.register32b(arch_register32b)
+# Loading work.instmem(description)
+# Loading work.adder(adder32)
+# Loading work.mux2(behavioral)
+# Loading work.ifid_register(behavioral)
+# Loading work.mux3_1(arch_mux3_1)
+# Loading work.register_bank(arch_register_bank)
+# Loading work.register32b_falling(arch_register32b_falling)
+# Loading work.mux32_1(arch_mux32_1)
+# Loading work.idex_register(arch_idex_register)
+# Loading work.register4b(arch_register4b)
+# Loading work.register1b(arch_register1b)
+# Loading work.register3b(arch_register3b)
+# Loading work.register2b(arch_register2b)
+# Loading work.register5b(arch_register5b)
+# Loading work.forwarding_unit(arch_forwarding)
+# Loading work.mux5_1(arch_mux5_1)
+# Loading work.alu(arch_alu)
+# Loading work.jump_target_unit(arch_jump_unit)
+# Loading work.exmem_pipeline(arch_exmem)
+# Loading work.hazard_control_unit(arch_hazard_unit)
+# Loading work.datamem_interface(behavioural)
+# Loading work.datamem(behavioural)
+# Loading work.memwb_pipeline(arch_memwb_register)
+# Compile of adder.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of datamem.vhd was successful.
+# Compile of datamem_interface.vhd was successful.
+# Compile of forwarding_unit.vhd was successful.
+# Compile of fpga_riscv32_minimal.vhd was successful.
+# Compile of hazard_control_unit.vhd was successful.
+# Compile of instmem.vhd was successful.
+# Compile of mux2.vhd was successful.
+# Compile of mux3_1.vhd was successful.
+# Compile of mux5_1.vhd was successful.
+# Compile of mux32_1.vhd was successful.
+# Compile of register1b.vhd was successful.
+# Compile of register2b.vhd was successful.
+# Compile of register3b.vhd was successful.
+# Compile of register4b.vhd was successful.
+# Compile of register5b.vhd was successful.
+# Compile of register32b.vhd was successful.
+# Compile of register32b_falling.vhd was successful.
+# Compile of tballinst.vhd was successful.
+# Compile of datapath.vhd was successful.
+# Compile of exmem_pipeline.vhd was successful.
+# Compile of idex_register.vhd was successful.
+# Compile of ifid_register.vhd was successful.
+# Compile of jump_target_unit.vhd was successful.
+# Compile of memwb_pipeline.vhd was successful.
+# Compile of pc.vhd was successful.
+# Compile of register_bank.vhd was successful.
+# 29 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tballinst(tballinst_arch)
+# Loading work.fpga_riscv32_minimal(arch_minimal_riscv32)
+# Loading work.controller(behavioral)
+# Loading work.datapath(arch_datapath)
+# Loading work.pc(behavioral)
+# Loading work.register32b(arch_register32b)
+# Loading work.instmem(description)
+# Loading work.adder(adder32)
+# Loading work.mux2(behavioral)
+# Loading work.ifid_register(behavioral)
+# Loading work.mux3_1(arch_mux3_1)
+# Loading work.register_bank(arch_register_bank)
+# Loading work.register32b_falling(arch_register32b_falling)
+# Loading work.mux32_1(arch_mux32_1)
+# Loading work.idex_register(arch_idex_register)
+# Loading work.register4b(arch_register4b)
+# Loading work.register1b(arch_register1b)
+# Loading work.register3b(arch_register3b)
+# Loading work.register2b(arch_register2b)
+# Loading work.register5b(arch_register5b)
+# Loading work.forwarding_unit(arch_forwarding)
+# Loading work.mux5_1(arch_mux5_1)
+# Loading work.alu(arch_alu)
+# Loading work.jump_target_unit(arch_jump_unit)
+# Loading work.exmem_pipeline(arch_exmem)
+# Loading work.hazard_control_unit(arch_hazard_unit)
+# Loading work.datamem_interface(behavioural)
+# Loading work.datamem(behavioural)
+# Loading work.memwb_pipeline(arch_memwb_register)
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_0
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_1
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_2
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_3
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/JTU_0/internal_adder
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/JTU_0/internal_adder
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/alu_pc
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /tballinst/DUT/datapath_0/JTU_0/internal_adder
+run
+run
+run
+run
+# ** Note: BEQ
+#    Time: 500 ns  Iteration: 5  Instance: /tballinst/DUT/controller_0
+# ** Note: BEQ
+#    Time: 500 ns  Iteration: 6  Instance: /tballinst/DUT/controller_0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+do latest
+# Error: Required dataset not found: "allinst"
+# Error: Required dataset not found: "model"
+# Use the dataset commands to open or alias the required datasets.
+dataset open
+# dataset open: no filename specified.
+# Usage: dataset open <file_name> [<dataset_name>]
+dataset open allinst.wlf
+# allinst.wlf opened as dataset "allinst"
+do wave.do
+# Cannot open macro file: wave.do
+do model.do
+# .main_pane.wave.interior.cs.body.pw.wf
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# ** Error: /fpga_riscv32_minimal/clock already exists in the wave, cannot add twice
+# Usage: wave create -pattern <clock|constant|random|repeater|counter|none> <args>
+# See Command Reference manual for pattern specific <args>
+# Error in macro ./model.do line 29
+# /fpga_riscv32_minimal/clock already exists in the wave, cannot add twice
+# Usage: wave create -pattern <clock|constant|random|repeater|counter|none> <args>
+# See Command Reference manual for pattern specific <args>
+#     while executing
+# "add wave -editable 1 -pattern none -portmode in -language vhdl /fpga_riscv32_minimal/clock"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval add wave -editable 1 $args"
+#     (procedure "wave_edit_create" line 2)
+#     invoked from within
+# "wave_edit_create -pattern none -portmode in -language vhdl /fpga_riscv32_minimal/clock"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $procname $args"
+#     (procedure "wave_edit_command" line 8)
+#     invoked from within
+# "wave_edit_command create {*}$args"
+#     (procedure "::wave::create" line 3)
+#     invoked from within
+# "wave create -pattern none -portmode in -language vhdl /fpga_riscv32_minimal/clock "
+do latest
+# Error: Required dataset not found: "model"
+# Use the dataset commands to open or alias the required datasets.
+do moedl
+# Cannot open macro file: moedl
+do model
+# Cannot open macro file: model
+quit -sim
+# End time: 13:22:52 on Dec 15,2020, Elapsed time: 0:08:58
+# Errors: 1, Warnings: 13
+vsim work.tballinst
+# vsim work.tballinst 
+# Start time: 13:23:17 on Dec 15,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tballinst(tballinst_arch)
+# Loading ieee.numeric_std(body)
+# Loading work.fpga_riscv32_minimal(arch_minimal_riscv32)
+# Loading work.controller(behavioral)
+# Loading work.datapath(arch_datapath)
+# Loading work.pc(behavioral)
+# Loading work.register32b(arch_register32b)
+# Loading work.instmem(description)
+# Loading work.adder(adder32)
+# Loading work.mux2(behavioral)
+# Loading work.ifid_register(behavioral)
+# Loading work.mux3_1(arch_mux3_1)
+# Loading work.register_bank(arch_register_bank)
+# Loading work.register32b_falling(arch_register32b_falling)
+# Loading work.mux32_1(arch_mux32_1)
+# Loading work.idex_register(arch_idex_register)
+# Loading work.register4b(arch_register4b)
+# Loading work.register1b(arch_register1b)
+# Loading work.register3b(arch_register3b)
+# Loading work.register2b(arch_register2b)
+# Loading work.register5b(arch_register5b)
+# Loading work.forwarding_unit(arch_forwarding)
+# Loading work.mux5_1(arch_mux5_1)
+# Loading work.alu(arch_alu)
+# Loading work.jump_target_unit(arch_jump_unit)
+# Loading work.exmem_pipeline(arch_exmem)
+# Loading work.hazard_control_unit(arch_hazard_unit)
+# Loading work.datamem_interface(behavioural)
+# Loading work.datamem(behavioural)
+# Loading work.memwb_pipeline(arch_memwb_register)
+do latest
+# Error: Required dataset not found: "model"
+# Use the dataset commands to open or alias the required datasets.
+dataset open model.do
+# WLF Error: File is not a WLF file: model.do
+# Cannot open file: model.do
+dataset open tballinst
+# dataset open: file not found: tballinst
+dataset open tballinst.vhd
+# WLF Error: Bad initial WLF parcel. WLF file is corrupt.
+# Cannot open file: tballinst.vhd
+dataset open vsim.wlf
+# vsim.wlf opened as dataset "vsim"
+do latest
+# Error: Required dataset not found: "model"
+# Use the dataset commands to open or alias the required datasets.
+do model.do
+# .main_pane.wave.interior.cs.body.pw.wf
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# tballinst
+# ** Error: /fpga_riscv32_minimal/clock already exists in the wave, cannot add twice
+# Usage: wave create -pattern <clock|constant|random|repeater|counter|none> <args>
+# See Command Reference manual for pattern specific <args>
+# Error in macro ./model.do line 29
+# /fpga_riscv32_minimal/clock already exists in the wave, cannot add twice
+# Usage: wave create -pattern <clock|constant|random|repeater|counter|none> <args>
+# See Command Reference manual for pattern specific <args>
+#     while executing
+# "add wave -editable 1 -pattern none -portmode in -language vhdl /fpga_riscv32_minimal/clock"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval add wave -editable 1 $args"
+#     (procedure "wave_edit_create" line 2)
+#     invoked from within
+# "wave_edit_create -pattern none -portmode in -language vhdl /fpga_riscv32_minimal/clock"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $procname $args"
+#     (procedure "wave_edit_command" line 8)
+#     invoked from within
+# "wave_edit_command create {*}$args"
+#     (procedure "::wave::create" line 3)
+#     invoked from within
+# "wave create -pattern none -portmode in -language vhdl /fpga_riscv32_minimal/clock "
+do latest
+# Error: Required dataset not found: "model"
+# Use the dataset commands to open or alias the required datasets.
+quit -sim
+# End time: 13:25:28 on Dec 15,2020, Elapsed time: 0:02:11
+# Errors: 1, Warnings: 1
+vsim work.tballinst
+# vsim work.tballinst 
+# Start time: 13:25:44 on Dec 15,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tballinst(tballinst_arch)
+# Loading ieee.numeric_std(body)
+# Loading work.fpga_riscv32_minimal(arch_minimal_riscv32)
+# Loading work.controller(behavioral)
+# Loading work.datapath(arch_datapath)
+# Loading work.pc(behavioral)
+# Loading work.register32b(arch_register32b)
+# Loading work.instmem(description)
+# Loading work.adder(adder32)
+# Loading work.mux2(behavioral)
+# Loading work.ifid_register(behavioral)
+# Loading work.mux3_1(arch_mux3_1)
+# Loading work.register_bank(arch_register_bank)
+# Loading work.register32b_falling(arch_register32b_falling)
+# Loading work.mux32_1(arch_mux32_1)
+# Loading work.idex_register(arch_idex_register)
+# Loading work.register4b(arch_register4b)
+# Loading work.register1b(arch_register1b)
+# Loading work.register3b(arch_register3b)
+# Loading work.register2b(arch_register2b)
+# Loading work.register5b(arch_register5b)
+# Loading work.forwarding_unit(arch_forwarding)
+# Loading work.mux5_1(arch_mux5_1)
+# Loading work.alu(arch_alu)
+# Loading work.jump_target_unit(arch_jump_unit)
+# Loading work.exmem_pipeline(arch_exmem)
+# Loading work.hazard_control_unit(arch_hazard_unit)
+# Loading work.datamem_interface(behavioural)
+# Loading work.datamem(behavioural)
+# Loading work.memwb_pipeline(arch_memwb_register)
+do latest
+# Error: Required dataset not found: "model"
+# Use the dataset commands to open or alias the required datasets.
+dataset open model.wlf
+# model.wlf opened as dataset "model"
+do latest
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_0
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_1
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_2
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_3
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/JTU_0/internal_adder
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/JTU_0/internal_adder
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/alu_pc
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /tballinst/DUT/datapath_0/JTU_0/internal_adder
+run
+run
+run
+run
+# ** Note: BEQ
+#    Time: 500 ns  Iteration: 5  Instance: /tballinst/DUT/controller_0
+# ** Note: BEQ
+#    Time: 500 ns  Iteration: 6  Instance: /tballinst/DUT/controller_0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position end model:/tballinst/DUT/datapath_0/*
+add wave -position end model:/tballinst/DUT/controller_0/*
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf F:/QuartusProjects/fpga-riscv32-minimal/simulation/modelsim/controlhazard/model.do
