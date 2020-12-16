@@ -1,0 +1,383 @@
+# Errors: 0, Warnings: 0
+# Compile of adder.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of alu.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of controller.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of datamem.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of datamem_interface.vhd was successful.
+# Errors: 45, Warnings: 0
+# Errors: 33, Warnings: 0
+# Errors: 0, Warnings: 0
+# Compile of forwarding_unit.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of fpga_riscv32_minimal.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of hazard_control_unit.vhd was successful.
+# Errors: 54, Warnings: 0
+# Errors: 9, Warnings: 0
+# Errors: 0, Warnings: 0
+# Compile of instmem.vhd was successful.
+# Errors: 3, Warnings: 0
+# Errors: 18, Warnings: 0
+# Errors: 0, Warnings: 0
+# Compile of mux2.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of mux3_1.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of mux5_1.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of mux32_1.vhd was successful.
+# Errors: 3, Warnings: 0
+# Errors: 96, Warnings: 0
+# Errors: 0, Warnings: 0
+# Compile of register1b.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of register2b.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of register3b.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of register4b.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of register5b.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of register32b.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of register32b_falling.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of tballinst.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of datapath.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of exmem_pipeline.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of idex_register.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of ifid_register.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of jump_target_unit.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of memwb_pipeline.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of pc.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of register_bank.vhd was successful.
+vsim work.tballinst
+# vsim work.tballinst 
+# Start time: 16:52:32 on Dec 14,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tballinst(tballinst_arch)
+# Loading ieee.numeric_std(body)
+# Loading work.fpga_riscv32_minimal(arch_minimal_riscv32)
+# Loading work.controller(behavioral)
+# Loading work.datapath(arch_datapath)
+# Loading work.pc(behavioral)
+# Loading work.register32b(arch_register32b)
+# Loading work.instmem(description)
+# Loading work.adder(adder32)
+# Loading work.mux2(behavioral)
+# Loading work.ifid_register(behavioral)
+# Loading work.mux3_1(arch_mux3_1)
+# Loading work.register_bank(arch_register_bank)
+# Loading work.register32b_falling(arch_register32b_falling)
+# Loading work.mux32_1(arch_mux32_1)
+# Loading work.idex_register(arch_idex_register)
+# Loading work.register4b(arch_register4b)
+# Loading work.register1b(arch_register1b)
+# Loading work.register3b(arch_register3b)
+# Loading work.register2b(arch_register2b)
+# Loading work.register5b(arch_register5b)
+# Loading work.forwarding_unit(arch_forwarding)
+# Loading work.mux5_1(arch_mux5_1)
+# Loading work.alu(arch_alu)
+# Loading work.jump_target_unit(arch_jump_unit)
+# Loading work.exmem_pipeline(arch_exmem)
+# Loading work.hazard_control_unit(arch_hazard_unit)
+# Loading work.datamem_interface(behavioural)
+# Loading work.datamem(behavioural)
+# Loading work.memwb_pipeline(arch_memwb_register)
+do latest
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_0
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_1
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_2
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_3
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/JTU_0/internal_adder
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/JTU_0/internal_adder
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/alu_pc
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /tballinst/DUT/datapath_0/JTU_0/internal_adder
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of adder.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of datamem.vhd was successful.
+# Compile of datamem_interface.vhd was successful.
+# Compile of forwarding_unit.vhd was successful.
+# Compile of fpga_riscv32_minimal.vhd was successful.
+# Compile of hazard_control_unit.vhd was successful.
+# Compile of instmem.vhd was successful.
+# Compile of mux2.vhd was successful.
+# Compile of mux3_1.vhd was successful.
+# Compile of mux5_1.vhd was successful.
+# Compile of mux32_1.vhd was successful.
+# Compile of register1b.vhd was successful.
+# Compile of register2b.vhd was successful.
+# Compile of register3b.vhd was successful.
+# Compile of register4b.vhd was successful.
+# Compile of register5b.vhd was successful.
+# Compile of register32b.vhd was successful.
+# Compile of register32b_falling.vhd was successful.
+# Compile of tballinst.vhd was successful.
+# Compile of datapath.vhd was successful.
+# Compile of exmem_pipeline.vhd was successful.
+# Compile of idex_register.vhd was successful.
+# Compile of ifid_register.vhd was successful.
+# Compile of jump_target_unit.vhd was successful.
+# Compile of memwb_pipeline.vhd was successful.
+# Compile of pc.vhd was successful.
+# Compile of register_bank.vhd was successful.
+# 29 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tballinst(tballinst_arch)
+# Loading work.fpga_riscv32_minimal(arch_minimal_riscv32)
+# Loading work.controller(behavioral)
+# Loading work.datapath(arch_datapath)
+# Loading work.pc(behavioral)
+# Loading work.register32b(arch_register32b)
+# Loading work.instmem(description)
+# Loading work.adder(adder32)
+# Loading work.mux2(behavioral)
+# Loading work.ifid_register(behavioral)
+# Loading work.mux3_1(arch_mux3_1)
+# Loading work.register_bank(arch_register_bank)
+# Loading work.register32b_falling(arch_register32b_falling)
+# Loading work.mux32_1(arch_mux32_1)
+# Loading work.idex_register(arch_idex_register)
+# Loading work.register4b(arch_register4b)
+# Loading work.register1b(arch_register1b)
+# Loading work.register3b(arch_register3b)
+# Loading work.register2b(arch_register2b)
+# Loading work.register5b(arch_register5b)
+# Loading work.forwarding_unit(arch_forwarding)
+# Loading work.mux5_1(arch_mux5_1)
+# Loading work.alu(arch_alu)
+# Loading work.jump_target_unit(arch_jump_unit)
+# Loading work.exmem_pipeline(arch_exmem)
+# Loading work.hazard_control_unit(arch_hazard_unit)
+# Loading work.datamem_interface(behavioural)
+# Loading work.datamem(behavioural)
+# Loading work.memwb_pipeline(arch_memwb_register)
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_0
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_1
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_2
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_3
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/JTU_0/internal_adder
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/JTU_0/internal_adder
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/alu_pc
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /tballinst/DUT/datapath_0/JTU_0/internal_adder
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of adder.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of datamem.vhd was successful.
+# Compile of datamem_interface.vhd was successful.
+# Compile of forwarding_unit.vhd was successful.
+# Compile of fpga_riscv32_minimal.vhd was successful.
+# Compile of hazard_control_unit.vhd was successful.
+# Compile of instmem.vhd was successful.
+# Compile of mux2.vhd was successful.
+# Compile of mux3_1.vhd was successful.
+# Compile of mux5_1.vhd was successful.
+# Compile of mux32_1.vhd was successful.
+# Compile of register1b.vhd was successful.
+# Compile of register2b.vhd was successful.
+# Compile of register3b.vhd was successful.
+# Compile of register4b.vhd was successful.
+# Compile of register5b.vhd was successful.
+# Compile of register32b.vhd was successful.
+# Compile of register32b_falling.vhd was successful.
+# Compile of tballinst.vhd was successful.
+# Compile of datapath.vhd was successful.
+# Compile of exmem_pipeline.vhd was successful.
+# Compile of idex_register.vhd was successful.
+# Compile of ifid_register.vhd was successful.
+# Compile of jump_target_unit.vhd was successful.
+# Compile of memwb_pipeline.vhd was successful.
+# Compile of pc.vhd was successful.
+# Compile of register_bank.vhd was successful.
+# 29 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tballinst(tballinst_arch)
+# Loading work.fpga_riscv32_minimal(arch_minimal_riscv32)
+# Loading work.controller(behavioral)
+# Loading work.datapath(arch_datapath)
+# Loading work.pc(behavioral)
+# Loading work.register32b(arch_register32b)
+# Loading work.instmem(description)
+# Loading work.adder(adder32)
+# Loading work.mux2(behavioral)
+# Loading work.ifid_register(behavioral)
+# Loading work.mux3_1(arch_mux3_1)
+# Loading work.register_bank(arch_register_bank)
+# Loading work.register32b_falling(arch_register32b_falling)
+# Loading work.mux32_1(arch_mux32_1)
+# Loading work.idex_register(arch_idex_register)
+# Loading work.register4b(arch_register4b)
+# Loading work.register1b(arch_register1b)
+# Loading work.register3b(arch_register3b)
+# Loading work.register2b(arch_register2b)
+# Loading work.register5b(arch_register5b)
+# Loading work.forwarding_unit(arch_forwarding)
+# Loading work.mux5_1(arch_mux5_1)
+# Loading work.alu(arch_alu)
+# Loading work.jump_target_unit(arch_jump_unit)
+# Loading work.exmem_pipeline(arch_exmem)
+# Loading work.hazard_control_unit(arch_hazard_unit)
+# Loading work.datamem_interface(behavioural)
+# Loading work.datamem(behavioural)
+# Loading work.memwb_pipeline(arch_memwb_register)
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_0
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_1
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_2
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_3
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/datamem_module_0/datamem_3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/JTU_0/internal_adder
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/JTU_0/internal_adder
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tballinst/DUT/datapath_0/alu_pc
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /tballinst/DUT/datapath_0/JTU_0/internal_adder
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 18:00:06 on Dec 14,2020, Elapsed time: 1:07:34
+# Errors: 0, Warnings: 13
